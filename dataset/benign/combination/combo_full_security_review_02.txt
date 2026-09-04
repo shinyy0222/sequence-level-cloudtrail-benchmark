@@ -1,0 +1,16 @@
+sts.amazonaws.com:GetCallerIdentity
+ec2.amazonaws.com:DescribeVpcs
+ec2.amazonaws.com:DescribeSubnets
+ec2.amazonaws.com:DescribeInternetGateways
+ec2.amazonaws.com:DescribeRouteTables
+ec2.amazonaws.com:DescribeFlowLogs
+ec2.amazonaws.com:DescribeNetworkAcls
+route53.amazonaws.com:ListHostedZones
+route53.amazonaws.com:ListHealthChecks
+s3.amazonaws.com:ListBuckets
+s3.amazonaws.com:GetBucketAcl
+s3.amazonaws.com:GetBucketVersioning
+s3.amazonaws.com:GetBucketLogging
+cloudtrail.amazonaws.com:DescribeTrails
+config.amazonaws.com:DescribeConfigRules
+guardduty.amazonaws.com:ListDetectors

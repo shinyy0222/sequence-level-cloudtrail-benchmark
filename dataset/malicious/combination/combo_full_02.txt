@@ -1,0 +1,10 @@
+signin.amazonaws.com:ConsoleLogin
+sts.amazonaws.com:AssumeRole
+sts.amazonaws.com:AssumeRole
+ec2.amazonaws.com:DescribeInstanceAttribute
+ssm.amazonaws.com:DescribeParameters
+ssm.amazonaws.com:GetParameters
+iam.amazonaws.com:CreateUser
+iam.amazonaws.com:AttachUserPolicy
+iam.amazonaws.com:CreateAccessKey
+cloudtrail.amazonaws.com:StopLogging

@@ -1,0 +1,3 @@
+ses.amazonaws.com:ListIdentities
+ses.amazonaws.com:GetSendQuota
+ses.amazonaws.com:GetAccountSendingEnabled

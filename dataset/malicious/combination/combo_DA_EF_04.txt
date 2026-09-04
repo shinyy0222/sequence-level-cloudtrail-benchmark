@@ -1,0 +1,4 @@
+sts.amazonaws.com:AssumeRole
+sts.amazonaws.com:AssumeRole
+ec2.amazonaws.com:DescribeInstanceAttribute
+s3.amazonaws.com:PutBucketPolicy

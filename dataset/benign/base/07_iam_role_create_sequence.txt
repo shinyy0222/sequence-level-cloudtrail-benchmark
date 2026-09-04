@@ -1,0 +1,6 @@
+iam.amazonaws.com:ListRoles
+iam.amazonaws.com:CreateRole
+iam.amazonaws.com:AttachRolePolicy
+iam.amazonaws.com:ListRolePolicies
+iam.amazonaws.com:DetachRolePolicy
+iam.amazonaws.com:DeleteRole

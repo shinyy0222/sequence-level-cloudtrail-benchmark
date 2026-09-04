@@ -1,0 +1,3 @@
+ssm.amazonaws.com:DescribeParameters
+ssm.amazonaws.com:GetParameters
+cloudtrail.amazonaws.com:StopLogging

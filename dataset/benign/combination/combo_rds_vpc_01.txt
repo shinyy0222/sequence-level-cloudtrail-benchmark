@@ -1,0 +1,9 @@
+rds.amazonaws.com:DescribeDBInstances
+rds.amazonaws.com:DescribeDBClusters
+rds.amazonaws.com:DescribeDBSnapshots
+rds.amazonaws.com:DescribeDBSubnetGroups
+sts.amazonaws.com:GetCallerIdentity
+ec2.amazonaws.com:DescribeVpcs
+ec2.amazonaws.com:DescribeSubnets
+ec2.amazonaws.com:DescribeInternetGateways
+ec2.amazonaws.com:DescribeRouteTables

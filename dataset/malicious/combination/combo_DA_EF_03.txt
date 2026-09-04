@@ -1,0 +1,5 @@
+ses.amazonaws.com:ListIdentities
+ses.amazonaws.com:GetSendQuota
+ses.amazonaws.com:GetAccountSendingEnabled
+rds.amazonaws.com:ModifyDBSnapshotAttribute
+rds.amazonaws.com:ModifyDBSnapshotAttribute

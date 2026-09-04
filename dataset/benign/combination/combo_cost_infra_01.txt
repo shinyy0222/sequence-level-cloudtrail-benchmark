@@ -1,0 +1,6 @@
+ce.amazonaws.com:GetCostAndUsage
+ec2.amazonaws.com:DescribeInstances
+ec2.amazonaws.com:DescribeSecurityGroups
+rds.amazonaws.com:DescribeDBInstances
+lambda.amazonaws.com:ListFunctions20150331
+ecs.amazonaws.com:ListClusters

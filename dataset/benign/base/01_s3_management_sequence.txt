@@ -1,0 +1,2 @@
+s3.amazonaws.com:CreateBucket
+s3.amazonaws.com:DeleteBucket

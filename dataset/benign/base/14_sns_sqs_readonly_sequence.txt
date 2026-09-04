@@ -1,0 +1,2 @@
+sns.amazonaws.com:ListTopics
+sns.amazonaws.com:ListSubscriptions

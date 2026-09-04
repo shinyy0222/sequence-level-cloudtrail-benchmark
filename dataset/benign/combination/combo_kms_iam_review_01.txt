@@ -1,0 +1,6 @@
+kms.amazonaws.com:ListKeys
+kms.amazonaws.com:ListAliases
+iam.amazonaws.com:ListRoles
+iam.amazonaws.com:ListPolicies
+iam.amazonaws.com:GetAccountSummary
+cloudtrail.amazonaws.com:DescribeTrails

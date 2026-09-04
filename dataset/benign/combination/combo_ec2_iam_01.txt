@@ -1,0 +1,9 @@
+ec2.amazonaws.com:DescribeInstances
+ec2.amazonaws.com:DescribeSecurityGroups
+ec2.amazonaws.com:DescribeVpcs
+ec2.amazonaws.com:DescribeSubnets
+ec2.amazonaws.com:DescribeKeyPairs
+iam.amazonaws.com:ListUsers
+iam.amazonaws.com:ListRoles
+iam.amazonaws.com:GetAccountSummary
+iam.amazonaws.com:ListPolicies

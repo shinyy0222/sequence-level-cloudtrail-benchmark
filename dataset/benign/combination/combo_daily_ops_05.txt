@@ -1,0 +1,8 @@
+sts.amazonaws.com:GetCallerIdentity
+iam.amazonaws.com:ListUsers
+iam.amazonaws.com:GetAccountSummary
+iam.amazonaws.com:ListAccessKeys
+cloudtrail.amazonaws.com:DescribeTrails
+guardduty.amazonaws.com:ListDetectors
+config.amazonaws.com:DescribeConfigRules
+monitoring.amazonaws.com:DescribeAlarms

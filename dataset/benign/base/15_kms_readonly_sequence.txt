@@ -1,0 +1,2 @@
+kms.amazonaws.com:ListKeys
+kms.amazonaws.com:ListAliases

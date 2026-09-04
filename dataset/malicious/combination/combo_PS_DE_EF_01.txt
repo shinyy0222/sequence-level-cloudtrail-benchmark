@@ -1,0 +1,6 @@
+iam.amazonaws.com:CreateUser
+iam.amazonaws.com:AttachUserPolicy
+iam.amazonaws.com:CreateAccessKey
+iam.amazonaws.com:ListAccessKeys
+cloudtrail.amazonaws.com:StopLogging
+ec2.amazonaws.com:ModifySnapshotAttribute

@@ -1,0 +1,5 @@
+ec2.amazonaws.com:EnableSerialConsoleAccess
+ec2.amazonaws.com:SendSerialConsoleSSHPublicKey
+ec2.amazonaws.com:SendSerialConsoleSSHPublicKey
+ec2.amazonaws.com:SendSerialConsoleSSHPublicKey
+s3.amazonaws.com:PutBucketPolicy

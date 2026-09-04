@@ -1,0 +1,13 @@
+sts.amazonaws.com:GetCallerIdentity
+iam.amazonaws.com:ListUsers
+iam.amazonaws.com:ListAccessKeys
+iam.amazonaws.com:GetAccountSummary
+cloudtrail.amazonaws.com:DescribeTrails
+cloudtrail.amazonaws.com:GetTrailStatus
+guardduty.amazonaws.com:ListDetectors
+s3.amazonaws.com:ListBuckets
+s3.amazonaws.com:GetBucketAcl
+s3.amazonaws.com:GetBucketVersioning
+secretsmanager.amazonaws.com:CreateSecret
+secretsmanager.amazonaws.com:GetSecretValue
+secretsmanager.amazonaws.com:DescribeSecret

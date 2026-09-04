@@ -1,0 +1,8 @@
+sts.amazonaws.com:GetCallerIdentity
+ec2.amazonaws.com:DescribeVpcs
+ec2.amazonaws.com:DescribeSubnets
+ec2.amazonaws.com:DescribeInternetGateways
+ec2.amazonaws.com:DescribeRouteTables
+route53.amazonaws.com:ListHostedZones
+route53.amazonaws.com:ListHealthChecks
+cloudformation.amazonaws.com:ListStacks

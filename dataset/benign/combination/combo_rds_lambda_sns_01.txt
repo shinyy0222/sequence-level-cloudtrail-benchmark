@@ -1,0 +1,7 @@
+rds.amazonaws.com:DescribeDBInstances
+rds.amazonaws.com:DescribeDBClusters
+rds.amazonaws.com:DescribeDBSnapshots
+lambda.amazonaws.com:ListFunctions20150331
+lambda.amazonaws.com:ListEventSourceMappings20150331
+sns.amazonaws.com:ListTopics
+sns.amazonaws.com:ListSubscriptions

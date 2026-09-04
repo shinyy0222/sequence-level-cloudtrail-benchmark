@@ -1,0 +1,5 @@
+ecs.amazonaws.com:ListClusters
+ecs.amazonaws.com:ListServices
+ecs.amazonaws.com:ListTaskDefinitions
+iam.amazonaws.com:ListRoles
+iam.amazonaws.com:ListPolicies

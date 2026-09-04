@@ -1,0 +1,5 @@
+ssm.amazonaws.com:TerminateSession
+ssm.amazonaws.com:StartSession
+ssm.amazonaws.com:TerminateSession
+ssm.amazonaws.com:DescribeInstanceInformation
+ssm.amazonaws.com:StartSession

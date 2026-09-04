@@ -1,0 +1,3 @@
+signin.amazonaws.com:ConsoleLogin
+iam.amazonaws.com:UpdateAssumeRolePolicy
+ec2.amazonaws.com:DeleteFlowLogs

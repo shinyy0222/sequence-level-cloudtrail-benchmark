@@ -1,0 +1,4 @@
+signin.amazonaws.com:ConsoleLogin
+ec2-instance-connect.amazonaws.com:SendSSHPublicKey
+ec2-instance-connect.amazonaws.com:SendSSHPublicKey
+ec2-instance-connect.amazonaws.com:SendSSHPublicKey

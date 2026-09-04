@@ -1,0 +1,6 @@
+signin.amazonaws.com:ConsoleLogin
+iam.amazonaws.com:CreateUser
+iam.amazonaws.com:AttachUserPolicy
+iam.amazonaws.com:CreateAccessKey
+iam.amazonaws.com:ListAccessKeys
+cloudtrail.amazonaws.com:StopLogging

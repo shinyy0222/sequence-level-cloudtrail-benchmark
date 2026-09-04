@@ -1,0 +1,2 @@
+signin.amazonaws.com:ConsoleLogin
+cloudtrail.amazonaws.com:PutEventSelectors

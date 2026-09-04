@@ -1,0 +1,2 @@
+signin.amazonaws.com:ConsoleLogin
+lambda.amazonaws.com:AddPermission20150331v2

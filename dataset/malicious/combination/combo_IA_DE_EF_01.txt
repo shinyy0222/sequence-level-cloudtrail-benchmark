@@ -1,0 +1,6 @@
+signin.amazonaws.com:ConsoleLogin
+cloudtrail.amazonaws.com:StopLogging
+ec2.amazonaws.com:DeleteFlowLogs
+ec2.amazonaws.com:ModifySnapshotAttribute
+rds.amazonaws.com:ModifyDBSnapshotAttribute
+rds.amazonaws.com:ModifyDBSnapshotAttribute

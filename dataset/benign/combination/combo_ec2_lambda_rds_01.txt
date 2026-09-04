@@ -1,0 +1,8 @@
+sts.amazonaws.com:GetCallerIdentity
+ec2.amazonaws.com:DescribeInstances
+ec2.amazonaws.com:DescribeSecurityGroups
+lambda.amazonaws.com:ListFunctions20150331
+lambda.amazonaws.com:ListEventSourceMappings20150331
+rds.amazonaws.com:DescribeDBInstances
+rds.amazonaws.com:DescribeDBClusters
+monitoring.amazonaws.com:DescribeAlarms

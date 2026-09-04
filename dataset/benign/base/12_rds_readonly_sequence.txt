@@ -1,0 +1,4 @@
+rds.amazonaws.com:DescribeDBInstances
+rds.amazonaws.com:DescribeDBClusters
+rds.amazonaws.com:DescribeDBSnapshots
+rds.amazonaws.com:DescribeDBSubnetGroups

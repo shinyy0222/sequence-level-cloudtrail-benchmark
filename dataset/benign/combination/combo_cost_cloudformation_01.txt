@@ -1,0 +1,3 @@
+ce.amazonaws.com:GetCostAndUsage
+cloudformation.amazonaws.com:ListStacks
+cloudformation.amazonaws.com:DescribeStacks

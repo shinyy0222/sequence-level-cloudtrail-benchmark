@@ -1,0 +1,5 @@
+signin.amazonaws.com:ConsoleLogin
+rolesanywhere.amazonaws.com:CreateProfile
+rolesanywhere.amazonaws.com:ListTrustAnchors
+rolesanywhere.amazonaws.com:CreateTrustAnchor
+cloudtrail.amazonaws.com:DeleteTrail

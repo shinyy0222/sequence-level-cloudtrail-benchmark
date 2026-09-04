@@ -1,0 +1,3 @@
+secretsmanager.amazonaws.com:ListSecrets
+secretsmanager.amazonaws.com:GetSecretValue
+cloudtrail.amazonaws.com:DeleteTrail

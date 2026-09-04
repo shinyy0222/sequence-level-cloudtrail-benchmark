@@ -1,0 +1,6 @@
+ecs.amazonaws.com:ListClusters
+ecs.amazonaws.com:ListServices
+ecs.amazonaws.com:ListTaskDefinitions
+ec2.amazonaws.com:DescribeVpcs
+ec2.amazonaws.com:DescribeSubnets
+ec2.amazonaws.com:DescribeSecurityGroups

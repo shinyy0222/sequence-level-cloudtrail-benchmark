@@ -1,0 +1,2 @@
+cloudformation.amazonaws.com:ListStacks
+cloudformation.amazonaws.com:DescribeStacks

@@ -1,0 +1,3 @@
+config.amazonaws.com:DescribeConfigRules
+config.amazonaws.com:DescribeConfigurationRecorders
+config.amazonaws.com:DescribeComplianceByConfigRule

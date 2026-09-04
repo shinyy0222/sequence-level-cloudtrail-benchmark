@@ -1,0 +1,2 @@
+cloudtrail.amazonaws.com:PutEventSelectors
+cloudtrail.amazonaws.com:PutEventSelectors

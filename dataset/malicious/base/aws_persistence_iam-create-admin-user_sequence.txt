@@ -1,0 +1,4 @@
+iam.amazonaws.com:CreateAccessKey
+iam.amazonaws.com:ListAccessKeys
+iam.amazonaws.com:AttachUserPolicy
+iam.amazonaws.com:CreateUser

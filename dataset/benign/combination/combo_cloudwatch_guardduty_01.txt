@@ -1,0 +1,4 @@
+monitoring.amazonaws.com:DescribeAlarms
+guardduty.amazonaws.com:ListDetectors
+cloudtrail.amazonaws.com:DescribeTrails
+cloudtrail.amazonaws.com:GetTrailStatus

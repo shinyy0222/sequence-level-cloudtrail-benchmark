@@ -1,0 +1,11 @@
+sts.amazonaws.com:GetCallerIdentity
+iam.amazonaws.com:ListUsers
+iam.amazonaws.com:CreateUser
+iam.amazonaws.com:AttachUserPolicy
+iam.amazonaws.com:ListAttachedUserPolicies
+iam.amazonaws.com:ListAccessKeys
+iam.amazonaws.com:ListRoles
+iam.amazonaws.com:ListPolicies
+cloudtrail.amazonaws.com:DescribeTrails
+ec2.amazonaws.com:DescribeInstances
+s3.amazonaws.com:ListBuckets

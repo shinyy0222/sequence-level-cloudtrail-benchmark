@@ -1,0 +1,3 @@
+ec2.amazonaws.com:RunInstances
+sts.amazonaws.com:AssumeRole
+sts.amazonaws.com:AssumeRole

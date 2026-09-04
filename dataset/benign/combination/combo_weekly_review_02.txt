@@ -1,0 +1,12 @@
+sts.amazonaws.com:GetCallerIdentity
+rds.amazonaws.com:DescribeDBInstances
+rds.amazonaws.com:DescribeDBClusters
+rds.amazonaws.com:DescribeDBSnapshots
+rds.amazonaws.com:DescribeDBSubnetGroups
+lambda.amazonaws.com:ListFunctions20150331
+lambda.amazonaws.com:ListLayers20181031
+ecs.amazonaws.com:ListClusters
+ecs.amazonaws.com:ListServices
+sns.amazonaws.com:ListTopics
+sns.amazonaws.com:ListSubscriptions
+ce.amazonaws.com:GetCostAndUsage

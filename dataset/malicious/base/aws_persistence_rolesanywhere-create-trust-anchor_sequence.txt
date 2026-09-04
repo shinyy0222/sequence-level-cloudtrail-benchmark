@@ -1,0 +1,2 @@
+rolesanywhere.amazonaws.com:CreateTrustAnchor
+rolesanywhere.amazonaws.com:CreateProfile

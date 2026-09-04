@@ -1,0 +1,3 @@
+ecs.amazonaws.com:ListClusters
+ecs.amazonaws.com:ListServices
+ecs.amazonaws.com:ListTaskDefinitions

@@ -1,0 +1,4 @@
+signin.amazonaws.com:ConsoleLogin
+ssm.amazonaws.com:DescribeInstanceInformation
+ssm.amazonaws.com:SendCommand
+ssm.amazonaws.com:GetCommandInvocation

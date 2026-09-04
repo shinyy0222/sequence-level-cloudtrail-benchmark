@@ -1,0 +1,4 @@
+signin.amazonaws.com:ConsoleLogin
+iam.amazonaws.com:ListAccessKeys
+iam.amazonaws.com:DeleteAccessKey
+iam.amazonaws.com:CreateAccessKey

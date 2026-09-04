@@ -1,0 +1,6 @@
+sts.amazonaws.com:GetCallerIdentity
+iam.amazonaws.com:ListAccessKeys
+iam.amazonaws.com:ListUsers
+iam.amazonaws.com:ListRoles
+iam.amazonaws.com:GetAccountSummary
+iam.amazonaws.com:ListPolicies

@@ -1,0 +1,6 @@
+ssm.amazonaws.com:DescribeParameters
+ssm.amazonaws.com:GetParameters
+iam.amazonaws.com:CreateUser
+iam.amazonaws.com:AttachUserPolicy
+iam.amazonaws.com:CreateAccessKey
+ec2.amazonaws.com:ModifyImageAttribute

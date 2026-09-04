@@ -1,0 +1,8 @@
+signin.amazonaws.com:ConsoleLogin
+ses.amazonaws.com:ListIdentities
+ses.amazonaws.com:GetSendQuota
+ses.amazonaws.com:GetAccountSendingEnabled
+secretsmanager.amazonaws.com:ListSecrets
+secretsmanager.amazonaws.com:GetSecretValue
+s3.amazonaws.com:PutBucketPolicy
+cloudtrail.amazonaws.com:DeleteTrail

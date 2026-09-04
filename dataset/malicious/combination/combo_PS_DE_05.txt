@@ -1,0 +1,2 @@
+iam.amazonaws.com:UpdateAssumeRolePolicy
+route53resolver.amazonaws.com:DeleteResolverQueryLogConfig

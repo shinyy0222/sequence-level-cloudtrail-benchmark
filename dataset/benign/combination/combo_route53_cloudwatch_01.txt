@@ -1,0 +1,5 @@
+route53.amazonaws.com:ListHostedZones
+route53.amazonaws.com:ListHealthChecks
+monitoring.amazonaws.com:DescribeAlarms
+ec2.amazonaws.com:DescribeVpcs
+ec2.amazonaws.com:DescribeSubnets

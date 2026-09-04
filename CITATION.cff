@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite the associated paper and this repository."
+title: "Sequence-Level AWS CloudTrail Benchmark"
+type: dataset
+version: "1.0.0"
+
+authors:
+  - family-names: Shin
+    given-names: Yeeun
+  - family-names: Kim
+    given-names: Seongmin
+
+repository-code: "https://github.com/shinyy0222/sequence-level-cloudtrail-benchmark"
+
+keywords:
+  - AWS CloudTrail
+  - cloud security
+  - threat detection
+  - API sequence
+  - large language models
+  - retrieval-augmented generation
+  - MITRE ATT&CK
+  - false positive

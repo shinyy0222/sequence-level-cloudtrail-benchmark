@@ -1,0 +1,2 @@
+signin.amazonaws.com:ConsoleLogin
+route53resolver.amazonaws.com:DeleteResolverQueryLogConfig

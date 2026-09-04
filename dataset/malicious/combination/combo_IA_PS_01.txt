@@ -1,0 +1,2 @@
+signin.amazonaws.com:ConsoleLogin
+iam.amazonaws.com:UpdateAssumeRolePolicy

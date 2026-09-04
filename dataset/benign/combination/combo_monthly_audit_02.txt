@@ -1,0 +1,16 @@
+sts.amazonaws.com:GetCallerIdentity
+iam.amazonaws.com:ListGroups
+iam.amazonaws.com:ListPolicies
+iam.amazonaws.com:ListRoles
+iam.amazonaws.com:GetAccountAuthorizationDetails
+secretsmanager.amazonaws.com:CreateSecret
+secretsmanager.amazonaws.com:GetSecretValue
+secretsmanager.amazonaws.com:DescribeSecret
+secretsmanager.amazonaws.com:UpdateSecret
+secretsmanager.amazonaws.com:DeleteSecret
+ssm.amazonaws.com:DescribeParameters
+ssm.amazonaws.com:GetParametersByPath
+kms.amazonaws.com:ListKeys
+kms.amazonaws.com:ListAliases
+rds.amazonaws.com:DescribeDBInstances
+rds.amazonaws.com:DescribeDBClusters

@@ -1,0 +1,2 @@
+rds.amazonaws.com:ModifyDBSnapshotAttribute
+rds.amazonaws.com:ModifyDBSnapshotAttribute

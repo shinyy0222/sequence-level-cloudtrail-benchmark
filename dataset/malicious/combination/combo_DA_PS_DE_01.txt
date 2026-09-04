@@ -1,0 +1,6 @@
+sts.amazonaws.com:AssumeRole
+sts.amazonaws.com:AssumeRole
+ec2.amazonaws.com:DescribeInstanceAttribute
+iam.amazonaws.com:UpdateAssumeRolePolicy
+route53resolver.amazonaws.com:DeleteResolverQueryLogConfig
+s3.amazonaws.com:PutBucketLifecycle

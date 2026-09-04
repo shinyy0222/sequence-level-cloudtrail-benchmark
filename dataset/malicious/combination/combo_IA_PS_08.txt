@@ -1,0 +1,2 @@
+signin.amazonaws.com:ConsoleLogin
+lambda.amazonaws.com:UpdateFunctionCode20150331v2

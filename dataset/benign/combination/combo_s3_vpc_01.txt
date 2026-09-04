@@ -1,0 +1,9 @@
+s3.amazonaws.com:CreateBucket
+s3.amazonaws.com:DeleteBucket
+sts.amazonaws.com:GetCallerIdentity
+ec2.amazonaws.com:DescribeVpcs
+ec2.amazonaws.com:DescribeSubnets
+ec2.amazonaws.com:DescribeInternetGateways
+ec2.amazonaws.com:DescribeRouteTables
+ec2.amazonaws.com:DescribeFlowLogs
+ec2.amazonaws.com:DescribeNetworkAcls

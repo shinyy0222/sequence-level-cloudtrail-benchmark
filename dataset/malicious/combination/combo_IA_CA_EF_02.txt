@@ -1,0 +1,4 @@
+signin.amazonaws.com:ConsoleLogin
+ssm.amazonaws.com:DescribeParameters
+ssm.amazonaws.com:GetParameters
+ec2.amazonaws.com:ModifySnapshotAttribute

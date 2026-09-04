@@ -1,0 +1,3 @@
+ec2.amazonaws.com:DescribeImages
+ec2.amazonaws.com:DescribeVolumes
+ec2.amazonaws.com:DescribeSnapshots

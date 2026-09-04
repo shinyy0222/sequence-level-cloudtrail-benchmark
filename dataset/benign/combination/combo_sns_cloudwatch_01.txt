@@ -1,0 +1,5 @@
+sns.amazonaws.com:ListTopics
+sns.amazonaws.com:ListSubscriptions
+monitoring.amazonaws.com:DescribeAlarms
+lambda.amazonaws.com:ListFunctions20150331
+lambda.amazonaws.com:ListEventSourceMappings20150331

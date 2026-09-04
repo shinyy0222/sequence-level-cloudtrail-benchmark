@@ -1,0 +1,13 @@
+sts.amazonaws.com:GetCallerIdentity
+iam.amazonaws.com:ListRoles
+iam.amazonaws.com:CreateRole
+iam.amazonaws.com:AttachRolePolicy
+iam.amazonaws.com:ListRolePolicies
+iam.amazonaws.com:DetachRolePolicy
+iam.amazonaws.com:DeleteRole
+secretsmanager.amazonaws.com:CreateSecret
+secretsmanager.amazonaws.com:GetSecretValue
+secretsmanager.amazonaws.com:DescribeSecret
+secretsmanager.amazonaws.com:DeleteSecret
+ec2.amazonaws.com:DescribeInstances
+ec2.amazonaws.com:DescribeVpcs

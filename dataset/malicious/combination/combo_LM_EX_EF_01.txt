@@ -1,0 +1,7 @@
+ec2-instance-connect.amazonaws.com:SendSSHPublicKey
+ec2-instance-connect.amazonaws.com:SendSSHPublicKey
+ssm.amazonaws.com:DescribeInstanceInformation
+ssm.amazonaws.com:SendCommand
+ssm.amazonaws.com:GetCommandInvocation
+rds.amazonaws.com:ModifyDBSnapshotAttribute
+rds.amazonaws.com:ModifyDBSnapshotAttribute

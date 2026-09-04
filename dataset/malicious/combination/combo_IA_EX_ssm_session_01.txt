@@ -1,0 +1,7 @@
+signin.amazonaws.com:ConsoleLogin
+ssm.amazonaws.com:DescribeInstanceInformation
+ssm.amazonaws.com:StartSession
+ssm.amazonaws.com:TerminateSession
+sts.amazonaws.com:AssumeRole
+sts.amazonaws.com:AssumeRole
+ec2.amazonaws.com:RunInstances

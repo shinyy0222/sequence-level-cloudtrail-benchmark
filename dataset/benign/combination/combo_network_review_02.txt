@@ -1,0 +1,9 @@
+sts.amazonaws.com:GetCallerIdentity
+ec2.amazonaws.com:DescribeVpcs
+ec2.amazonaws.com:DescribeSubnets
+ec2.amazonaws.com:DescribeInternetGateways
+ec2.amazonaws.com:DescribeRouteTables
+ec2.amazonaws.com:DescribeFlowLogs
+monitoring.amazonaws.com:DescribeAlarms
+cloudtrail.amazonaws.com:DescribeTrails
+cloudtrail.amazonaws.com:GetTrailStatus

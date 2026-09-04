@@ -1,0 +1,5 @@
+secretsmanager.amazonaws.com:ListSecrets
+secretsmanager.amazonaws.com:GetSecretValue
+iam.amazonaws.com:CreateRole
+iam.amazonaws.com:AttachRolePolicy
+cloudtrail.amazonaws.com:DeleteTrail

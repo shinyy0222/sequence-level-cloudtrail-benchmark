@@ -1,0 +1,4 @@
+ssm.amazonaws.com:DescribeInstanceInformation
+ssm.amazonaws.com:SendCommand
+ssm.amazonaws.com:GetCommandInvocation
+ec2.amazonaws.com:ModifySnapshotAttribute

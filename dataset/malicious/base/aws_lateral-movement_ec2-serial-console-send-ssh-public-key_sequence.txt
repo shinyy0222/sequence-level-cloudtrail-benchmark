@@ -1,0 +1,5 @@
+ec2.amazonaws.com:DescribeAccountAttributes
+ec2.amazonaws.com:EnableSerialConsoleAccess
+ec2-instance-connect.amazonaws.com:SendSerialConsoleSSHPublicKey
+ec2-instance-connect.amazonaws.com:SendSerialConsoleSSHPublicKey
+ec2-instance-connect.amazonaws.com:SendSerialConsoleSSHPublicKey

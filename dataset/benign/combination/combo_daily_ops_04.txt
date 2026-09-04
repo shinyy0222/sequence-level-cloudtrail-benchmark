@@ -1,0 +1,7 @@
+sts.amazonaws.com:GetCallerIdentity
+ec2.amazonaws.com:DescribeImages
+ec2.amazonaws.com:DescribeVolumes
+ec2.amazonaws.com:DescribeSnapshots
+rds.amazonaws.com:DescribeDBSnapshots
+s3.amazonaws.com:ListBuckets
+ce.amazonaws.com:GetCostAndUsage

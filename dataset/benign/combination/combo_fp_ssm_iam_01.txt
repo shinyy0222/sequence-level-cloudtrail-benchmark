@@ -1,0 +1,9 @@
+sts.amazonaws.com:GetCallerIdentity
+ssm.amazonaws.com:DescribeParameters
+ssm.amazonaws.com:GetParametersByPath
+iam.amazonaws.com:ListUsers
+iam.amazonaws.com:CreateUser
+iam.amazonaws.com:AttachUserPolicy
+iam.amazonaws.com:ListAttachedUserPolicies
+iam.amazonaws.com:DetachUserPolicy
+iam.amazonaws.com:DeleteUser

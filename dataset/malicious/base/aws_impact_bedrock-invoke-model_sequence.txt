@@ -1,0 +1,1 @@
+bedrock.amazonaws.com:InvokeModel

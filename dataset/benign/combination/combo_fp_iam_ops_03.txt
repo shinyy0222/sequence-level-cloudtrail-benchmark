@@ -1,0 +1,9 @@
+sts.amazonaws.com:GetCallerIdentity
+iam.amazonaws.com:ListGroups
+iam.amazonaws.com:ListPolicies
+iam.amazonaws.com:ListRoles
+iam.amazonaws.com:GetAccountAuthorizationDetails
+s3.amazonaws.com:GetBucketAcl
+s3.amazonaws.com:ListBuckets
+s3.amazonaws.com:GetBucketVersioning
+s3.amazonaws.com:GetBucketLogging

@@ -1,0 +1,17 @@
+ec2.amazonaws.com:DescribeInstanceAttribute
+ec2.amazonaws.com:DescribeInstanceAttribute
+ec2.amazonaws.com:DescribeInstanceAttribute
+ec2.amazonaws.com:DescribeInstanceAttribute
+ec2.amazonaws.com:DescribeInstanceAttribute
+ec2.amazonaws.com:DescribeInstanceAttribute
+ec2.amazonaws.com:DescribeInstanceAttribute
+ec2.amazonaws.com:DescribeInstanceAttribute
+ec2.amazonaws.com:DescribeInstanceAttribute
+ec2.amazonaws.com:DescribeInstanceAttribute
+ec2.amazonaws.com:DescribeInstanceAttribute
+ec2.amazonaws.com:DescribeInstanceAttribute
+ec2.amazonaws.com:DescribeInstanceAttribute
+ec2.amazonaws.com:DescribeInstanceAttribute
+ec2.amazonaws.com:DescribeInstanceAttribute
+sts.amazonaws.com:AssumeRole
+sts.amazonaws.com:AssumeRole

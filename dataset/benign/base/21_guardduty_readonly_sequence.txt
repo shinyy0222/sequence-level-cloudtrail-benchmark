@@ -1,0 +1,1 @@
+guardduty.amazonaws.com:ListDetectors

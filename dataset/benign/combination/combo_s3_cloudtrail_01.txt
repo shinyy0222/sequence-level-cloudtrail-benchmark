@@ -1,0 +1,5 @@
+s3.amazonaws.com:CreateBucket
+s3.amazonaws.com:DeleteBucket
+cloudtrail.amazonaws.com:DescribeTrails
+cloudtrail.amazonaws.com:GetTrailStatus
+cloudtrail.amazonaws.com:ListTrails

@@ -1,0 +1,16 @@
+sts.amazonaws.com:GetCallerIdentity
+iam.amazonaws.com:ListUsers
+iam.amazonaws.com:CreateUser
+iam.amazonaws.com:AttachUserPolicy
+iam.amazonaws.com:ListAttachedUserPolicies
+iam.amazonaws.com:DetachUserPolicy
+iam.amazonaws.com:DeleteUser
+secretsmanager.amazonaws.com:CreateSecret
+secretsmanager.amazonaws.com:GetSecretValue
+secretsmanager.amazonaws.com:DescribeSecret
+secretsmanager.amazonaws.com:UpdateSecret
+secretsmanager.amazonaws.com:DeleteSecret
+ssm.amazonaws.com:DescribeParameters
+ssm.amazonaws.com:GetParametersByPath
+cloudtrail.amazonaws.com:DescribeTrails
+cloudtrail.amazonaws.com:GetTrailStatus

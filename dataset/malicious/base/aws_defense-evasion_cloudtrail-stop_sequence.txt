@@ -1,0 +1,2 @@
+cloudtrail.amazonaws.com:StartLogging
+cloudtrail.amazonaws.com:StopLogging

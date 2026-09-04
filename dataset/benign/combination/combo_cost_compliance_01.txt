@@ -1,0 +1,6 @@
+ce.amazonaws.com:GetCostAndUsage
+config.amazonaws.com:DescribeConfigRules
+config.amazonaws.com:DescribeConfigurationRecorders
+config.amazonaws.com:DescribeComplianceByConfigRule
+cloudformation.amazonaws.com:ListStacks
+cloudformation.amazonaws.com:DescribeStacks

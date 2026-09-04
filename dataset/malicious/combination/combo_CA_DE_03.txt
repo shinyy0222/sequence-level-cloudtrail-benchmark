@@ -1,0 +1,2 @@
+secretsmanager.amazonaws.com:BatchGetSecretValue
+ec2.amazonaws.com:DeleteFlowLogs

@@ -1,0 +1,10 @@
+signin.amazonaws.com:ConsoleLogin
+ses.amazonaws.com:ListIdentities
+ses.amazonaws.com:GetSendQuota
+ses.amazonaws.com:GetAccountSendingEnabled
+iam.amazonaws.com:CreateRole
+iam.amazonaws.com:AttachRolePolicy
+rolesanywhere.amazonaws.com:CreateTrustAnchor
+rolesanywhere.amazonaws.com:CreateProfile
+ec2.amazonaws.com:ModifySnapshotAttribute
+cloudtrail.amazonaws.com:PutEventSelectors

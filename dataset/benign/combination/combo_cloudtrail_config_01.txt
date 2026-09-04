@@ -1,0 +1,6 @@
+cloudtrail.amazonaws.com:DescribeTrails
+cloudtrail.amazonaws.com:GetTrailStatus
+cloudtrail.amazonaws.com:ListTrails
+config.amazonaws.com:DescribeConfigRules
+config.amazonaws.com:DescribeConfigurationRecorders
+config.amazonaws.com:DescribeComplianceByConfigRule

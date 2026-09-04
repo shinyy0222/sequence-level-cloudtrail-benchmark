@@ -1,0 +1,12 @@
+signin.amazonaws.com:ConsoleLogin
+ssm.amazonaws.com:DescribeInstanceInformation
+ssm.amazonaws.com:SendCommand
+ssm.amazonaws.com:GetCommandInvocation
+secretsmanager.amazonaws.com:ListSecrets
+secretsmanager.amazonaws.com:GetSecretValue
+iam.amazonaws.com:CreateUser
+iam.amazonaws.com:GetUser
+iam.amazonaws.com:CreateLoginProfile
+ec2.amazonaws.com:AuthorizeSecurityGroupIngress
+cloudtrail.amazonaws.com:DeleteTrail
+route53resolver.amazonaws.com:DeleteResolverQueryLogConfig

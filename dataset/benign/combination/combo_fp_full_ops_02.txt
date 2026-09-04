@@ -1,0 +1,12 @@
+sts.amazonaws.com:GetCallerIdentity
+iam.amazonaws.com:ListRoles
+iam.amazonaws.com:CreateRole
+iam.amazonaws.com:AttachRolePolicy
+iam.amazonaws.com:ListRolePolicies
+iam.amazonaws.com:DetachRolePolicy
+iam.amazonaws.com:DeleteRole
+ec2.amazonaws.com:DescribeInstances
+ec2.amazonaws.com:DescribeSecurityGroups
+ec2.amazonaws.com:DescribeVpcs
+s3.amazonaws.com:ListBuckets
+cloudtrail.amazonaws.com:DescribeTrails

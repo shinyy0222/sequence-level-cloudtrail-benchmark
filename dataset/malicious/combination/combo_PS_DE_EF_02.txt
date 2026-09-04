@@ -1,0 +1,4 @@
+iam.amazonaws.com:CreateRole
+iam.amazonaws.com:AttachRolePolicy
+cloudtrail.amazonaws.com:DeleteTrail
+s3.amazonaws.com:PutBucketPolicy

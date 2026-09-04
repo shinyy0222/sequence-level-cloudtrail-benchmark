@@ -1,0 +1,2 @@
+lambda.amazonaws.com:UpdateFunctionCode20150331v2
+ec2.amazonaws.com:DeleteFlowLogs

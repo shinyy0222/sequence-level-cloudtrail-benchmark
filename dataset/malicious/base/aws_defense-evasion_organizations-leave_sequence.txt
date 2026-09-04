@@ -1,0 +1,3 @@
+organizations.amazonaws.com:LeaveOrganization
+sts.amazonaws.com:AssumeRole
+sts.amazonaws.com:AssumeRole

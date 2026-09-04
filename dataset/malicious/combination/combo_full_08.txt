@@ -1,0 +1,9 @@
+signin.amazonaws.com:ConsoleLogin
+sts.amazonaws.com:AssumeRole
+sts.amazonaws.com:AssumeRole
+organizations.amazonaws.com:LeaveOrganization
+iam.amazonaws.com:CreateUser
+iam.amazonaws.com:AttachUserPolicy
+iam.amazonaws.com:CreateAccessKey
+ec2.amazonaws.com:ModifySnapshotAttribute
+s3.amazonaws.com:PutBucketPolicy

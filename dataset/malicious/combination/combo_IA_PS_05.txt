@@ -1,0 +1,5 @@
+signin.amazonaws.com:ConsoleLogin
+iam.amazonaws.com:CreateUser
+iam.amazonaws.com:GetUser
+iam.amazonaws.com:CreateLoginProfile
+iam.amazonaws.com:GetUser

@@ -1,0 +1,35 @@
+file_name,relative_path,mitre_tactic
+aws_credential-access_ec2-steal-instance-credentials_sequence.txt,dataset/malicious/base/aws_credential-access_ec2-steal-instance-credentials_sequence.txt,Credential Access
+aws_credential-access_secretsmanager-batch-retrieve-secrets_sequence.txt,dataset/malicious/base/aws_credential-access_secretsmanager-batch-retrieve-secrets_sequence.txt,Credential Access
+aws_credential-access_secretsmanager-retrieve-secrets_sequence.txt,dataset/malicious/base/aws_credential-access_secretsmanager-retrieve-secrets_sequence.txt,Credential Access
+aws_credential-access_ssm-retrieve-securestring-parameters_sequence.txt,dataset/malicious/base/aws_credential-access_ssm-retrieve-securestring-parameters_sequence.txt,Credential Access
+aws_defense-evasion_cloudtrail-delete_sequence.txt,dataset/malicious/base/aws_defense-evasion_cloudtrail-delete_sequence.txt,Defense Evasion
+aws_defense-evasion_cloudtrail-event-selectors_sequence.txt,dataset/malicious/base/aws_defense-evasion_cloudtrail-event-selectors_sequence.txt,Defense Evasion
+aws_defense-evasion_cloudtrail-lifecycle-rule_sequence.txt,dataset/malicious/base/aws_defense-evasion_cloudtrail-lifecycle-rule_sequence.txt,Defense Evasion
+aws_defense-evasion_cloudtrail-stop_sequence.txt,dataset/malicious/base/aws_defense-evasion_cloudtrail-stop_sequence.txt,Defense Evasion
+aws_defense-evasion_dns-delete-logs_sequence.txt,dataset/malicious/base/aws_defense-evasion_dns-delete-logs_sequence.txt,Defense Evasion
+aws_defense-evasion_organizations-leave_sequence.txt,dataset/malicious/base/aws_defense-evasion_organizations-leave_sequence.txt,Defense Evasion
+aws_defense-evasion_vpc-remove-flow-logs_sequence.txt,dataset/malicious/base/aws_defense-evasion_vpc-remove-flow-logs_sequence.txt,Defense Evasion
+aws_discovery_ec2-download-user-data_sequence.txt,dataset/malicious/base/aws_discovery_ec2-download-user-data_sequence.txt,Discovery
+aws_discovery_ses-enumerate_sequence.txt,dataset/malicious/base/aws_discovery_ses-enumerate_sequence.txt,Discovery
+aws_execution_ec2-launch-unusual-instances_sequence.txt,dataset/malicious/base/aws_execution_ec2-launch-unusual-instances_sequence.txt,Execution
+aws_execution_ssm-send-command_sequence.txt,dataset/malicious/base/aws_execution_ssm-send-command_sequence.txt,Execution
+aws_execution_ssm-start-session_sequence.txt,dataset/malicious/base/aws_execution_ssm-start-session_sequence.txt,Execution
+aws_exfiltration_ec2-security-group-open-port-22-ingress_sequence.txt,dataset/malicious/base/aws_exfiltration_ec2-security-group-open-port-22-ingress_sequence.txt,Exfiltration
+aws_exfiltration_ec2-share-ami_sequence.txt,dataset/malicious/base/aws_exfiltration_ec2-share-ami_sequence.txt,Exfiltration
+aws_exfiltration_ec2-share-ebs-snapshot_sequence.txt,dataset/malicious/base/aws_exfiltration_ec2-share-ebs-snapshot_sequence.txt,Exfiltration
+aws_exfiltration_rds-share-snapshot_sequence.txt,dataset/malicious/base/aws_exfiltration_rds-share-snapshot_sequence.txt,Exfiltration
+aws_exfiltration_s3-backdoor-bucket-policy_sequence.txt,dataset/malicious/base/aws_exfiltration_s3-backdoor-bucket-policy_sequence.txt,Exfiltration
+aws_impact_bedrock-invoke-model_sequence.txt,dataset/malicious/base/aws_impact_bedrock-invoke-model_sequence.txt,Impact
+aws_initial-access_console-login-without-mfa_sequence.txt,dataset/malicious/base/aws_initial-access_console-login-without-mfa_sequence.txt,Initial Access
+aws_lateral-movement_ec2-instance-connect_sequence.txt,dataset/malicious/base/aws_lateral-movement_ec2-instance-connect_sequence.txt,Lateral Movement
+aws_lateral-movement_ec2-serial-console-send-ssh-public-key_sequence.txt,dataset/malicious/base/aws_lateral-movement_ec2-serial-console-send-ssh-public-key_sequence.txt,Lateral Movement
+aws_persistence_iam-backdoor-role_sequence.txt,dataset/malicious/base/aws_persistence_iam-backdoor-role_sequence.txt,Persistence
+aws_persistence_iam-backdoor-user_sequence.txt,dataset/malicious/base/aws_persistence_iam-backdoor-user_sequence.txt,Persistence
+aws_persistence_iam-create-admin-user_sequence.txt,dataset/malicious/base/aws_persistence_iam-create-admin-user_sequence.txt,Persistence
+aws_persistence_iam-create-backdoor-role_sequence.txt,dataset/malicious/base/aws_persistence_iam-create-backdoor-role_sequence.txt,Persistence
+aws_persistence_iam-create-user-login-profile_sequence.txt,dataset/malicious/base/aws_persistence_iam-create-user-login-profile_sequence.txt,Persistence
+aws_persistence_lambda-backdoor-function_sequence.txt,dataset/malicious/base/aws_persistence_lambda-backdoor-function_sequence.txt,Persistence
+aws_persistence_lambda-layer-extension_sequence.txt,dataset/malicious/base/aws_persistence_lambda-layer-extension_sequence.txt,Persistence
+aws_persistence_lambda-overwrite-code_sequence.txt,dataset/malicious/base/aws_persistence_lambda-overwrite-code_sequence.txt,Persistence
+aws_persistence_rolesanywhere-create-trust-anchor_sequence.txt,dataset/malicious/base/aws_persistence_rolesanywhere-create-trust-anchor_sequence.txt,Persistence

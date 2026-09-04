@@ -1,0 +1,3 @@
+signin.amazonaws.com:ConsoleLogin
+secretsmanager.amazonaws.com:ListSecrets
+secretsmanager.amazonaws.com:GetSecretValue

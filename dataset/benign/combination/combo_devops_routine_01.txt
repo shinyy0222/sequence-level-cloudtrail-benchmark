@@ -1,0 +1,9 @@
+sts.amazonaws.com:GetCallerIdentity
+iam.amazonaws.com:ListRoles
+iam.amazonaws.com:ListPolicies
+lambda.amazonaws.com:ListFunctions20150331
+lambda.amazonaws.com:ListLayers20181031
+lambda.amazonaws.com:ListEventSourceMappings20150331
+sns.amazonaws.com:ListTopics
+sns.amazonaws.com:ListSubscriptions
+monitoring.amazonaws.com:DescribeAlarms

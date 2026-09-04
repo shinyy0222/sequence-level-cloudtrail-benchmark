@@ -1,0 +1,2 @@
+signin.amazonaws.com:ConsoleLogin
+bedrock.amazonaws.com:InvokeModel

@@ -1,0 +1,7 @@
+sts.amazonaws.com:GetCallerIdentity
+config.amazonaws.com:DescribeConfigRules
+config.amazonaws.com:DescribeConfigurationRecorders
+config.amazonaws.com:DescribeComplianceByConfigRule
+iam.amazonaws.com:ListUsers
+iam.amazonaws.com:ListRoles
+iam.amazonaws.com:GetAccountSummary

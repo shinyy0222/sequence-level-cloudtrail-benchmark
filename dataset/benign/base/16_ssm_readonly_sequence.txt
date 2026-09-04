@@ -1,0 +1,3 @@
+sts.amazonaws.com:GetCallerIdentity
+ssm.amazonaws.com:DescribeParameters
+ssm.amazonaws.com:GetParametersByPath

@@ -1,0 +1,7 @@
+s3.amazonaws.com:CreateBucket
+s3.amazonaws.com:DeleteBucket
+s3.amazonaws.com:ListBuckets
+rds.amazonaws.com:DescribeDBSnapshots
+rds.amazonaws.com:DescribeDBInstances
+ec2.amazonaws.com:DescribeSnapshots
+ec2.amazonaws.com:DescribeImages

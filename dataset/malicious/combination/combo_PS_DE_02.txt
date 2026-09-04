@@ -1,0 +1,3 @@
+iam.amazonaws.com:CreateRole
+iam.amazonaws.com:AttachRolePolicy
+cloudtrail.amazonaws.com:DeleteTrail

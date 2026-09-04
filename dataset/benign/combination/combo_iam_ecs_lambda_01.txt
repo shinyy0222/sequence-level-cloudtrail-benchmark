@@ -1,0 +1,8 @@
+sts.amazonaws.com:GetCallerIdentity
+iam.amazonaws.com:ListRoles
+iam.amazonaws.com:ListPolicies
+ecs.amazonaws.com:ListClusters
+ecs.amazonaws.com:ListServices
+ecs.amazonaws.com:ListTaskDefinitions
+lambda.amazonaws.com:ListFunctions20150331
+lambda.amazonaws.com:ListLayers20181031

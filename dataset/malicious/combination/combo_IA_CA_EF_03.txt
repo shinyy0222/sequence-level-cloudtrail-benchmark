@@ -1,0 +1,4 @@
+signin.amazonaws.com:ConsoleLogin
+secretsmanager.amazonaws.com:BatchGetSecretValue
+rds.amazonaws.com:ModifyDBSnapshotAttribute
+rds.amazonaws.com:ModifyDBSnapshotAttribute

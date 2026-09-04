@@ -1,0 +1,7 @@
+sts.amazonaws.com:GetCallerIdentity
+ec2.amazonaws.com:DescribeVpcs
+ec2.amazonaws.com:DescribeFlowLogs
+ec2.amazonaws.com:DescribeNetworkAcls
+guardduty.amazonaws.com:ListDetectors
+config.amazonaws.com:DescribeConfigRules
+config.amazonaws.com:DescribeConfigurationRecorders

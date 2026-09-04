@@ -1,0 +1,5 @@
+cloudformation.amazonaws.com:ListStacks
+cloudformation.amazonaws.com:DescribeStacks
+iam.amazonaws.com:ListRoles
+iam.amazonaws.com:ListPolicies
+iam.amazonaws.com:GetAccountSummary

@@ -1,0 +1,8 @@
+sts.amazonaws.com:GetCallerIdentity
+s3.amazonaws.com:CreateBucket
+s3.amazonaws.com:DeleteBucket
+ec2.amazonaws.com:DescribeInstances
+rds.amazonaws.com:DescribeDBInstances
+rds.amazonaws.com:DescribeDBSnapshots
+iam.amazonaws.com:ListUsers
+iam.amazonaws.com:ListRoles

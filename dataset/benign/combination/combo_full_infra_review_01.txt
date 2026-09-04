@@ -1,0 +1,14 @@
+sts.amazonaws.com:GetCallerIdentity
+ec2.amazonaws.com:DescribeInstances
+ec2.amazonaws.com:DescribeSecurityGroups
+ec2.amazonaws.com:DescribeVpcs
+ec2.amazonaws.com:DescribeSubnets
+ec2.amazonaws.com:DescribeImages
+ec2.amazonaws.com:DescribeVolumes
+ec2.amazonaws.com:DescribeSnapshots
+rds.amazonaws.com:DescribeDBInstances
+rds.amazonaws.com:DescribeDBClusters
+rds.amazonaws.com:DescribeDBSnapshots
+lambda.amazonaws.com:ListFunctions20150331
+ecs.amazonaws.com:ListClusters
+cloudformation.amazonaws.com:ListStacks

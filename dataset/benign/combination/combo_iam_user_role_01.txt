@@ -1,0 +1,13 @@
+sts.amazonaws.com:GetCallerIdentity
+iam.amazonaws.com:ListUsers
+iam.amazonaws.com:CreateUser
+iam.amazonaws.com:AttachUserPolicy
+iam.amazonaws.com:ListAttachedUserPolicies
+iam.amazonaws.com:DetachUserPolicy
+iam.amazonaws.com:DeleteUser
+iam.amazonaws.com:ListRoles
+iam.amazonaws.com:CreateRole
+iam.amazonaws.com:AttachRolePolicy
+iam.amazonaws.com:ListRolePolicies
+iam.amazonaws.com:DetachRolePolicy
+iam.amazonaws.com:DeleteRole

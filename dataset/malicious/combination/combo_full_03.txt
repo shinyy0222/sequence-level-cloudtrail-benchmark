@@ -1,0 +1,8 @@
+signin.amazonaws.com:ConsoleLogin
+ec2-instance-connect.amazonaws.com:SendSSHPublicKey
+ec2-instance-connect.amazonaws.com:SendSSHPublicKey
+ec2-instance-connect.amazonaws.com:SendSSHPublicKey
+ssm.amazonaws.com:SendCommand
+ssm.amazonaws.com:GetCommandInvocation
+ec2.amazonaws.com:ModifyImageAttribute
+cloudtrail.amazonaws.com:StopLogging

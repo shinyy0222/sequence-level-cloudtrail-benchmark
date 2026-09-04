@@ -1,0 +1,7 @@
+ecs.amazonaws.com:ListClusters
+ecs.amazonaws.com:ListServices
+ecs.amazonaws.com:ListTaskDefinitions
+lambda.amazonaws.com:ListFunctions20150331
+lambda.amazonaws.com:ListEventSourceMappings20150331
+sns.amazonaws.com:ListTopics
+sns.amazonaws.com:ListSubscriptions

@@ -1,0 +1,8 @@
+s3.amazonaws.com:ListBuckets
+s3.amazonaws.com:GetBucketAcl
+s3.amazonaws.com:GetBucketVersioning
+s3.amazonaws.com:GetBucketLogging
+cloudtrail.amazonaws.com:DescribeTrails
+cloudtrail.amazonaws.com:GetTrailStatus
+config.amazonaws.com:DescribeConfigRules
+config.amazonaws.com:DescribeComplianceByConfigRule

@@ -1,0 +1,4 @@
+ssm.amazonaws.com:DescribeInstanceInformation
+ssm.amazonaws.com:StartSession
+ssm.amazonaws.com:TerminateSession
+s3.amazonaws.com:PutBucketPolicy

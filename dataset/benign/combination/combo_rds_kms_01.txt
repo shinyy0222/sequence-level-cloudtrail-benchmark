@@ -1,0 +1,5 @@
+rds.amazonaws.com:DescribeDBInstances
+rds.amazonaws.com:DescribeDBClusters
+rds.amazonaws.com:DescribeDBSnapshots
+kms.amazonaws.com:ListKeys
+kms.amazonaws.com:ListAliases

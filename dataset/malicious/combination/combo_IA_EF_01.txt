@@ -1,0 +1,2 @@
+signin.amazonaws.com:ConsoleLogin
+ec2.amazonaws.com:AuthorizeSecurityGroupIngress

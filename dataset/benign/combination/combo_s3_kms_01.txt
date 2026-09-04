@@ -1,0 +1,7 @@
+s3.amazonaws.com:CreateBucket
+s3.amazonaws.com:DeleteBucket
+s3.amazonaws.com:GetBucketAcl
+s3.amazonaws.com:ListBuckets
+s3.amazonaws.com:GetBucketVersioning
+kms.amazonaws.com:ListKeys
+kms.amazonaws.com:ListAliases

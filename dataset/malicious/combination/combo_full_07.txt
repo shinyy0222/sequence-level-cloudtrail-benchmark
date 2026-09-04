@@ -1,0 +1,9 @@
+signin.amazonaws.com:ConsoleLogin
+ses.amazonaws.com:ListIdentities
+ses.amazonaws.com:GetSendQuota
+iam.amazonaws.com:ListAccessKeys
+iam.amazonaws.com:DeleteAccessKey
+iam.amazonaws.com:CreateAccessKey
+rds.amazonaws.com:ModifyDBSnapshotAttribute
+rds.amazonaws.com:ModifyDBSnapshotAttribute
+route53resolver.amazonaws.com:DeleteResolverQueryLogConfig

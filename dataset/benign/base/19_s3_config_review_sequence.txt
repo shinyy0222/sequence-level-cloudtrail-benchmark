@@ -1,0 +1,5 @@
+sts.amazonaws.com:GetCallerIdentity
+s3.amazonaws.com:GetBucketAcl
+s3.amazonaws.com:ListBuckets
+s3.amazonaws.com:GetBucketVersioning
+s3.amazonaws.com:GetBucketLogging

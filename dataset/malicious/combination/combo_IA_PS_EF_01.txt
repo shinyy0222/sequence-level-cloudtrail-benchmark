@@ -1,0 +1,6 @@
+signin.amazonaws.com:ConsoleLogin
+iam.amazonaws.com:CreateUser
+iam.amazonaws.com:AttachUserPolicy
+iam.amazonaws.com:CreateAccessKey
+ec2.amazonaws.com:ModifySnapshotAttribute
+s3.amazonaws.com:PutBucketPolicy

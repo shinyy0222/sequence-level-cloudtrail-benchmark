@@ -1,0 +1,6 @@
+s3.amazonaws.com:CreateBucket
+s3.amazonaws.com:DeleteBucket
+iam.amazonaws.com:ListUsers
+iam.amazonaws.com:ListRoles
+iam.amazonaws.com:GetAccountSummary
+iam.amazonaws.com:ListPolicies

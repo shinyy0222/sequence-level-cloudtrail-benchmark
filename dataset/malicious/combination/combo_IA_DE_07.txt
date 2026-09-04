@@ -1,0 +1,4 @@
+signin.amazonaws.com:ConsoleLogin
+sts.amazonaws.com:AssumeRole
+sts.amazonaws.com:AssumeRole
+organizations.amazonaws.com:LeaveOrganization

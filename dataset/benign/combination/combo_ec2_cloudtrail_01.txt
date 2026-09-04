@@ -1,0 +1,6 @@
+ec2.amazonaws.com:DescribeInstances
+ec2.amazonaws.com:DescribeSecurityGroups
+ec2.amazonaws.com:DescribeVpcs
+cloudtrail.amazonaws.com:DescribeTrails
+cloudtrail.amazonaws.com:GetTrailStatus
+cloudtrail.amazonaws.com:ListTrails
