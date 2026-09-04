@@ -9,9 +9,6 @@ authors:
   - family-names: Shin
     given-names: Yeeun
 
-  - family-names: Kim
-    given-names: Seongmin
-
 repository-code: "https://github.com/shinyy0222/sequence-level-cloudtrail-benchmark"
 
 keywords:

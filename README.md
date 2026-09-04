@@ -45,9 +45,9 @@ The benchmark was constructed from AWS CloudTrail activity collected in a contro
 
 ### Malicious Data
 
-Malicious base sequences were derived from AWS attack-technique executions using Stratus Red Team v2.31.0.
+Malicious base sequences were derived from AWS attack-technique executions using [Stratus Red Team v2.31.0](https://github.com/DataDog/stratus-red-team).
 
-CloudTrail activity generated during execution was collected and organized using Grimoire.
+CloudTrail activity generated during execution was collected and organized using [Grimoire](https://github.com/DataDog/grimoire).
 
 The temporal order of observed API calls was preserved.
 
@@ -101,7 +101,7 @@ Each base sequence is an execution-derived API flow collected from an individual
 
 The 100 malicious combination sequences were constructed from the 34 malicious base sequences.
 
-Two or more collected base sequences were connected according to MITRE ATT&CK-informed attack progressions.
+Two or more collected base sequences were connected according to attack progressions informed by the [MITRE ATT&CK Enterprise Cloud Matrix](https://attack.mitre.org/matrices/enterprise/cloud/).
 
 The internal temporal order of every constituent base sequence was preserved.
 

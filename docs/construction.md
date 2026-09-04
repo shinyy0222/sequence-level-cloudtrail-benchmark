@@ -18,9 +18,9 @@ Event-specific fields such as request parameters, actor identity, source IP addr
 
 ## Malicious Base Sequences
 
-Malicious base sequences were derived from executions of AWS attack techniques using Stratus Red Team v2.31.0.
+Malicious base sequences were derived from executions of AWS attack techniques using [Stratus Red Team v2.31.0](https://github.com/DataDog/stratus-red-team).
 
-CloudTrail events generated during each execution were collected and organized using Grimoire.
+CloudTrail events generated during each execution were collected and organized using [Grimoire](https://github.com/DataDog/grimoire).
 
 One execution-derived API flow forms one malicious base sequence.
 
@@ -32,7 +32,7 @@ The final benchmark contains 34 malicious base sequences.
 
 Malicious combination sequences were constructed using the 34 malicious base sequences as constituent flows.
 
-Two or more base sequences were connected according to MITRE ATT&CK-informed attack progression.
+Two or more base sequences were connected according to attack progressions informed by the [MITRE ATT&CK Enterprise Cloud Matrix](https://attack.mitre.org/matrices/enterprise/cloud/).
 
 The construction follows three principles:
 
