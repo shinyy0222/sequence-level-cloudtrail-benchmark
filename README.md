@@ -10,13 +10,11 @@ by Yeeun Shin and Seongmin Kim.
 
 ## Overview
 
-The benchmark represents each AWS CloudTrail event using the compact representation:
+Each AWS CloudTrail event is represented using the compact format:
 
     eventSource:eventName
 
-Each sample is stored as a temporally ordered sequence of normalized AWS API events.
-
-The benchmark contains 259 sequences.
+Each sample is a temporally ordered sequence of normalized API events.
 
 | Category | Count |
 | --- | ---: |
@@ -24,9 +22,48 @@ The benchmark contains 259 sequences.
 | Malicious Combination Sequence | 100 |
 | Benign Base Sequence | 25 |
 | Benign Combination Sequence | 100 |
-| Total | 259 |
+| **Total** | **259** |
 
-The benchmark is designed for controlled evaluation of dual-use AWS APIs that can occur in both malicious attack workflows and legitimate administrative operations.
+The benchmark is intended for controlled analysis of dual-use AWS APIs that can occur in both malicious attack workflows and legitimate administrative operations.
+
+## Dataset Version
+
+- Version: 1.0.0
+- Initial release: September 2026
+- Total sequences: 259
+
+## Data Provenance and Collection Environment
+
+The benchmark was constructed from AWS CloudTrail activity collected in a controlled AWS environment.
+
+### Collection Environment
+
+- AWS Region: `us-east-1`
+- CloudTrail multi-region management events
+- Global service events enabled
+- Released representation: `eventSource:eventName`
+
+### Malicious Data
+
+Malicious base sequences were derived from AWS attack-technique executions using Stratus Red Team v2.31.0.
+
+CloudTrail activity generated during execution was collected and organized using Grimoire.
+
+The temporal order of observed API calls was preserved.
+
+### Benign Data
+
+Benign base sequences were collected from administrative workflows executed in AWS.
+
+The workflows include IAM lifecycle management, access-key management, Secrets Manager lifecycle operations, monitoring, audit, infrastructure review, security review, and cleanup.
+
+### Normalization
+
+Raw CloudTrail events were normalized to:
+
+    eventSource:eventName
+
+Only this normalized representation is released. Raw CloudTrail JSON records are not distributed.
 
 ## Dataset Structure
 
@@ -37,13 +74,6 @@ The benchmark is designed for controlled evaluation of dual-use AWS APIs that ca
     └── benign/
         ├── base/
         └── combination/
-
-The released dataset contains:
-
-- 34 malicious base sequences
-- 100 malicious combination sequences
-- 25 benign base sequences
-- 100 benign combination sequences
 
 ## Sequence Format
 
@@ -59,53 +89,45 @@ Example:
     iam.amazonaws.com:DetachUserPolicy
     iam.amazonaws.com:DeleteUser
 
-Repeated API calls are retained because repetition may reflect discovery, retry, polling, or execution-confirmation behavior.
+Repeated API calls are retained.
 
 ## Malicious Base Sequences
 
-Malicious base sequences were derived from AWS attack-technique executions using Stratus Red Team v2.31.0.
+The benchmark contains 34 malicious base sequences.
 
-CloudTrail activity generated during execution was collected and organized using Grimoire.
-
-The temporal order of the observed API calls was preserved.
+Each base sequence is an execution-derived API flow collected from an individual attack-technique execution.
 
 ## Malicious Combination Sequences
 
-Malicious combination sequences connect two or more collected malicious base sequences according to MITRE ATT&CK-informed attack progressions.
+The 100 malicious combination sequences were constructed from the 34 malicious base sequences.
 
-The internal temporal order of each constituent base sequence is preserved.
+Two or more collected base sequences were connected according to MITRE ATT&CK-informed attack progressions.
 
-No arbitrary individual API events are synthesized during the combination process.
+The internal temporal order of every constituent base sequence was preserved.
+
+No arbitrary individual API events were synthesized or inserted during combination.
+
+The resulting samples therefore represent longer attack progressions assembled from execution-derived base flows.
 
 ## Benign Base Sequences
 
-Benign base sequences were collected from administrative workflows executed in AWS.
+The benchmark contains 25 benign base sequences collected from administrative workflows executed in AWS.
 
-Representative workflow categories include:
-
-- IAM identity and role lifecycle operations
-- access-key management
-- AWS Secrets Manager lifecycle operations
-- audit and inventory
-- monitoring and review
-- infrastructure inspection
-- security review and cleanup
-
-Security-sensitive dual-use APIs are intentionally included to provide controlled benign workflows that may appear suspicious when interpreted at the individual-event level.
+Security-sensitive dual-use APIs are intentionally included.
 
 ## Benign Combination Sequences
 
-Benign combination sequences connect multiple benign base workflows to represent consecutive administrative activities.
+The 100 benign combination sequences were constructed by connecting multiple benign base workflows to represent consecutive administrative activities.
 
-These sequences provide longer benign operational flows containing multiple APIs that may also appear in attack scenarios.
+They are intended as controlled, operationally plausible workflows rather than estimates of production workflow prevalence.
 
 ## Release Scope
 
-This repository releases only the compact normalized representation used in the associated experiments.
+This repository releases only the compact normalized representation used in the associated study.
 
 Raw CloudTrail JSON records are not included.
 
-The released sequence files intentionally exclude event-specific fields such as:
+The released files intentionally exclude event-specific fields such as:
 
 - AWS account identifiers
 - IAM user identities
@@ -118,34 +140,46 @@ The released sequence files intentionally exclude event-specific fields such as:
 - MFA information
 - policy documents
 
-See `docs/privacy.md` for details.
+See [docs/privacy.md](docs/privacy.md) for details.
 
 ## Metadata
 
-Metadata for the released sequences is provided under the `metadata/` directory.
+The repository provides:
 
-The file `metadata/sequences.csv` contains one row per sequence with information including:
+- `metadata/sequences.csv`: one row per sequence with file name, path, label, sequence type, and number of API events.
+- `metadata/malicious_tactic_mapping.csv`: MITRE ATT&CK tactic assignments for the 34 malicious base sequences.
+- `metadata/dataset.yaml`: dataset composition, provenance, collection settings, and construction rules.
 
-- file name
-- relative path
-- label
-- sequence type
-- number of API events
+A separate per-combination mapping to exact constituent base-sequence filenames is not included as a release artifact.
 
-`metadata/malicious_tactic_mapping.csv` provides MITRE ATT&CK tactic assignments for the 34 malicious base sequences.
+## Usage
+
+Example in Python:
+
+    from pathlib import Path
+
+    path = Path(
+        "dataset/malicious/base/"
+        "aws_defense-evasion_cloudtrail-delete_sequence.txt"
+    )
+
+    sequence = [
+        line.strip()
+        for line in path.read_text().splitlines()
+        if line.strip()
+    ]
+
+    print(sequence)
+
+This release contains normalized API sequences rather than native CloudTrail JSON and is not intended for direct replay as raw CloudTrail logs.
 
 ## Validation
 
-The repository provides a dataset validation script:
+Run:
 
     python3 scripts/validate_dataset.py
 
-The script checks:
-
-- expected sequence counts
-- eventSource:eventName formatting
-- unexpected sensitive-data patterns
-- total released sequence count
+The validation script checks dataset counts, `eventSource:eventName` formatting, common sensitive-data patterns, and dataset consistency.
 
 ## Intended Use
 
@@ -154,28 +188,29 @@ This benchmark is intended for research on:
 - AWS CloudTrail threat detection
 - sequence-level cloud security analysis
 - LLM-based log analysis
-- dual-use API behavior
 - false-positive analysis
+- dual-use API behavior
 - retrieval-augmented security reasoning
-- event-level versus sequence-level representations
 
 ## Limitations
 
 This is a controlled research benchmark and should not be interpreted as representative of the complete distribution of production AWS activity.
 
-See `docs/limitations.md` for details.
+See [docs/limitations.md](docs/limitations.md).
 
 ## Documentation
 
-- `DATA_CARD.md`
-- `docs/construction.md`
-- `docs/privacy.md`
-- `docs/limitations.md`
+- [Dataset Card](DATA_CARD.md)
+- [Dataset Construction](docs/construction.md)
+- [Privacy and Data Release](docs/privacy.md)
+- [Limitations](docs/limitations.md)
 
 ## Citation
 
-Citation information is provided in `CITATION.cff`.
+Citation information is provided in [`CITATION.cff`](CITATION.cff).
 
 ## License
 
-This dataset is released under the Creative Commons Attribution 4.0 International (CC BY 4.0) license. See `LICENSE` for details.
+This dataset is released under the Creative Commons Attribution 4.0 International (CC BY 4.0) license.
+
+See [`LICENSE`](LICENSE) for details.

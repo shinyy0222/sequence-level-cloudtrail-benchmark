@@ -12,18 +12,7 @@ The resulting sequences do not capture the complete diversity of real enterprise
 
 Only `eventSource:eventName` is retained.
 
-Potentially informative event attributes are excluded, including:
-
-- request parameters
-- actor identity
-- source IP
-- user agent
-- MFA status
-- resource identifiers
-- policy documents
-- error information
-
-Some malicious and benign activities may therefore remain ambiguous.
+Potentially informative fields such as request parameters, actor identity, source IP, user agent, MFA status, resource identifiers, policy documents, and error information are excluded.
 
 ## Production Distribution
 
@@ -39,9 +28,15 @@ They are not a comprehensive representation of all AWS attack behavior.
 
 ## Combination Sequences
 
-Combination sequences are constructed from base workflows.
+For malicious data, combination sequences are assembled from collected malicious base sequences according to MITRE ATT&CK-informed attack progressions while preserving the internal order of each constituent base sequence.
 
-Although constituent sequence order is preserved, these combinations do not reproduce all sources of noise, concurrency, timing variation, or unrelated background activity that occur in production CloudTrail logs.
+No arbitrary individual API event is synthesized during combination.
+
+For benign data, multiple benign base workflows are connected to form longer consecutive administrative activities.
+
+The public release provides the resulting combination sequences and construction rules but does not provide a separate per-combination constituent-base mapping artifact.
+
+Combination sequences do not reproduce all sources of noise, concurrency, timing variation, or unrelated background activity found in production CloudTrail logs.
 
 ## Generalization
 

@@ -3,10 +3,12 @@ message: "If you use this dataset, please cite the associated paper and this rep
 title: "Sequence-Level AWS CloudTrail Benchmark"
 type: dataset
 version: "1.0.0"
+license: CC-BY-4.0
 
 authors:
   - family-names: Shin
     given-names: Yeeun
+
   - family-names: Kim
     given-names: Seongmin
 

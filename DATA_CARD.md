@@ -8,11 +8,9 @@ Sequence-Level AWS CloudTrail Benchmark
 
 This dataset contains temporally ordered AWS CloudTrail API sequences represented using only the `eventSource:eventName` pair.
 
-It was constructed to support controlled research on threat detection involving dual-use AWS APIs that may occur in both malicious attack workflows and legitimate administrative activity.
+It was constructed for controlled research on threat detection involving dual-use AWS APIs.
 
 ## Dataset Size
-
-The benchmark contains 259 sequence samples.
 
 | Label | Sequence Type | Count |
 | --- | --- | ---: |
@@ -20,46 +18,51 @@ The benchmark contains 259 sequence samples.
 | Malicious | Combination | 100 |
 | Benign | Base | 25 |
 | Benign | Combination | 100 |
-| | Total | 259 |
+| | **Total** | **259** |
 
-## Data Representation
+## Representation
 
-Each sample is stored as a plain-text file with one API event per line.
+Each sample is stored as a plain-text file containing one normalized API event per line.
 
-Example:
+## Provenance
 
-    ec2.amazonaws.com:DescribeInstances
-    ssm.amazonaws.com:SendCommand
-    ssm.amazonaws.com:GetCommandInvocation
+### Malicious Base Sequences
 
-Only the AWS service and operation identity are retained.
+Malicious base sequences were derived from AWS attack-technique executions using Stratus Red Team v2.31.0.
 
-## Malicious Data
+CloudTrail activity was collected and organized using Grimoire.
 
-Malicious base sequences were derived from AWS attack-technique executions using Stratus Red Team v2.31.0, with corresponding CloudTrail activity collected using Grimoire.
+### Malicious Combination Sequences
 
-Malicious combination sequences were constructed by connecting collected base sequences according to MITRE ATT&CK-informed multi-stage attack progressions while preserving the internal order of each constituent base sequence.
+Malicious combination sequences were constructed from the collected malicious base sequences.
 
-## Benign Data
+Two or more base sequences were connected according to MITRE ATT&CK-informed attack progressions while preserving the internal temporal order of each constituent base sequence.
 
-Benign base sequences were derived from administrative workflows executed in AWS.
+No arbitrary individual API events were synthesized during this process.
 
-They include identity management, access-key management, Secrets Manager lifecycle management, infrastructure review, audit, monitoring, and cleanup operations.
+### Benign Base Sequences
 
-Benign combination sequences connect multiple benign base workflows into longer consecutive administrative sequences.
+Benign base sequences were collected from administrative workflows executed in AWS.
+
+### Benign Combination Sequences
+
+Benign combination sequences connect multiple benign base workflows to represent consecutive administrative activities.
+
+## Collection Environment
+
+- AWS Region: `us-east-1`
+- CloudTrail multi-region management events
+- Global service events enabled
 
 ## Labels
 
-Each complete sequence is assigned one of two labels:
+Each complete sequence is labeled `malicious` or `benign`.
 
-- malicious
-- benign
-
-The label applies to the complete sequence and does not imply that every individual API event in the sequence is independently malicious or benign.
+The sequence label does not imply that every individual API event in that sequence is independently malicious or benign.
 
 ## Intended Uses
 
-Appropriate research uses include:
+Appropriate uses include:
 
 - sequence-level CloudTrail classification
 - event-level versus sequence-level comparison
@@ -87,6 +90,4 @@ The released sequences contain only normalized API identifiers and intentionally
 
 The benchmark is based on controlled attack emulation and designed administrative workflows.
 
-It does not capture the full variability of production AWS environments, including organization-specific automation, long-term user behavior, background activity, adaptive attackers, and complete event-specific telemetry.
-
-See `docs/limitations.md` for additional information.
+A separate per-combination constituent-base mapping artifact is not included in this release.

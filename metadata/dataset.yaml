@@ -1,8 +1,23 @@
 name: sequence-level-aws-cloudtrail-benchmark
-version: "1.0"
+version: "1.0.0"
 representation: "eventSource:eventName"
 format: "one normalized API event per line"
 total_sequences: 259
+
+collection:
+  aws_region: us-east-1
+  cloudtrail:
+    multi_region_management_events: true
+    global_service_events: true
+
+sources:
+  malicious_base:
+    tool: Stratus Red Team
+    version: "2.31.0"
+    collection_tool: Grimoire
+
+  benign_base:
+    source: administrative workflows executed in AWS
 
 classes:
   malicious:
@@ -15,10 +30,25 @@ classes:
     base: 25
     combination: 100
 
+construction:
+  malicious_combination:
+    source: malicious base sequences
+    count: 100
+    rule: MITRE ATT&CK-informed attack progression
+    preserve_constituent_temporal_order: true
+    arbitrary_api_synthesis: false
+
+  benign_combination:
+    source: benign base sequences
+    count: 100
+    rule: consecutive administrative workflow composition
+
 directories:
   malicious_base: dataset/malicious/base
   malicious_combination: dataset/malicious/combination
   benign_base: dataset/benign/base
   benign_combination: dataset/benign/combination
 
-raw_cloudtrail_included: false
+release:
+  raw_cloudtrail_included: false
+  per_combination_constituent_mapping_included: false

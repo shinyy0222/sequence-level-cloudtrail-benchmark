@@ -8,7 +8,13 @@ Each CloudTrail event is normalized to:
 
 Events remain in temporal order within each sequence.
 
-Request parameters, actor identity, source IP address, resource identifiers, user-agent information, MFA state, policy documents, and other event-specific fields are not included in the released representation.
+Event-specific fields such as request parameters, actor identity, source IP address, resource identifiers, user-agent information, MFA state, policy documents, and error information are not included in the released representation.
+
+## Collection Environment
+
+- AWS Region: `us-east-1`
+- CloudTrail multi-region management events
+- Global service events enabled
 
 ## Malicious Base Sequences
 
@@ -18,17 +24,23 @@ CloudTrail events generated during each execution were collected and organized u
 
 One execution-derived API flow forms one malicious base sequence.
 
-Repeated API calls are preserved.
+The observed temporal order and repeated API calls are preserved.
+
+The final benchmark contains 34 malicious base sequences.
 
 ## Malicious Combination Sequences
 
-Malicious combination sequences connect two or more collected malicious base sequences into longer attack workflows.
+Malicious combination sequences were constructed using the 34 malicious base sequences as constituent flows.
 
-Combination follows MITRE ATT&CK-informed tactic progression.
+Two or more base sequences were connected according to MITRE ATT&CK-informed attack progression.
 
-The internal API order of every constituent base sequence is preserved.
+The construction follows three principles:
 
-No arbitrary individual API event is inserted to create a malicious combination sequence.
+1. Only collected malicious base sequences are used as constituent attack flows.
+2. The internal temporal order of each constituent base sequence is preserved.
+3. No arbitrary individual API event is synthesized or inserted during combination.
+
+The final benchmark contains 100 malicious combination sequences.
 
 ## Benign Base Sequences
 
@@ -36,34 +48,37 @@ Benign base sequences correspond to administrative workflows executed in AWS.
 
 Representative workflow categories include:
 
-- IAM user lifecycle
-- IAM role lifecycle
-- IAM permission review
+- IAM lifecycle operations
 - access-key management
-- Secrets Manager lifecycle
-- EC2 inventory
-- CloudTrail review
-- CloudWatch monitoring
-- VPC and network review
-- RDS review
-- Lambda review
-- security assessment and audit workflows
+- Secrets Manager lifecycle management
+- infrastructure inspection
+- monitoring
+- audit
+- security review
+- cleanup
 
 The benign set intentionally includes security-sensitive APIs that can also occur in attacks.
 
+The final benchmark contains 25 benign base sequences.
+
 ## Benign Combination Sequences
 
-Benign combination sequences connect multiple benign base workflows to represent consecutive administrative activities.
+Benign combination sequences were constructed by connecting multiple benign base workflows to represent consecutive administrative activities.
 
-They provide longer normal workflows containing APIs that may appear suspicious when interpreted as isolated events.
+They are intended as controlled, operationally plausible workflows rather than measurements of production prevalence.
+
+The final benchmark contains 100 benign combination sequences.
+
+## Combination Mapping Availability
+
+The release documents the construction procedure and distributes all resulting combination sequence files.
+
+A separate per-combination mapping from each combination file to the exact constituent base-sequence filenames is not included as a release artifact.
 
 ## Final Dataset
 
-The released dataset contains:
-
-- 34 malicious base sequences
-- 100 malicious combination sequences
-- 25 benign base sequences
-- 100 benign combination sequences
-
-Total: 259 sequences.
+- Malicious Base Sequence: 34
+- Malicious Combination Sequence: 100
+- Benign Base Sequence: 25
+- Benign Combination Sequence: 100
+- Total: 259
