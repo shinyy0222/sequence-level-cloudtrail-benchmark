@@ -67,20 +67,22 @@ The primary benchmark representation is the normalized `eventSource:eventName` s
 
 ## Dataset Structure
 
+<pre>
 dataset/
-    ├── malicious/
-    │   ├── base/
-    │   └── combination/
-    └── benign/
-        ├── base/
-        └── combination/
+├── malicious/
+│   ├── base/
+│   └── combination/
+└── benign/
+    ├── base/
+    └── combination/
 
-    raw/
-    ├── malicious/
-    │   └── base/          # 34 sanitized raw traces
-    ├── benign/
-    │   └── base/          # 25 sanitized raw traces
-    └── raw_manifest.json
+raw/
+├── malicious/
+│   └── base/          # 34 sanitized raw traces
+├── benign/
+│   └── base/          # 25 sanitized raw traces
+└── raw_manifest.json
+</pre>
 
 ## Sequence Format
 
