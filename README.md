@@ -41,7 +41,7 @@ The benchmark was constructed from AWS CloudTrail activity collected in a contro
 - AWS Region: `us-east-1`
 - CloudTrail multi-region management events
 - Global service events enabled
-- Released representation: `eventSource:eventName`
+- Normalized benchmark representation: `eventSource:eventName`
 
 ### Malicious Data
 
