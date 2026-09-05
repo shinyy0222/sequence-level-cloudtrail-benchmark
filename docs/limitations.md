@@ -41,3 +41,7 @@ Combination sequences do not reproduce all sources of noise, concurrency, timing
 ## Generalization
 
 Performance measured on this benchmark should not be interpreted as evidence of production-level robustness without additional validation on independently collected malicious and benign CloudTrail activity.
+
+## Sanitized Raw Trace Limitations
+
+The released raw traces are sanitized provenance artifacts rather than exact copies of the private AWS environment logs. Identifier-level relationships are preserved only through pseudonymized values, and analyses that require original identities, source IP addresses, credential identifiers, or resource names are therefore outside the intended scope of the release.

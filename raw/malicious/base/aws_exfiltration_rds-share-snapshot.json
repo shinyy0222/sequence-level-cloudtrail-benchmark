@@ -1,0 +1,94 @@
+[
+  {
+    "awsRegion": "us-east-1",
+    "eventCategory": "Management",
+    "eventID": "EVENTID_C6EE-5C8F-F369",
+    "eventName": "ModifyDBSnapshotAttribute",
+    "eventSource": "rds.amazonaws.com",
+    "eventTime": "2026-04-22T05:32:58Z",
+    "eventType": "AwsApiCall",
+    "eventVersion": "1.11",
+    "managementEvent": true,
+    "readOnly": false,
+    "recipientAccountId": "ACCOUNT_9E7B-54AF-AAC0",
+    "requestID": "REQUESTID_1FEF-E19C-4CD4",
+    "requestParameters": {
+      "attributeName": "restore",
+      "dBSnapshotIdentifier": "exfiltration",
+      "valuesToAdd": [
+        "ACCOUNT_3A55-31EB-9537"
+      ]
+    },
+    "responseElements": {
+      "dBSnapshotAttributes": [
+        {
+          "attributeName": "restore",
+          "attributeValues": [
+            "ACCOUNT_3A55-31EB-9537"
+          ]
+        }
+      ],
+      "dBSnapshotIdentifier": "exfiltration"
+    },
+    "sourceIPAddress": "IP_3296-6CC8-92D8",
+    "tlsDetails": {
+      "cipherSuite": "TLS_AES_128_GCM_SHA256",
+      "clientProvidedHostHeader": "rds.us-east-1.amazonaws.com",
+      "tlsVersion": "TLSv1.3"
+    },
+    "userAgent": "stratus-red-team_c44aa7e9-2593-413c-aa9b-4f86ba53b3d8",
+    "userIdentity": {
+      "accessKeyId": "ACCESSKEY_4441-6385-8CDE",
+      "accountId": "ACCOUNT_9E7B-54AF-AAC0",
+      "arn": "arn:aws:iam::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_49AD-C89D-87F9",
+      "principalId": "PRINCIPAL_6ACC-0DDD-F1E2",
+      "type": "IAMUser",
+      "userName": "USER_488F-BA78-9E22"
+    }
+  },
+  {
+    "awsRegion": "us-east-1",
+    "eventCategory": "Management",
+    "eventID": "EVENTID_DC99-BB1F-BD1C",
+    "eventName": "ModifyDBSnapshotAttribute",
+    "eventSource": "rds.amazonaws.com",
+    "eventTime": "2026-04-22T05:32:58Z",
+    "eventType": "AwsApiCall",
+    "eventVersion": "1.11",
+    "managementEvent": true,
+    "readOnly": false,
+    "recipientAccountId": "ACCOUNT_9E7B-54AF-AAC0",
+    "requestID": "REQUESTID_179C-53F1-8D85",
+    "requestParameters": {
+      "attributeName": "restore",
+      "dBSnapshotIdentifier": "exfiltration",
+      "valuesToRemove": [
+        "ACCOUNT_3A55-31EB-9537"
+      ]
+    },
+    "responseElements": {
+      "dBSnapshotAttributes": [
+        {
+          "attributeName": "restore",
+          "attributeValues": []
+        }
+      ],
+      "dBSnapshotIdentifier": "exfiltration"
+    },
+    "sourceIPAddress": "IP_3296-6CC8-92D8",
+    "tlsDetails": {
+      "cipherSuite": "TLS_AES_128_GCM_SHA256",
+      "clientProvidedHostHeader": "rds.us-east-1.amazonaws.com",
+      "tlsVersion": "TLSv1.3"
+    },
+    "userAgent": "stratus-red-team_c44aa7e9-2593-413c-aa9b-4f86ba53b3d8",
+    "userIdentity": {
+      "accessKeyId": "ACCESSKEY_4441-6385-8CDE",
+      "accountId": "ACCOUNT_9E7B-54AF-AAC0",
+      "arn": "arn:aws:iam::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_49AD-C89D-87F9",
+      "principalId": "PRINCIPAL_6ACC-0DDD-F1E2",
+      "type": "IAMUser",
+      "userName": "USER_488F-BA78-9E22"
+    }
+  }
+]

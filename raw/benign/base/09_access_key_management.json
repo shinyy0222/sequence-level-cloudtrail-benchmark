@@ -1,0 +1,73 @@
+{
+  "Records": [
+    {
+      "eventVersion": "1.11",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "PRINCIPAL_6ACC-0DDD-F1E2",
+        "arn": "arn:aws:iam::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_49AD-C89D-87F9",
+        "accountId": "ACCOUNT_9E7B-54AF-AAC0",
+        "accessKeyId": "ACCESSKEY_4441-6385-8CDE",
+        "userName": "USER_488F-BA78-9E22"
+      },
+      "eventTime": "2026-04-22T11:05:35Z",
+      "eventSource": "sts.amazonaws.com",
+      "eventName": "GetCallerIdentity",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "IP_3296-6CC8-92D8",
+      "userAgent": "Boto3/1.42.93 md/Botocore#1.42.93 ua/2.1 os/linux#IP_04B7-A84E-2925-microsoft-standard-WSL2 md/arch#x86_64 lang/python#3.12.3 md/pyimpl#CPython m/Z,b,D cfg/retry-mode#legacy Botocore/1.42.93",
+      "requestParameters": null,
+      "responseElements": null,
+      "additionalEventData": {
+        "ExtendedRequestId": "MTp1cy1lYXN0LTE6UzoxNzc2ODU1OTM1OTE1OlI6WDN0eThMang=",
+        "RequestDetails": {
+          "endpointType": "regional",
+          "awsServingRegion": "us-east-1"
+        }
+      },
+      "requestID": "REQUESTID_12E1-8D3F-013C",
+      "eventID": "EVENTID_D9AC-DE78-9FBA",
+      "readOnly": true,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "ACCOUNT_9E7B-54AF-AAC0",
+      "eventCategory": "Management",
+      "tlsDetails": {
+        "tlsVersion": "TLSv1.3",
+        "cipherSuite": "TLS_AES_128_GCM_SHA256",
+        "clientProvidedHostHeader": "sts.us-east-1.amazonaws.com"
+      }
+    },
+    {
+      "eventVersion": "1.11",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "PRINCIPAL_6ACC-0DDD-F1E2",
+        "arn": "arn:aws:iam::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_49AD-C89D-87F9",
+        "accountId": "ACCOUNT_9E7B-54AF-AAC0",
+        "accessKeyId": "ACCESSKEY_4441-6385-8CDE",
+        "userName": "USER_488F-BA78-9E22"
+      },
+      "eventTime": "2026-04-22T11:05:36Z",
+      "eventSource": "iam.amazonaws.com",
+      "eventName": "ListAccessKeys",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "IP_3296-6CC8-92D8",
+      "userAgent": "Boto3/1.42.93 md/Botocore#1.42.93 ua/2.1 os/linux#IP_04B7-A84E-2925-microsoft-standard-WSL2 md/arch#x86_64 lang/python#3.12.3 md/pyimpl#CPython m/Z,b,D cfg/retry-mode#legacy Botocore/1.42.93",
+      "requestParameters": null,
+      "responseElements": null,
+      "requestID": "REQUESTID_18B9-EED9-D62B",
+      "eventID": "EVENTID_8BEF-F657-F4DF",
+      "readOnly": true,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "ACCOUNT_9E7B-54AF-AAC0",
+      "eventCategory": "Management",
+      "tlsDetails": {
+        "tlsVersion": "TLSv1.3",
+        "cipherSuite": "TLS_AES_128_GCM_SHA256",
+        "clientProvidedHostHeader": "iam.amazonaws.com"
+      }
+    }
+  ]
+}

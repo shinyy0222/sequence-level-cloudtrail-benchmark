@@ -1,0 +1,35 @@
+[
+  {
+    "awsRegion": "us-east-1",
+    "eventCategory": "Management",
+    "eventID": "EVENTID_C31F-9565-3FD8",
+    "eventName": "DeleteTrail",
+    "eventSource": "cloudtrail.amazonaws.com",
+    "eventTime": "2026-04-21T07:23:22Z",
+    "eventType": "AwsApiCall",
+    "eventVersion": "1.11",
+    "managementEvent": true,
+    "readOnly": false,
+    "recipientAccountId": "ACCOUNT_9E7B-54AF-AAC0",
+    "requestID": "REQUESTID_D818-5229-E5E7",
+    "requestParameters": {
+      "name": "stratus-red-team-cloudtraild-trail-gxhazjbsmj"
+    },
+    "responseElements": null,
+    "sourceIPAddress": "IP_3296-6CC8-92D8",
+    "tlsDetails": {
+      "cipherSuite": "TLS_AES_128_GCM_SHA256",
+      "clientProvidedHostHeader": "cloudtrail.us-east-1.amazonaws.com",
+      "tlsVersion": "TLSv1.3"
+    },
+    "userAgent": "stratus-red-team_f3ef156a-6737-4906-a53c-dcb925479184",
+    "userIdentity": {
+      "accessKeyId": "ACCESSKEY_4441-6385-8CDE",
+      "accountId": "ACCOUNT_9E7B-54AF-AAC0",
+      "arn": "arn:aws:iam::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_49AD-C89D-87F9",
+      "principalId": "PRINCIPAL_6ACC-0DDD-F1E2",
+      "type": "IAMUser",
+      "userName": "USER_488F-BA78-9E22"
+    }
+  }
+]

@@ -1,0 +1,36 @@
+[
+  {
+    "awsRegion": "us-east-1",
+    "eventCategory": "Management",
+    "eventID": "EVENTID_535D-DCF1-E94D",
+    "eventName": "UpdateAssumeRolePolicy",
+    "eventSource": "iam.amazonaws.com",
+    "eventTime": "2026-04-22T08:46:26Z",
+    "eventType": "AwsApiCall",
+    "eventVersion": "1.11",
+    "managementEvent": true,
+    "readOnly": false,
+    "recipientAccountId": "ACCOUNT_9E7B-54AF-AAC0",
+    "requestID": "REQUESTID_A059-E7C1-A863",
+    "requestParameters": {
+      "policyDocument": "{\n  \"Version\": \"2012-10-17\",\n  \"Statement\": [\n    {\n      \"Effect\": \"Allow\",\n      \"Principal\": {\n        \"Service\": \"ec2.amazonaws.com\"\n      },\n      \"Action\": \"sts:AssumeRole\"\n    },\n    {\n      \"Effect\": \"Allow\",\n      \"Principal\": {\n        \"AWS\": \"arn:aws:iam::ACCOUNT_3A55-31EB-9537:RESOURCE_6117-B4B9-C6CC\"\n      },\n      \"Action\": \"sts:AssumeRole\"\n    }\n  ]\n}",
+      "roleName": "ROLENAME_4DA7-A4FF-AA9F"
+    },
+    "responseElements": null,
+    "sourceIPAddress": "IP_3296-6CC8-92D8",
+    "tlsDetails": {
+      "cipherSuite": "TLS_AES_128_GCM_SHA256",
+      "clientProvidedHostHeader": "iam.amazonaws.com",
+      "tlsVersion": "TLSv1.3"
+    },
+    "userAgent": "stratus-red-team_85f3705f-f759-49a4-b931-9f088213d8a2",
+    "userIdentity": {
+      "accessKeyId": "ACCESSKEY_4441-6385-8CDE",
+      "accountId": "ACCOUNT_9E7B-54AF-AAC0",
+      "arn": "arn:aws:iam::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_49AD-C89D-87F9",
+      "principalId": "PRINCIPAL_6ACC-0DDD-F1E2",
+      "type": "IAMUser",
+      "userName": "USER_488F-BA78-9E22"
+    }
+  }
+]

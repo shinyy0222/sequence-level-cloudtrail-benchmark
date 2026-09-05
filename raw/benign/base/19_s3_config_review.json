@@ -1,0 +1,233 @@
+{
+  "Records": [
+    {
+      "eventVersion": "1.11",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "PRINCIPAL_6ACC-0DDD-F1E2",
+        "arn": "arn:aws:iam::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_49AD-C89D-87F9",
+        "accountId": "ACCOUNT_9E7B-54AF-AAC0",
+        "accessKeyId": "ACCESSKEY_4441-6385-8CDE",
+        "userName": "USER_488F-BA78-9E22"
+      },
+      "eventTime": "2026-04-22T11:14:38Z",
+      "eventSource": "sts.amazonaws.com",
+      "eventName": "GetCallerIdentity",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "IP_3296-6CC8-92D8",
+      "userAgent": "Boto3/1.42.93 md/Botocore#1.42.93 ua/2.1 os/linux#IP_04B7-A84E-2925-microsoft-standard-WSL2 md/arch#x86_64 lang/python#3.12.3 md/pyimpl#CPython m/Z,b,D cfg/retry-mode#legacy Botocore/1.42.93",
+      "requestParameters": null,
+      "responseElements": null,
+      "additionalEventData": {
+        "ExtendedRequestId": "MTp1cy1lYXN0LTE6UzoxNzc2ODU2NDc4NjgxOlI6a1g4dWxGWmI=",
+        "RequestDetails": {
+          "awsServingRegion": "us-east-1",
+          "endpointType": "regional"
+        }
+      },
+      "requestID": "REQUESTID_D7AC-03BC-2B4B",
+      "eventID": "EVENTID_E5A5-8F9E-73DD",
+      "readOnly": true,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "ACCOUNT_9E7B-54AF-AAC0",
+      "eventCategory": "Management",
+      "tlsDetails": {
+        "tlsVersion": "TLSv1.3",
+        "cipherSuite": "TLS_AES_128_GCM_SHA256",
+        "clientProvidedHostHeader": "sts.us-east-1.amazonaws.com"
+      }
+    },
+    {
+      "eventVersion": "1.11",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "PRINCIPAL_6ACC-0DDD-F1E2",
+        "arn": "arn:aws:iam::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_49AD-C89D-87F9",
+        "accountId": "ACCOUNT_9E7B-54AF-AAC0",
+        "accessKeyId": "ACCESSKEY_4441-6385-8CDE",
+        "userName": "USER_488F-BA78-9E22"
+      },
+      "eventTime": "2026-04-22T11:14:39Z",
+      "eventSource": "s3.amazonaws.com",
+      "eventName": "GetBucketAcl",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "IP_3296-6CC8-92D8",
+      "userAgent": "[Boto3/1.42.93 md/Botocore#1.42.93 ua/2.1 os/linux#IP_04B7-A84E-2925-microsoft-standard-WSL2 md/arch#x86_64 lang/python#3.12.3 md/pyimpl#CPython m/Z,b,D cfg/retry-mode#legacy Botocore/1.42.93]",
+      "requestParameters": {
+        "bucketName": "BUCKETNAME_70B0-617F-56AD",
+        "Host": "app-dataa.s3.amazonaws.com",
+        "acl": ""
+      },
+      "responseElements": null,
+      "additionalEventData": {
+        "SignatureVersion": "SigV4",
+        "CipherSuite": "TLS_AES_128_GCM_SHA256",
+        "bytesTransferredIn": 0,
+        "AuthenticationMethod": "AuthHeader",
+        "x-amz-id-2": "ars0ZmmQcKx1xnx8oI+hpqEx6AUP7Wanne9r100Pd/jMw2gA5zZmnbmQEyVsCXQe9R/UE5KEYkA=",
+        "bytesTransferredOut": 480
+      },
+      "requestID": "REQUESTID_9663-C9BD-976E",
+      "eventID": "EVENTID_B922-A040-A37E",
+      "readOnly": true,
+      "resources": [
+        {
+          "accountId": "ACCOUNT_9E7B-54AF-AAC0",
+          "type": "AWS::S3::Bucket",
+          "ARN": "arn:aws:s3:::RESOURCE_70B0-617F-56AD"
+        }
+      ],
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "ACCOUNT_9E7B-54AF-AAC0",
+      "eventCategory": "Management",
+      "tlsDetails": {
+        "tlsVersion": "TLSv1.3",
+        "cipherSuite": "TLS_AES_128_GCM_SHA256",
+        "clientProvidedHostHeader": "app-dataa.s3.amazonaws.com"
+      }
+    },
+    {
+      "eventVersion": "1.11",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "PRINCIPAL_6ACC-0DDD-F1E2",
+        "arn": "arn:aws:iam::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_49AD-C89D-87F9",
+        "accountId": "ACCOUNT_9E7B-54AF-AAC0",
+        "accessKeyId": "ACCESSKEY_4441-6385-8CDE",
+        "userName": "USER_488F-BA78-9E22"
+      },
+      "eventTime": "2026-04-22T11:14:39Z",
+      "eventSource": "s3.amazonaws.com",
+      "eventName": "ListBuckets",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "IP_3296-6CC8-92D8",
+      "userAgent": "[Boto3/1.42.93 md/Botocore#1.42.93 ua/2.1 os/linux#IP_04B7-A84E-2925-microsoft-standard-WSL2 md/arch#x86_64 lang/python#3.12.3 md/pyimpl#CPython m/Z,b,D cfg/retry-mode#legacy Botocore/1.42.93]",
+      "requestParameters": {
+        "Host": "s3.amazonaws.com"
+      },
+      "responseElements": null,
+      "additionalEventData": {
+        "SignatureVersion": "SigV4",
+        "CipherSuite": "TLS_AES_128_GCM_SHA256",
+        "bytesTransferredIn": 0,
+        "AuthenticationMethod": "AuthHeader",
+        "x-amz-id-2": "ySovcwz4wYSKd0EOKlDZOe4WnwhTYpOlpQo6YW17zGWU2UdZgUC7xgbefoe3OB28VsuXjKciW7s=",
+        "bytesTransferredOut": 1245
+      },
+      "requestID": "REQUESTID_D6F1-3E05-4E3A",
+      "eventID": "EVENTID_3235-B9E8-5A58",
+      "readOnly": true,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "ACCOUNT_9E7B-54AF-AAC0",
+      "eventCategory": "Management",
+      "tlsDetails": {
+        "tlsVersion": "TLSv1.3",
+        "cipherSuite": "TLS_AES_128_GCM_SHA256",
+        "clientProvidedHostHeader": "s3.amazonaws.com"
+      }
+    },
+    {
+      "eventVersion": "1.11",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "PRINCIPAL_6ACC-0DDD-F1E2",
+        "arn": "arn:aws:iam::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_49AD-C89D-87F9",
+        "accountId": "ACCOUNT_9E7B-54AF-AAC0",
+        "accessKeyId": "ACCESSKEY_4441-6385-8CDE",
+        "userName": "USER_488F-BA78-9E22"
+      },
+      "eventTime": "2026-04-22T11:14:40Z",
+      "eventSource": "s3.amazonaws.com",
+      "eventName": "GetBucketVersioning",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "IP_3296-6CC8-92D8",
+      "userAgent": "[Boto3/1.42.93 md/Botocore#1.42.93 ua/2.1 os/linux#IP_04B7-A84E-2925-microsoft-standard-WSL2 md/arch#x86_64 lang/python#3.12.3 md/pyimpl#CPython m/Z,b,D cfg/retry-mode#legacy Botocore/1.42.93]",
+      "requestParameters": {
+        "bucketName": "BUCKETNAME_70B0-617F-56AD",
+        "Host": "app-dataa.s3.amazonaws.com",
+        "versioning": ""
+      },
+      "responseElements": null,
+      "additionalEventData": {
+        "SignatureVersion": "SigV4",
+        "CipherSuite": "TLS_AES_128_GCM_SHA256",
+        "bytesTransferredIn": 0,
+        "AuthenticationMethod": "AuthHeader",
+        "x-amz-id-2": "NhtoJHwczEsNoX8q6uiSOsl8S4sby52lw/EIWz0DTP1MOw8JGaJWXDi0VHGN9sulsmT8gwiQC20=",
+        "bytesTransferredOut": 113
+      },
+      "requestID": "REQUESTID_FD6D-365F-42EE",
+      "eventID": "EVENTID_8682-E3AF-BA3E",
+      "readOnly": true,
+      "resources": [
+        {
+          "accountId": "ACCOUNT_9E7B-54AF-AAC0",
+          "type": "AWS::S3::Bucket",
+          "ARN": "arn:aws:s3:::RESOURCE_70B0-617F-56AD"
+        }
+      ],
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "ACCOUNT_9E7B-54AF-AAC0",
+      "eventCategory": "Management",
+      "tlsDetails": {
+        "tlsVersion": "TLSv1.3",
+        "cipherSuite": "TLS_AES_128_GCM_SHA256",
+        "clientProvidedHostHeader": "app-dataa.s3.amazonaws.com"
+      }
+    },
+    {
+      "eventVersion": "1.11",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "PRINCIPAL_6ACC-0DDD-F1E2",
+        "arn": "arn:aws:iam::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_49AD-C89D-87F9",
+        "accountId": "ACCOUNT_9E7B-54AF-AAC0",
+        "accessKeyId": "ACCESSKEY_4441-6385-8CDE",
+        "userName": "USER_488F-BA78-9E22"
+      },
+      "eventTime": "2026-04-22T11:14:40Z",
+      "eventSource": "s3.amazonaws.com",
+      "eventName": "GetBucketLogging",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "IP_3296-6CC8-92D8",
+      "userAgent": "[Boto3/1.42.93 md/Botocore#1.42.93 ua/2.1 os/linux#IP_04B7-A84E-2925-microsoft-standard-WSL2 md/arch#x86_64 lang/python#3.12.3 md/pyimpl#CPython m/Z,b,D cfg/retry-mode#legacy Botocore/1.42.93]",
+      "requestParameters": {
+        "logging": "",
+        "bucketName": "BUCKETNAME_70B0-617F-56AD",
+        "Host": "app-dataa.s3.amazonaws.com"
+      },
+      "responseElements": null,
+      "additionalEventData": {
+        "SignatureVersion": "SigV4",
+        "CipherSuite": "TLS_AES_128_GCM_SHA256",
+        "bytesTransferredIn": 0,
+        "AuthenticationMethod": "AuthHeader",
+        "x-amz-id-2": "htutu2a7wekR1Il6t7x2zoLvjXDWbP08qr6csV0GbstX8WCJdTD1Lh12nk3qb3I7M2pi1Iyjh8w=",
+        "bytesTransferredOut": 289
+      },
+      "requestID": "REQUESTID_64BD-7C12-181F",
+      "eventID": "EVENTID_4F5B-C377-FAD2",
+      "readOnly": true,
+      "resources": [
+        {
+          "accountId": "ACCOUNT_9E7B-54AF-AAC0",
+          "type": "AWS::S3::Bucket",
+          "ARN": "arn:aws:s3:::RESOURCE_70B0-617F-56AD"
+        }
+      ],
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "ACCOUNT_9E7B-54AF-AAC0",
+      "eventCategory": "Management",
+      "tlsDetails": {
+        "tlsVersion": "TLSv1.3",
+        "cipherSuite": "TLS_AES_128_GCM_SHA256",
+        "clientProvidedHostHeader": "app-dataa.s3.amazonaws.com"
+      }
+    }
+  ]
+}

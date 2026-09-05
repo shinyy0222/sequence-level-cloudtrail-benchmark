@@ -1,0 +1,165 @@
+[
+  {
+    "awsRegion": "us-east-1",
+    "errorCode": "AccessDenied",
+    "errorMessage": "User: arn:aws:sts::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_DC7D-36D1-904E is not authorized to perform: organizations:LeaveOrganization on resource: * because no identity-based policy allows the organizations:LeaveOrganization action",
+    "eventCategory": "Management",
+    "eventID": "EVENTID_A682-F5F1-7368",
+    "eventName": "LeaveOrganization",
+    "eventSource": "organizations.amazonaws.com",
+    "eventTime": "2026-04-21T08:09:19Z",
+    "eventType": "AwsApiCall",
+    "eventVersion": "1.11",
+    "managementEvent": true,
+    "readOnly": false,
+    "recipientAccountId": "ACCOUNT_9E7B-54AF-AAC0",
+    "requestID": "REQUESTID_E527-D1B8-23BC",
+    "requestParameters": null,
+    "responseElements": null,
+    "sourceIPAddress": "IP_3296-6CC8-92D8",
+    "tlsDetails": {
+      "cipherSuite": "TLS_AES_128_GCM_SHA256",
+      "clientProvidedHostHeader": "organizations.us-east-1.amazonaws.com",
+      "tlsVersion": "TLSv1.3"
+    },
+    "userAgent": "stratus-red-team_c5fa572a-baca-4171-b856-2de375acc226",
+    "userIdentity": {
+      "accessKeyId": "ACCESSKEY_B2B8-241F-3375",
+      "accountId": "ACCOUNT_9E7B-54AF-AAC0",
+      "arn": "arn:aws:sts::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_DC7D-36D1-904E",
+      "principalId": "PRINCIPAL_B702-C8B2-161E",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-04-21T08:09:18Z",
+          "mfaAuthenticated": "false"
+        },
+        "sessionIssuer": {
+          "accountId": "ACCOUNT_9E7B-54AF-AAC0",
+          "arn": "arn:aws:iam::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_980D-0725-CC55",
+          "principalId": "PRINCIPAL_EA48-D95E-A809",
+          "type": "Role",
+          "userName": "USER_CB61-1A20-5BF6"
+        }
+      },
+      "type": "AssumedRole"
+    }
+  },
+  {
+    "additionalEventData": {
+      "ExtendedRequestId": "MTp1cy1lYXN0LTE6UzoxNzc2NzU4OTU4NTM0OlI6elM3SUtpRlY=",
+      "RequestDetails": {
+        "awsServingRegion": "us-east-1",
+        "endpointType": "regional"
+      }
+    },
+    "awsRegion": "us-east-1",
+    "eventCategory": "Management",
+    "eventID": "EVENTID_7D67-3CCC-65AB",
+    "eventName": "AssumeRole",
+    "eventSource": "sts.amazonaws.com",
+    "eventTime": "2026-04-21T08:09:18Z",
+    "eventType": "AwsApiCall",
+    "eventVersion": "1.11",
+    "managementEvent": true,
+    "readOnly": true,
+    "recipientAccountId": "ACCOUNT_9E7B-54AF-AAC0",
+    "requestID": "REQUESTID_C18A-AA1D-A3CC",
+    "requestParameters": {
+      "durationSeconds": 900,
+      "roleArn": "arn:aws:iam::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_980D-0725-CC55",
+      "roleSessionName": "aws-go-sdk-1776758958780180523"
+    },
+    "resources": [
+      {
+        "ARN": "arn:aws:iam::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_980D-0725-CC55",
+        "accountId": "ACCOUNT_9E7B-54AF-AAC0",
+        "type": "AWS::IAM::Role"
+      }
+    ],
+    "responseElements": {
+      "assumedRoleUser": {
+        "arn": "arn:aws:sts::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_DC7D-36D1-904E",
+        "assumedRoleId": "AROAV47MCUL5VLJYON42V:aws-go-sdk-1776758958780180523"
+      },
+      "credentials": {
+        "accessKeyId": "ACCESSKEY_9A6A-EF4C-96EF",
+        "expiration": "Apr 21, 2026, 8:24:18 AM",
+        "sessionToken": "REDACTED_791F-055A-57C8"
+      }
+    },
+    "sourceIPAddress": "IP_3296-6CC8-92D8",
+    "tlsDetails": {
+      "cipherSuite": "TLS_AES_128_GCM_SHA256",
+      "clientProvidedHostHeader": "sts.us-east-1.amazonaws.com",
+      "tlsVersion": "TLSv1.3"
+    },
+    "userAgent": "stratus-red-team_c5fa572a-baca-4171-b856-2de375acc226",
+    "userIdentity": {
+      "accessKeyId": "ACCESSKEY_4441-6385-8CDE",
+      "accountId": "ACCOUNT_9E7B-54AF-AAC0",
+      "arn": "arn:aws:iam::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_49AD-C89D-87F9",
+      "principalId": "PRINCIPAL_6ACC-0DDD-F1E2",
+      "type": "IAMUser",
+      "userName": "USER_488F-BA78-9E22"
+    }
+  },
+  {
+    "additionalEventData": {
+      "ExtendedRequestId": "MTp1cy1lYXN0LTE6UzoxNzc2NzU4OTU4NzUwOlI6SG01SDhjV1I=",
+      "RequestDetails": {
+        "awsServingRegion": "us-east-1",
+        "endpointType": "regional"
+      }
+    },
+    "awsRegion": "us-east-1",
+    "eventCategory": "Management",
+    "eventID": "EVENTID_39F5-27B6-21D6",
+    "eventName": "AssumeRole",
+    "eventSource": "sts.amazonaws.com",
+    "eventTime": "2026-04-21T08:09:18Z",
+    "eventType": "AwsApiCall",
+    "eventVersion": "1.11",
+    "managementEvent": true,
+    "readOnly": true,
+    "recipientAccountId": "ACCOUNT_9E7B-54AF-AAC0",
+    "requestID": "REQUESTID_04BF-9D4D-1348",
+    "requestParameters": {
+      "durationSeconds": 900,
+      "roleArn": "arn:aws:iam::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_980D-0725-CC55",
+      "roleSessionName": "aws-go-sdk-1776758958780180523"
+    },
+    "resources": [
+      {
+        "ARN": "arn:aws:iam::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_980D-0725-CC55",
+        "accountId": "ACCOUNT_9E7B-54AF-AAC0",
+        "type": "AWS::IAM::Role"
+      }
+    ],
+    "responseElements": {
+      "assumedRoleUser": {
+        "arn": "arn:aws:sts::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_DC7D-36D1-904E",
+        "assumedRoleId": "AROAV47MCUL5VLJYON42V:aws-go-sdk-1776758958780180523"
+      },
+      "credentials": {
+        "accessKeyId": "ACCESSKEY_B2B8-241F-3375",
+        "expiration": "Apr 21, 2026, 8:24:18 AM",
+        "sessionToken": "REDACTED_ACF2-4DCD-BF81"
+      }
+    },
+    "sourceIPAddress": "IP_3296-6CC8-92D8",
+    "tlsDetails": {
+      "cipherSuite": "TLS_AES_128_GCM_SHA256",
+      "clientProvidedHostHeader": "sts.us-east-1.amazonaws.com",
+      "tlsVersion": "TLSv1.3"
+    },
+    "userAgent": "stratus-red-team_c5fa572a-baca-4171-b856-2de375acc226",
+    "userIdentity": {
+      "accessKeyId": "ACCESSKEY_4441-6385-8CDE",
+      "accountId": "ACCOUNT_9E7B-54AF-AAC0",
+      "arn": "arn:aws:iam::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_49AD-C89D-87F9",
+      "principalId": "PRINCIPAL_6ACC-0DDD-F1E2",
+      "type": "IAMUser",
+      "userName": "USER_488F-BA78-9E22"
+    }
+  }
+]

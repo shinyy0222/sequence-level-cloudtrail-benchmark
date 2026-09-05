@@ -1,0 +1,46 @@
+[
+  {
+    "awsRegion": "us-east-1",
+    "eventCategory": "Management",
+    "eventID": "EVENTID_3729-82A9-953F",
+    "eventName": "DeleteFlowLogs",
+    "eventSource": "ec2.amazonaws.com",
+    "eventTime": "2026-04-21T08:14:19Z",
+    "eventType": "AwsApiCall",
+    "eventVersion": "1.11",
+    "managementEvent": true,
+    "readOnly": false,
+    "recipientAccountId": "ACCOUNT_9E7B-54AF-AAC0",
+    "requestID": "REQUESTID_3553-01A4-31CC",
+    "requestParameters": {
+      "DeleteFlowLogsRequest": {
+        "FlowLogId": {
+          "content": "fl-00654d5f15ec42230",
+          "tag": 1
+        }
+      }
+    },
+    "responseElements": {
+      "DeleteFlowLogsResponse": {
+        "requestId": "REQUESTID_3553-01A4-31CC",
+        "unsuccessful": "",
+        "xmlns": "http://ec2.amazonaws.com/doc/2016-11-15/"
+      }
+    },
+    "sourceIPAddress": "IP_3296-6CC8-92D8",
+    "tlsDetails": {
+      "cipherSuite": "TLS_AES_128_GCM_SHA256",
+      "clientProvidedHostHeader": "ec2.us-east-1.amazonaws.com",
+      "tlsVersion": "TLSv1.3"
+    },
+    "userAgent": "stratus-red-team_fa52801d-392d-403d-b096-48354b405a83",
+    "userIdentity": {
+      "accessKeyId": "ACCESSKEY_4441-6385-8CDE",
+      "accountId": "ACCOUNT_9E7B-54AF-AAC0",
+      "arn": "arn:aws:iam::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_49AD-C89D-87F9",
+      "principalId": "PRINCIPAL_6ACC-0DDD-F1E2",
+      "type": "IAMUser",
+      "userName": "USER_488F-BA78-9E22"
+    }
+  }
+]

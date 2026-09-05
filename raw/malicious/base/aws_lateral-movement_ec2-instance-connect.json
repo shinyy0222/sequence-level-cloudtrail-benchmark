@@ -1,0 +1,116 @@
+[
+  {
+    "awsRegion": "us-east-1",
+    "eventCategory": "Management",
+    "eventID": "EVENTID_CD81-98F6-2AEE",
+    "eventName": "SendSSHPublicKey",
+    "eventSource": "ec2-instance-connect.amazonaws.com",
+    "eventTime": "2026-04-22T08:42:41Z",
+    "eventType": "AwsApiCall",
+    "eventVersion": "1.11",
+    "managementEvent": true,
+    "readOnly": false,
+    "recipientAccountId": "ACCOUNT_9E7B-54AF-AAC0",
+    "requestID": "REQUESTID_80B3-16DF-C804",
+    "requestParameters": {
+      "instanceId": "INSTANCEID_26F7-58BF-B6BC",
+      "instanceOSUser": "ec2-user",
+      "sSHPublicKey": "REDACTED_B200-61AB-3B4C"
+    },
+    "responseElements": {
+      "requestId": "REQUESTID_80B3-16DF-C804",
+      "success": true
+    },
+    "sourceIPAddress": "IP_3296-6CC8-92D8",
+    "tlsDetails": {
+      "cipherSuite": "TLS_AES_128_GCM_SHA256",
+      "clientProvidedHostHeader": "ec2-instance-connect.us-east-1.amazonaws.com",
+      "tlsVersion": "TLSv1.3"
+    },
+    "userAgent": "stratus-red-team_3a8b9d5e-d4b0-4e4e-997b-ae922edf75fd",
+    "userIdentity": {
+      "accessKeyId": "ACCESSKEY_4441-6385-8CDE",
+      "accountId": "ACCOUNT_9E7B-54AF-AAC0",
+      "arn": "arn:aws:iam::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_49AD-C89D-87F9",
+      "principalId": "PRINCIPAL_6ACC-0DDD-F1E2",
+      "type": "IAMUser",
+      "userName": "USER_488F-BA78-9E22"
+    }
+  },
+  {
+    "awsRegion": "us-east-1",
+    "eventCategory": "Management",
+    "eventID": "EVENTID_97B9-40CF-C098",
+    "eventName": "SendSSHPublicKey",
+    "eventSource": "ec2-instance-connect.amazonaws.com",
+    "eventTime": "2026-04-22T08:42:41Z",
+    "eventType": "AwsApiCall",
+    "eventVersion": "1.11",
+    "managementEvent": true,
+    "readOnly": false,
+    "recipientAccountId": "ACCOUNT_9E7B-54AF-AAC0",
+    "requestID": "REQUESTID_0405-88FF-A6B9",
+    "requestParameters": {
+      "instanceId": "INSTANCEID_4170-CB81-90D9",
+      "instanceOSUser": "ec2-user",
+      "sSHPublicKey": "REDACTED_B200-61AB-3B4C"
+    },
+    "responseElements": {
+      "requestId": "REQUESTID_0405-88FF-A6B9",
+      "success": true
+    },
+    "sourceIPAddress": "IP_3296-6CC8-92D8",
+    "tlsDetails": {
+      "cipherSuite": "TLS_AES_128_GCM_SHA256",
+      "clientProvidedHostHeader": "ec2-instance-connect.us-east-1.amazonaws.com",
+      "tlsVersion": "TLSv1.3"
+    },
+    "userAgent": "stratus-red-team_3a8b9d5e-d4b0-4e4e-997b-ae922edf75fd",
+    "userIdentity": {
+      "accessKeyId": "ACCESSKEY_4441-6385-8CDE",
+      "accountId": "ACCOUNT_9E7B-54AF-AAC0",
+      "arn": "arn:aws:iam::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_49AD-C89D-87F9",
+      "principalId": "PRINCIPAL_6ACC-0DDD-F1E2",
+      "type": "IAMUser",
+      "userName": "USER_488F-BA78-9E22"
+    }
+  },
+  {
+    "awsRegion": "us-east-1",
+    "eventCategory": "Management",
+    "eventID": "EVENTID_B3E9-64F5-A479",
+    "eventName": "SendSSHPublicKey",
+    "eventSource": "ec2-instance-connect.amazonaws.com",
+    "eventTime": "2026-04-22T08:42:40Z",
+    "eventType": "AwsApiCall",
+    "eventVersion": "1.11",
+    "managementEvent": true,
+    "readOnly": false,
+    "recipientAccountId": "ACCOUNT_9E7B-54AF-AAC0",
+    "requestID": "REQUESTID_574D-26A9-5A84",
+    "requestParameters": {
+      "instanceId": "INSTANCEID_2C80-99F7-84CA",
+      "instanceOSUser": "ec2-user",
+      "sSHPublicKey": "REDACTED_B200-61AB-3B4C"
+    },
+    "responseElements": {
+      "requestId": "REQUESTID_574D-26A9-5A84",
+      "success": true
+    },
+    "sourceIPAddress": "IP_3296-6CC8-92D8",
+    "tlsDetails": {
+      "cipherSuite": "TLS_AES_128_GCM_SHA256",
+      "clientProvidedHostHeader": "ec2-instance-connect.us-east-1.amazonaws.com",
+      "tlsVersion": "TLSv1.3"
+    },
+    "userAgent": "stratus-red-team_3a8b9d5e-d4b0-4e4e-997b-ae922edf75fd",
+    "userIdentity": {
+      "accessKeyId": "ACCESSKEY_4441-6385-8CDE",
+      "accountId": "ACCOUNT_9E7B-54AF-AAC0",
+      "arn": "arn:aws:iam::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_49AD-C89D-87F9",
+      "principalId": "PRINCIPAL_6ACC-0DDD-F1E2",
+      "type": "IAMUser",
+      "userName": "USER_488F-BA78-9E22"
+    }
+  }
+]

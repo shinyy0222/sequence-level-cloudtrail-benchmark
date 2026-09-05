@@ -1,0 +1,840 @@
+[
+  {
+    "awsRegion": "us-east-1",
+    "errorCode": "Client.UnauthorizedOperation",
+    "errorMessage": "You are not authorized to perform this operation. User: arn:aws:sts::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_0D9D-B300-BDD3 is not authorized to perform: ec2:DescribeInstanceAttribute on resource: arn:aws:ec2:us-east-1:ACCOUNT_9E7B-54AF-AAC0:RESOURCE_7A0C-AD0B-AC62 because no identity-based policy allows the ec2:DescribeInstanceAttribute action. Encoded authorization failure message: rrPCdYbLheYsNnsLuzPRus2IKYRyNSazleLyCsyl51npCCY8sJAIkumqG4Wa6CuZRqf7fASJoiu2llb6wfsKQx4FA0FPUlaijWlYgZtb5fJKOm0r44UpWa2fYKBrCl1MEhxCdz5m5qnfNSyTobm2iCXoCUJqG1Uopb95WxedtV7GhX_7C2uvxC4ZTbqt05cZVIZsIuAJlU53V2GxlaO0RGY_5TKWS5vnCmy4IhHBqtJe7ACptkNbzJ6rSP_dBb1N1dZks3YdIBM0OxUYv8aDvDmQZ7alCOsA_FQWwi0NWOe95hS_QnqVV0FRtl-OjjcgOhuDEp8OYkFr2ufaWo0h5PtJVIBDaVNx5CE6rWKWZrI0Ucm4dbxZ1vrAoc-E4439VkWFUdl0aklOWtROy0mRFEJ0wRdWC6wy6ZrOHSaSwksP4bHw2KwFn0yZHTn9efrnruG2KIVQgizfJLh7Dmf8HF0pHh5ALDZBak3kaxNyqb35R3CEpl8fNwUQ38GHe8skW6iGsXCS9xSDBXdMlOqYXbea_Yz8J4_tMn06E13uAuBObiHr0tPH_iscTh5jJs61eLaf5YMFus8",
+    "eventCategory": "Management",
+    "eventID": "EVENTID_136D-4C97-5CDC",
+    "eventName": "DescribeInstanceAttribute",
+    "eventSource": "ec2.amazonaws.com",
+    "eventTime": "2026-04-21T08:27:00Z",
+    "eventType": "AwsApiCall",
+    "eventVersion": "1.11",
+    "managementEvent": true,
+    "readOnly": true,
+    "recipientAccountId": "ACCOUNT_9E7B-54AF-AAC0",
+    "requestID": "REQUESTID_3DE2-71C5-F0E8",
+    "requestParameters": {
+      "attribute": "userData",
+      "instanceId": "INSTANCEID_C0F5-9AD7-99F6"
+    },
+    "responseElements": null,
+    "sourceIPAddress": "IP_3296-6CC8-92D8",
+    "tlsDetails": {
+      "cipherSuite": "TLS_AES_128_GCM_SHA256",
+      "clientProvidedHostHeader": "ec2.us-east-1.amazonaws.com",
+      "tlsVersion": "TLSv1.3"
+    },
+    "userAgent": "stratus-red-team_cae81a42-c36d-4225-99d8-88666c3a945a",
+    "userIdentity": {
+      "accessKeyId": "ACCESSKEY_5515-3F96-593B",
+      "accountId": "ACCOUNT_9E7B-54AF-AAC0",
+      "arn": "arn:aws:sts::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_0D9D-B300-BDD3",
+      "principalId": "PRINCIPAL_A392-9F93-FC3B",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-04-21T08:26:58Z",
+          "mfaAuthenticated": "false"
+        },
+        "sessionIssuer": {
+          "accountId": "ACCOUNT_9E7B-54AF-AAC0",
+          "arn": "arn:aws:iam::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_3687-BCF1-7AE3",
+          "principalId": "PRINCIPAL_EC24-E191-6E58",
+          "type": "Role",
+          "userName": "USER_05D1-FAF8-F9CA"
+        }
+      },
+      "type": "AssumedRole"
+    }
+  },
+  {
+    "awsRegion": "us-east-1",
+    "errorCode": "Client.UnauthorizedOperation",
+    "errorMessage": "You are not authorized to perform this operation. User: arn:aws:sts::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_0D9D-B300-BDD3 is not authorized to perform: ec2:DescribeInstanceAttribute on resource: arn:aws:ec2:us-east-1:ACCOUNT_9E7B-54AF-AAC0:RESOURCE_7A0C-AD0B-AC62 because no identity-based policy allows the ec2:DescribeInstanceAttribute action. Encoded authorization failure message: 9_VmXX_4q5qKXH9nigr8V1rhfO1-O894hvKQ9QhflPtfBEqj-sX3iDtQXWOPtVafmMffl86CvOf1cslNk1ZUBskz_nyKdgSLV904jX1MRo-cYA0Vx2_ibfvVVZMR9u-oEcAn7g4MevoDaeNrrQXrd4KykIc1f2XQhvS96IMd5ZAbNXy0rp9bNLb9KTtVZZtBTTgoidmpLlZjzdtoLHZgrD43X-yLIKmjRmykKyUK0TdC9jZLL7AfmoRexdklJOPTPIBSkzvm8jg_U7jAivCYf-1QT3XsfRJtK7Ae3t0QyWFQ_2DUQlSkctqeovct0u0szB-YB6Xm1Y0lXRnqqVFcTWgjeKnzOiSC8-0dKYg2xJSdGJ_KTWIt-bbMjbq0HqWj5WOYmkHSrj_nL5bNKXfT7Slz1-qNaxPqaA_EE8eLDTCcZzFAj2RhFtnCinK55prIR1JFiViXZgJp2IQtOPb1CSav25WzHXGQHFTwktspfUsKyZpz66f9HoUlzLhLH4i4Pf8suxu-oC3an-VHvvBOVl8KMdWiJ2XtkMNyfOR5Fz5LhRDm8rbfUnA_pY_ju8fIfPBJDtGpEDQ",
+    "eventCategory": "Management",
+    "eventID": "EVENTID_B796-CF35-0908",
+    "eventName": "DescribeInstanceAttribute",
+    "eventSource": "ec2.amazonaws.com",
+    "eventTime": "2026-04-21T08:26:59Z",
+    "eventType": "AwsApiCall",
+    "eventVersion": "1.11",
+    "managementEvent": true,
+    "readOnly": true,
+    "recipientAccountId": "ACCOUNT_9E7B-54AF-AAC0",
+    "requestID": "REQUESTID_C416-991A-9A4C",
+    "requestParameters": {
+      "attribute": "userData",
+      "instanceId": "INSTANCEID_3DF6-146F-25AD"
+    },
+    "responseElements": null,
+    "sourceIPAddress": "IP_3296-6CC8-92D8",
+    "tlsDetails": {
+      "cipherSuite": "TLS_AES_128_GCM_SHA256",
+      "clientProvidedHostHeader": "ec2.us-east-1.amazonaws.com",
+      "tlsVersion": "TLSv1.3"
+    },
+    "userAgent": "stratus-red-team_cae81a42-c36d-4225-99d8-88666c3a945a",
+    "userIdentity": {
+      "accessKeyId": "ACCESSKEY_5515-3F96-593B",
+      "accountId": "ACCOUNT_9E7B-54AF-AAC0",
+      "arn": "arn:aws:sts::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_0D9D-B300-BDD3",
+      "principalId": "PRINCIPAL_A392-9F93-FC3B",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-04-21T08:26:58Z",
+          "mfaAuthenticated": "false"
+        },
+        "sessionIssuer": {
+          "accountId": "ACCOUNT_9E7B-54AF-AAC0",
+          "arn": "arn:aws:iam::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_3687-BCF1-7AE3",
+          "principalId": "PRINCIPAL_EC24-E191-6E58",
+          "type": "Role",
+          "userName": "USER_05D1-FAF8-F9CA"
+        }
+      },
+      "type": "AssumedRole"
+    }
+  },
+  {
+    "awsRegion": "us-east-1",
+    "errorCode": "Client.UnauthorizedOperation",
+    "errorMessage": "You are not authorized to perform this operation. User: arn:aws:sts::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_0D9D-B300-BDD3 is not authorized to perform: ec2:DescribeInstanceAttribute on resource: arn:aws:ec2:us-east-1:ACCOUNT_9E7B-54AF-AAC0:RESOURCE_7A0C-AD0B-AC62 because no identity-based policy allows the ec2:DescribeInstanceAttribute action. Encoded authorization failure message: 9OfSjmaVqdEU2DFWl2NIWEIfrXaK2uShd7t6XNXgwK-rlZiytnV_SD04cnjAJneTqhiHjw9AVnsbNGmqbuR4iQ-53sRFd2sxrn_9EYHN_Y7LfZMfygJ9w_WleqCk_Iu8c1gcoMeiHgme94uyMIlWNed_o0yCWr7oieKcFinf0pdWgX9g6H2ow0RtpbQsWF4xb210I-A1sEm1-Y0GfisWUu7oT3o2XbHVg3hidEQ26nxeeXgx9lLGlJESKGtZkBztzCk09KzXjJJ19bfldJiUL285wg3FUllSXBA8Gn17F2BuoBMjTTGBlbuOfx4-wL7Ya-tJHooe_Q6DAP7kAkKRWAiiXdk7tCOVQYEiML_qVfg5RQcjX6VxvpEwpSscVq9Hb9spxPZm1ZfrXI3pj0lUbvdNszJAkfaVplCke72Ca3uPElGe2PUdwy7qX4aPYxmPyXAgEAZAPj6Qbyp9KLB1o47VI81hhHtltj0KGToAHmL7QUgAYbO_wzA19thCNRq9PJFW20Z7lcmgoNXoIPFt8cxf-oOzpEwcrl5KzGpRKJzp2fxdu7ftNAIcKduPUbDWeGj4IOvUcVTO",
+    "eventCategory": "Management",
+    "eventID": "EVENTID_8E5C-6CAB-B719",
+    "eventName": "DescribeInstanceAttribute",
+    "eventSource": "ec2.amazonaws.com",
+    "eventTime": "2026-04-21T08:26:59Z",
+    "eventType": "AwsApiCall",
+    "eventVersion": "1.11",
+    "managementEvent": true,
+    "readOnly": true,
+    "recipientAccountId": "ACCOUNT_9E7B-54AF-AAC0",
+    "requestID": "REQUESTID_0BCD-4547-A530",
+    "requestParameters": {
+      "attribute": "userData",
+      "instanceId": "INSTANCEID_A248-081F-E8B1"
+    },
+    "responseElements": null,
+    "sourceIPAddress": "IP_3296-6CC8-92D8",
+    "tlsDetails": {
+      "cipherSuite": "TLS_AES_128_GCM_SHA256",
+      "clientProvidedHostHeader": "ec2.us-east-1.amazonaws.com",
+      "tlsVersion": "TLSv1.3"
+    },
+    "userAgent": "stratus-red-team_cae81a42-c36d-4225-99d8-88666c3a945a",
+    "userIdentity": {
+      "accessKeyId": "ACCESSKEY_5515-3F96-593B",
+      "accountId": "ACCOUNT_9E7B-54AF-AAC0",
+      "arn": "arn:aws:sts::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_0D9D-B300-BDD3",
+      "principalId": "PRINCIPAL_A392-9F93-FC3B",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-04-21T08:26:58Z",
+          "mfaAuthenticated": "false"
+        },
+        "sessionIssuer": {
+          "accountId": "ACCOUNT_9E7B-54AF-AAC0",
+          "arn": "arn:aws:iam::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_3687-BCF1-7AE3",
+          "principalId": "PRINCIPAL_EC24-E191-6E58",
+          "type": "Role",
+          "userName": "USER_05D1-FAF8-F9CA"
+        }
+      },
+      "type": "AssumedRole"
+    }
+  },
+  {
+    "awsRegion": "us-east-1",
+    "errorCode": "Client.UnauthorizedOperation",
+    "errorMessage": "You are not authorized to perform this operation. User: arn:aws:sts::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_0D9D-B300-BDD3 is not authorized to perform: ec2:DescribeInstanceAttribute on resource: arn:aws:ec2:us-east-1:ACCOUNT_9E7B-54AF-AAC0:RESOURCE_7A0C-AD0B-AC62 because no identity-based policy allows the ec2:DescribeInstanceAttribute action. Encoded authorization failure message: KZySh7S01Hb4QFhTxWLBDjpWQXMMUc6ENmgdLw2m_sQEa7cilSo74omMsShosTDv4mbderqLlxG-2ZdxEdKW-gTRTJq_W29LKh8GORllZAXgt4QDNLHzV0r9A2v4lk1W-Jq9MIkepre-ACgPOHn3Zv3NtPJXleuonKIiEXOJt4BltJWLMSrViFIueRTBhb4LyezK7V5w7WYuLopK07OZATBe-kLNSBhkWWiwTeky_WXI7g7DI0Ca-wntO5BqEeYmOpRVFRlG6oVpzsp7qC6_tzQ-A2DFft8fkqR5jriKvf8H2c0QtS4Kuv6YV6oECCLK75LohwTS1n-aJxy2kDGj3RtmGoMkMg_G9Kjv1NqhtWCgd8y2cxScCru65lC-weeI6r0iKqAnzIKf8P2-nT_4KO3t4xAR-HlYyZO7vOeaPFMta8_P3RtJKXcA3__e9tO6sWdomVvphGLApC_vZf1lEBOph2H3dAI19BNqEfpdaMt-A3h6h7zn7wpN269enXcNPsDldBXHJtwldQO4ty1yrsFDFchCpcmPdacM4Bqn5Vyc7N3l2IWCXZZFSznHRHKIBODKx8mWdeQ",
+    "eventCategory": "Management",
+    "eventID": "EVENTID_F323-2934-BA02",
+    "eventName": "DescribeInstanceAttribute",
+    "eventSource": "ec2.amazonaws.com",
+    "eventTime": "2026-04-21T08:27:04Z",
+    "eventType": "AwsApiCall",
+    "eventVersion": "1.11",
+    "managementEvent": true,
+    "readOnly": true,
+    "recipientAccountId": "ACCOUNT_9E7B-54AF-AAC0",
+    "requestID": "REQUESTID_D470-3D12-E3F5",
+    "requestParameters": {
+      "attribute": "userData",
+      "instanceId": "INSTANCEID_1FFA-7C12-D32A"
+    },
+    "responseElements": null,
+    "sourceIPAddress": "IP_3296-6CC8-92D8",
+    "tlsDetails": {
+      "cipherSuite": "TLS_AES_128_GCM_SHA256",
+      "clientProvidedHostHeader": "ec2.us-east-1.amazonaws.com",
+      "tlsVersion": "TLSv1.3"
+    },
+    "userAgent": "stratus-red-team_cae81a42-c36d-4225-99d8-88666c3a945a",
+    "userIdentity": {
+      "accessKeyId": "ACCESSKEY_5515-3F96-593B",
+      "accountId": "ACCOUNT_9E7B-54AF-AAC0",
+      "arn": "arn:aws:sts::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_0D9D-B300-BDD3",
+      "principalId": "PRINCIPAL_A392-9F93-FC3B",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-04-21T08:26:58Z",
+          "mfaAuthenticated": "false"
+        },
+        "sessionIssuer": {
+          "accountId": "ACCOUNT_9E7B-54AF-AAC0",
+          "arn": "arn:aws:iam::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_3687-BCF1-7AE3",
+          "principalId": "PRINCIPAL_EC24-E191-6E58",
+          "type": "Role",
+          "userName": "USER_05D1-FAF8-F9CA"
+        }
+      },
+      "type": "AssumedRole"
+    }
+  },
+  {
+    "awsRegion": "us-east-1",
+    "errorCode": "Client.UnauthorizedOperation",
+    "errorMessage": "You are not authorized to perform this operation. User: arn:aws:sts::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_0D9D-B300-BDD3 is not authorized to perform: ec2:DescribeInstanceAttribute on resource: arn:aws:ec2:us-east-1:ACCOUNT_9E7B-54AF-AAC0:RESOURCE_7A0C-AD0B-AC62 because no identity-based policy allows the ec2:DescribeInstanceAttribute action. Encoded authorization failure message: nempx2sdfjnAH5F13tf_Xalgp1n8vJnQvHZ1XlTXeNs43hQtVWPU2VlVNr3mVdXv2iNHFCt0HvtNx8zzye6ayauC6yHaJwFzXnyZzGh0WRMMbfjqhzDv2IdgRjii8YlHLzx1YPvj5edHp_W0_M4jbVawKDHPgOvUOP8r89q1_UgmjgCUPmmvBLjnuEls2ykeemexTK5p3qMg7UiHSojojwOTvQIc6ctkUVvVgVN2u6NB9aPiul1x_s4RSHSfjnCoHv96T2RiKO6GUYenxhBtDhaUu_-gJNefxy8VmCyrZHzcKHQ3Wtqlt8Zp4jvx5nYAc5QY3XLl9lSdGcaktqqAEcqg20AwXnnR13f8BW1YEHc1GlmY5vCOB9rQ02SufRHQGWZvF38oWpqM4zzx0FUhi7z6406OI-qw94za7TlpoXPmHZsKI5R-kn3Zpt1mlZX6RyugbiBBh2e3D_YJcwkNtpO7aH9aXayVGJ-7TH2q2uPwXNZBLUhfcCY9O7gfvVjInwbKhzFNz1dhMRm0R51j3Q92JCq99bQF9TvkVJ-6BT_nX9_GnJIw52DlQVMnOJtJXd8osRciQ8g",
+    "eventCategory": "Management",
+    "eventID": "EVENTID_2CD9-97FD-1DF6",
+    "eventName": "DescribeInstanceAttribute",
+    "eventSource": "ec2.amazonaws.com",
+    "eventTime": "2026-04-21T08:27:04Z",
+    "eventType": "AwsApiCall",
+    "eventVersion": "1.11",
+    "managementEvent": true,
+    "readOnly": true,
+    "recipientAccountId": "ACCOUNT_9E7B-54AF-AAC0",
+    "requestID": "REQUESTID_B2B5-3B33-1F57",
+    "requestParameters": {
+      "attribute": "userData",
+      "instanceId": "INSTANCEID_0786-35B4-F92B"
+    },
+    "responseElements": null,
+    "sourceIPAddress": "IP_3296-6CC8-92D8",
+    "tlsDetails": {
+      "cipherSuite": "TLS_AES_128_GCM_SHA256",
+      "clientProvidedHostHeader": "ec2.us-east-1.amazonaws.com",
+      "tlsVersion": "TLSv1.3"
+    },
+    "userAgent": "stratus-red-team_cae81a42-c36d-4225-99d8-88666c3a945a",
+    "userIdentity": {
+      "accessKeyId": "ACCESSKEY_5515-3F96-593B",
+      "accountId": "ACCOUNT_9E7B-54AF-AAC0",
+      "arn": "arn:aws:sts::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_0D9D-B300-BDD3",
+      "principalId": "PRINCIPAL_A392-9F93-FC3B",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-04-21T08:26:58Z",
+          "mfaAuthenticated": "false"
+        },
+        "sessionIssuer": {
+          "accountId": "ACCOUNT_9E7B-54AF-AAC0",
+          "arn": "arn:aws:iam::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_3687-BCF1-7AE3",
+          "principalId": "PRINCIPAL_EC24-E191-6E58",
+          "type": "Role",
+          "userName": "USER_05D1-FAF8-F9CA"
+        }
+      },
+      "type": "AssumedRole"
+    }
+  },
+  {
+    "awsRegion": "us-east-1",
+    "errorCode": "Client.UnauthorizedOperation",
+    "errorMessage": "You are not authorized to perform this operation. User: arn:aws:sts::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_0D9D-B300-BDD3 is not authorized to perform: ec2:DescribeInstanceAttribute on resource: arn:aws:ec2:us-east-1:ACCOUNT_9E7B-54AF-AAC0:RESOURCE_7A0C-AD0B-AC62 because no identity-based policy allows the ec2:DescribeInstanceAttribute action. Encoded authorization failure message: qy5XkYktKNi9W5S_1WkngC9pXsPXJDUXZ1cXboB6IiCc4iLmLMAapQxXSCUWHtoQU_D6-CN6ctSPHgk9VFgR_P7d5ZFJda8oUPa6t_yX1SUG7suLI4zxd4mODE2qkWg-5xVqmL-6tvoOLsJwglatDfw00QPWGFCTW3XDYnG6ODrXd78CA0yu_3w9kUBUV5Chr8ZOTHFsD_u820gYthx2IfR4L7hDkDij8bxosnhNuyUuoylB4aroCMb4USyXxrFCUPH4AeCTKMkzCGTTKuSapO__oqjKnj1IZIKvK8eHT4tlYGNPSm9t-lLZ1DWzEErxdo6gkN9wmqGkIbPbk0kVQ894aOxHFtQ5Ku7W1auPKsyq385Wz6GC--4Cnz8LBjJ1hiYH60jLmJKUw5mkZjIdeCMisCdq58_DMj9-PghDSO4MDGab3BChul61tNIkOQ8Cq3Dg4GXMkxubYCrLTV8jgIBtppNw8E4McBxq9-CoCDbIXNSEK1qxQogtGQv9KJJoWpI5GWOLLwYMVK2B6Oysb2y9RjGEOPHiLZ9fGsBhhUe3Is1RBq8wjusY4ZwVadMOROZSe28EoSY",
+    "eventCategory": "Management",
+    "eventID": "EVENTID_C84F-D27F-60EF",
+    "eventName": "DescribeInstanceAttribute",
+    "eventSource": "ec2.amazonaws.com",
+    "eventTime": "2026-04-21T08:27:03Z",
+    "eventType": "AwsApiCall",
+    "eventVersion": "1.11",
+    "managementEvent": true,
+    "readOnly": true,
+    "recipientAccountId": "ACCOUNT_9E7B-54AF-AAC0",
+    "requestID": "REQUESTID_0196-736E-F328",
+    "requestParameters": {
+      "attribute": "userData",
+      "instanceId": "INSTANCEID_C7D6-31A8-2C83"
+    },
+    "responseElements": null,
+    "sourceIPAddress": "IP_3296-6CC8-92D8",
+    "tlsDetails": {
+      "cipherSuite": "TLS_AES_128_GCM_SHA256",
+      "clientProvidedHostHeader": "ec2.us-east-1.amazonaws.com",
+      "tlsVersion": "TLSv1.3"
+    },
+    "userAgent": "stratus-red-team_cae81a42-c36d-4225-99d8-88666c3a945a",
+    "userIdentity": {
+      "accessKeyId": "ACCESSKEY_5515-3F96-593B",
+      "accountId": "ACCOUNT_9E7B-54AF-AAC0",
+      "arn": "arn:aws:sts::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_0D9D-B300-BDD3",
+      "principalId": "PRINCIPAL_A392-9F93-FC3B",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-04-21T08:26:58Z",
+          "mfaAuthenticated": "false"
+        },
+        "sessionIssuer": {
+          "accountId": "ACCOUNT_9E7B-54AF-AAC0",
+          "arn": "arn:aws:iam::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_3687-BCF1-7AE3",
+          "principalId": "PRINCIPAL_EC24-E191-6E58",
+          "type": "Role",
+          "userName": "USER_05D1-FAF8-F9CA"
+        }
+      },
+      "type": "AssumedRole"
+    }
+  },
+  {
+    "awsRegion": "us-east-1",
+    "errorCode": "Client.UnauthorizedOperation",
+    "errorMessage": "You are not authorized to perform this operation. User: arn:aws:sts::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_0D9D-B300-BDD3 is not authorized to perform: ec2:DescribeInstanceAttribute on resource: arn:aws:ec2:us-east-1:ACCOUNT_9E7B-54AF-AAC0:RESOURCE_7A0C-AD0B-AC62 because no identity-based policy allows the ec2:DescribeInstanceAttribute action. Encoded authorization failure message: SbSKONjGocvSXtlFUX9YMaIRBGEKj_1P3mnieAgCjP3AbuMNGASpp9yL4VPet_ynKwo2UZsmX3keGz3e_7acPIPwy8KM7uIqAe2S9IQaoePfuiiJs_8zf3y0YsXgGFCM79KluOa67uWarvscg0o0vnJHElnsrEu3rOpb7dMXBq2i1rOtKQ6MSsbfufqws753aqyJXkk7u7zlKOdn_b_9CdZPgsnE2Tx5OzfYqR9WmoNlMJcVZZuKzzbWTF80z5_srvsdQ02bTpZNhzX9gVDWBriuTc3Heax669MJc2ZCaQF5OEA2XJnWcD89wH1GjyZAFzFxk2MreYsuAhHYqMFMzflwBvIVxffOdcuAzwRRmXVRdqpnx7LuFq-W5ZQyEPCx1KsjyOhISj4w9DSk_ioU6BN3sah_FakW8MmKt6LB2j7J_rmLIUDv8ZXALUPCFcpfnObKI9Tdo1f_WHsEuBOCXww_YwfOwOJjp0yzraSgtCdF6zfJ4m1WMq1p5vQtaf8ASRSsLnLOqMrjMHtG1gItAJuKExuKgrrcIBQDtiphu7TQTuPafaX_Z2VyySjzFxl6C6kf1tYaXPs",
+    "eventCategory": "Management",
+    "eventID": "EVENTID_3DC2-EDDC-D3FD",
+    "eventName": "DescribeInstanceAttribute",
+    "eventSource": "ec2.amazonaws.com",
+    "eventTime": "2026-04-21T08:27:03Z",
+    "eventType": "AwsApiCall",
+    "eventVersion": "1.11",
+    "managementEvent": true,
+    "readOnly": true,
+    "recipientAccountId": "ACCOUNT_9E7B-54AF-AAC0",
+    "requestID": "REQUESTID_1E92-CA68-500F",
+    "requestParameters": {
+      "attribute": "userData",
+      "instanceId": "INSTANCEID_C7B9-70AB-9488"
+    },
+    "responseElements": null,
+    "sourceIPAddress": "IP_3296-6CC8-92D8",
+    "tlsDetails": {
+      "cipherSuite": "TLS_AES_128_GCM_SHA256",
+      "clientProvidedHostHeader": "ec2.us-east-1.amazonaws.com",
+      "tlsVersion": "TLSv1.3"
+    },
+    "userAgent": "stratus-red-team_cae81a42-c36d-4225-99d8-88666c3a945a",
+    "userIdentity": {
+      "accessKeyId": "ACCESSKEY_5515-3F96-593B",
+      "accountId": "ACCOUNT_9E7B-54AF-AAC0",
+      "arn": "arn:aws:sts::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_0D9D-B300-BDD3",
+      "principalId": "PRINCIPAL_A392-9F93-FC3B",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-04-21T08:26:58Z",
+          "mfaAuthenticated": "false"
+        },
+        "sessionIssuer": {
+          "accountId": "ACCOUNT_9E7B-54AF-AAC0",
+          "arn": "arn:aws:iam::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_3687-BCF1-7AE3",
+          "principalId": "PRINCIPAL_EC24-E191-6E58",
+          "type": "Role",
+          "userName": "USER_05D1-FAF8-F9CA"
+        }
+      },
+      "type": "AssumedRole"
+    }
+  },
+  {
+    "awsRegion": "us-east-1",
+    "errorCode": "Client.UnauthorizedOperation",
+    "errorMessage": "You are not authorized to perform this operation. User: arn:aws:sts::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_0D9D-B300-BDD3 is not authorized to perform: ec2:DescribeInstanceAttribute on resource: arn:aws:ec2:us-east-1:ACCOUNT_9E7B-54AF-AAC0:RESOURCE_7A0C-AD0B-AC62 because no identity-based policy allows the ec2:DescribeInstanceAttribute action. Encoded authorization failure message: Imzg5TKSy8ibVN8osnwLR6gcP2-nXj3Vj9MJojVw-IMxp4Djw89A9liGw2Qo87zXvYvwaZ7PNytNRFmh25t7ZCkyQsd6_RyE5HC43uaFoza3LPDwsYRsYsmZv_KFC3a3lSk5eXbboDcvcu2-anpoAUPf6Ff3MefYULKxAmxzuJDCQBUydWqTAye8WBHHmIfjPjfCIbmsl173H2wVLlSmYS3YHlSpyrel9FVDyjKvfJgXpzQV92xWLvYWIPdC7_PQHkctSZ7nQkvwgSTNPmxLXdCN0lecSEtAXhRAAukAtzwpQ7mWOckle91rYxBBdMWpVpeoZb-ecNnjjqniC0kM26Y_PlKetyyP48Wcmi-sg4XurCLdMmfrgPyFDNIfrhIK-KbZduPzJ68PABl-G2kyp7l7_O-1GBL0wOsJr6gP58x4MOcWi8emg8TIKoAQZVy6balLcvhH_B2T3e7GeWXAu9e_djXz6wOMkuOYxbfkZRalqjocUIWJx8aI6IZt2zVZ6C-k0JArl9VXm_mKEsVH3Chgbuiat1KqCzsB23amDb5WlEi0lY-a9Rr2pRn8tq05JJFWXc0prW4",
+    "eventCategory": "Management",
+    "eventID": "EVENTID_F03E-AAC1-94B7",
+    "eventName": "DescribeInstanceAttribute",
+    "eventSource": "ec2.amazonaws.com",
+    "eventTime": "2026-04-21T08:27:03Z",
+    "eventType": "AwsApiCall",
+    "eventVersion": "1.11",
+    "managementEvent": true,
+    "readOnly": true,
+    "recipientAccountId": "ACCOUNT_9E7B-54AF-AAC0",
+    "requestID": "REQUESTID_922D-4344-001D",
+    "requestParameters": {
+      "attribute": "userData",
+      "instanceId": "INSTANCEID_0DE7-0876-8CC0"
+    },
+    "responseElements": null,
+    "sourceIPAddress": "IP_3296-6CC8-92D8",
+    "tlsDetails": {
+      "cipherSuite": "TLS_AES_128_GCM_SHA256",
+      "clientProvidedHostHeader": "ec2.us-east-1.amazonaws.com",
+      "tlsVersion": "TLSv1.3"
+    },
+    "userAgent": "stratus-red-team_cae81a42-c36d-4225-99d8-88666c3a945a",
+    "userIdentity": {
+      "accessKeyId": "ACCESSKEY_5515-3F96-593B",
+      "accountId": "ACCOUNT_9E7B-54AF-AAC0",
+      "arn": "arn:aws:sts::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_0D9D-B300-BDD3",
+      "principalId": "PRINCIPAL_A392-9F93-FC3B",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-04-21T08:26:58Z",
+          "mfaAuthenticated": "false"
+        },
+        "sessionIssuer": {
+          "accountId": "ACCOUNT_9E7B-54AF-AAC0",
+          "arn": "arn:aws:iam::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_3687-BCF1-7AE3",
+          "principalId": "PRINCIPAL_EC24-E191-6E58",
+          "type": "Role",
+          "userName": "USER_05D1-FAF8-F9CA"
+        }
+      },
+      "type": "AssumedRole"
+    }
+  },
+  {
+    "awsRegion": "us-east-1",
+    "errorCode": "Client.UnauthorizedOperation",
+    "errorMessage": "You are not authorized to perform this operation. User: arn:aws:sts::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_0D9D-B300-BDD3 is not authorized to perform: ec2:DescribeInstanceAttribute on resource: arn:aws:ec2:us-east-1:ACCOUNT_9E7B-54AF-AAC0:RESOURCE_7A0C-AD0B-AC62 because no identity-based policy allows the ec2:DescribeInstanceAttribute action. Encoded authorization failure message: o1r65JJNQcVONh0gqCG4aEwhE70UJLv0xtnVZLq0mdqEQX64vNdgVFNVPtmLP5AKEfZG8Te955TnliNDDGkfZcVwWu0e6wsFK-QHofkjzwNWtP0Hyt1_Ncu2y6Er0vRFielXONyOtjsn1bBJlllJyKuQ7TmumzBr3rlKSoivkUjYZqcz6yGF1RwSIquOCM-dRQBRpWo-a3Bu7jA1lPP-p_Lo1YQ0rc_z2yh4T2brtxEzfmA_6fMieXQOEis70Jnt6cyDx8Q08yiB2MnmEz3mI_EYw-4n_ZEPbs6RgTLtothemgTCuC7BsRRFwB47qxJb2gVcaBmXuQ_Wy6zUEwtFekgcwOcSA_eJvLhiwWHsS0JoDXDocGczSJAynOowlAOOuRs9O0Tg66JAzgPisraN64W5u0-G0X2pBWJXfDLVmk3AN7wR2bAqy9OBPa7hsycxwqXqUpdqa8B3X8GD6iTYDkEILr0JUn4s2iOPtOsNLJXxJDhgXnfJS5hYU5S8sfJVqo9F4POBbfJYG3Il09iu_fYHvulZ_KyVA3H-ULPrdoJpy6NPRUWc1ClK92917VHRihVwKwDgjTI",
+    "eventCategory": "Management",
+    "eventID": "EVENTID_6857-BBDF-BBBB",
+    "eventName": "DescribeInstanceAttribute",
+    "eventSource": "ec2.amazonaws.com",
+    "eventTime": "2026-04-21T08:27:02Z",
+    "eventType": "AwsApiCall",
+    "eventVersion": "1.11",
+    "managementEvent": true,
+    "readOnly": true,
+    "recipientAccountId": "ACCOUNT_9E7B-54AF-AAC0",
+    "requestID": "REQUESTID_5469-55B6-6CD6",
+    "requestParameters": {
+      "attribute": "userData",
+      "instanceId": "INSTANCEID_43E5-8351-08EE"
+    },
+    "responseElements": null,
+    "sourceIPAddress": "IP_3296-6CC8-92D8",
+    "tlsDetails": {
+      "cipherSuite": "TLS_AES_128_GCM_SHA256",
+      "clientProvidedHostHeader": "ec2.us-east-1.amazonaws.com",
+      "tlsVersion": "TLSv1.3"
+    },
+    "userAgent": "stratus-red-team_cae81a42-c36d-4225-99d8-88666c3a945a",
+    "userIdentity": {
+      "accessKeyId": "ACCESSKEY_5515-3F96-593B",
+      "accountId": "ACCOUNT_9E7B-54AF-AAC0",
+      "arn": "arn:aws:sts::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_0D9D-B300-BDD3",
+      "principalId": "PRINCIPAL_A392-9F93-FC3B",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-04-21T08:26:58Z",
+          "mfaAuthenticated": "false"
+        },
+        "sessionIssuer": {
+          "accountId": "ACCOUNT_9E7B-54AF-AAC0",
+          "arn": "arn:aws:iam::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_3687-BCF1-7AE3",
+          "principalId": "PRINCIPAL_EC24-E191-6E58",
+          "type": "Role",
+          "userName": "USER_05D1-FAF8-F9CA"
+        }
+      },
+      "type": "AssumedRole"
+    }
+  },
+  {
+    "awsRegion": "us-east-1",
+    "errorCode": "Client.UnauthorizedOperation",
+    "errorMessage": "You are not authorized to perform this operation. User: arn:aws:sts::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_0D9D-B300-BDD3 is not authorized to perform: ec2:DescribeInstanceAttribute on resource: arn:aws:ec2:us-east-1:ACCOUNT_9E7B-54AF-AAC0:RESOURCE_7A0C-AD0B-AC62 because no identity-based policy allows the ec2:DescribeInstanceAttribute action. Encoded authorization failure message: 6v1rG9xg28XmntrTEkUsFUcZU4gRS_s8WVVksatNQrLlvNML_BmUb_MA5Ww0uxGKu-pw27ljwUY4yzTKmvTV0E7Kjfs2XGoDWqPTyWCgRumACNvzq3Sm3zZYi9B2SMoSiM9QT7LTDil5aNdESJlxway0ROHszmV9z7d23R96AByE7zZiUYr9XPg5AXYWpAJyT9IivZBaAbli72eEJXSPq3tC2ixbn-iF4qxTrSCzb1T_DXkcf8NYTBhHt6IMl-6mqg_heSgrUQOVyHuGrSBMh2CWZiM8e2gWDWldOX-_-oodO9K-aDCKNTa4Y_ykHrOo64CSGNL4b-8h2bzmbDDRJv2-lmN332LBzEA0ITlOvdP2EhBiqK62zuiT0fj_4jRQCjK9NKARNYTCE-FHkNt4pjYiLTz_tSrhLFrB6ww8ue62tcCnKQu3lwDeI6_XB8_0ZTp7TxPQM1mxNELmT0zpZBVftZ7W6OZpL8rCrJf5WMxtmyM8aPqadfnBeiSa7K2ItVTN4Lu0TFduvU8JIqQQwEE5V2e-_4LLgT15Ip96g69_skxMzkBVDVT9hP5TN90XyyOVo3IB0Pw",
+    "eventCategory": "Management",
+    "eventID": "EVENTID_73CF-11DF-E24D",
+    "eventName": "DescribeInstanceAttribute",
+    "eventSource": "ec2.amazonaws.com",
+    "eventTime": "2026-04-21T08:27:02Z",
+    "eventType": "AwsApiCall",
+    "eventVersion": "1.11",
+    "managementEvent": true,
+    "readOnly": true,
+    "recipientAccountId": "ACCOUNT_9E7B-54AF-AAC0",
+    "requestID": "REQUESTID_31E1-5678-74EF",
+    "requestParameters": {
+      "attribute": "userData",
+      "instanceId": "INSTANCEID_ADDE-6ECE-6A15"
+    },
+    "responseElements": null,
+    "sourceIPAddress": "IP_3296-6CC8-92D8",
+    "tlsDetails": {
+      "cipherSuite": "TLS_AES_128_GCM_SHA256",
+      "clientProvidedHostHeader": "ec2.us-east-1.amazonaws.com",
+      "tlsVersion": "TLSv1.3"
+    },
+    "userAgent": "stratus-red-team_cae81a42-c36d-4225-99d8-88666c3a945a",
+    "userIdentity": {
+      "accessKeyId": "ACCESSKEY_5515-3F96-593B",
+      "accountId": "ACCOUNT_9E7B-54AF-AAC0",
+      "arn": "arn:aws:sts::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_0D9D-B300-BDD3",
+      "principalId": "PRINCIPAL_A392-9F93-FC3B",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-04-21T08:26:58Z",
+          "mfaAuthenticated": "false"
+        },
+        "sessionIssuer": {
+          "accountId": "ACCOUNT_9E7B-54AF-AAC0",
+          "arn": "arn:aws:iam::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_3687-BCF1-7AE3",
+          "principalId": "PRINCIPAL_EC24-E191-6E58",
+          "type": "Role",
+          "userName": "USER_05D1-FAF8-F9CA"
+        }
+      },
+      "type": "AssumedRole"
+    }
+  },
+  {
+    "awsRegion": "us-east-1",
+    "errorCode": "Client.UnauthorizedOperation",
+    "errorMessage": "You are not authorized to perform this operation. User: arn:aws:sts::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_0D9D-B300-BDD3 is not authorized to perform: ec2:DescribeInstanceAttribute on resource: arn:aws:ec2:us-east-1:ACCOUNT_9E7B-54AF-AAC0:RESOURCE_7A0C-AD0B-AC62 because no identity-based policy allows the ec2:DescribeInstanceAttribute action. Encoded authorization failure message: J0Ykmer31rZhq0kQA8P6yUHozlNBaJPU91AQuoidp6dp4B8EDRBFSlYwor11wpmLkmKmKELXS0eOQ416qu0x2lySb4zNqAV69299kmoeSk-L7L65_H8z-yl295obaZyGY5b33aK4tjJCxSBJQ5UD-vsM-90EIwdo_6_c5Pky3ysGZoJuzJxmLJAegdu4RE66SXwEY1xNxjiRP4h9foJg9KRjpSTWCZzFb6_fMHOqNn5u52j8Hd7q4fVXXJ7QembpiwZ225qL82ZRZyX3CNU0uBtx9-HQfUoxGyIxV_6hueWxtgaIMW4CQZGyOiNUIe7PjQBoLCxtimVOm_fRB18-hDizqv9DdPEyEsNY4uTjeVYy5dhF5BGFRsYWQWNERB5ZwAS0W-7rpoAaYiB4DUJOnucyli0bUbemn2yV_u0ZDrr7mF3C9pzTiNad7w9QLAARmn6wo86soSHXgwy6zSl8gt3okyJMHL47lfYdjPpAk0l_EfunIkgI-fq8yqPC_Ve7Or-sqtNcfdEbEv1_9kh7pmfoogVwBjvINfRTACm_LoOtWztIZZ79vGwAn7VCMswDmZb9hqI6kww",
+    "eventCategory": "Management",
+    "eventID": "EVENTID_2114-5A38-0BB7",
+    "eventName": "DescribeInstanceAttribute",
+    "eventSource": "ec2.amazonaws.com",
+    "eventTime": "2026-04-21T08:27:01Z",
+    "eventType": "AwsApiCall",
+    "eventVersion": "1.11",
+    "managementEvent": true,
+    "readOnly": true,
+    "recipientAccountId": "ACCOUNT_9E7B-54AF-AAC0",
+    "requestID": "REQUESTID_A79D-5B78-8BAD",
+    "requestParameters": {
+      "attribute": "userData",
+      "instanceId": "INSTANCEID_72B7-E114-9730"
+    },
+    "responseElements": null,
+    "sourceIPAddress": "IP_3296-6CC8-92D8",
+    "tlsDetails": {
+      "cipherSuite": "TLS_AES_128_GCM_SHA256",
+      "clientProvidedHostHeader": "ec2.us-east-1.amazonaws.com",
+      "tlsVersion": "TLSv1.3"
+    },
+    "userAgent": "stratus-red-team_cae81a42-c36d-4225-99d8-88666c3a945a",
+    "userIdentity": {
+      "accessKeyId": "ACCESSKEY_5515-3F96-593B",
+      "accountId": "ACCOUNT_9E7B-54AF-AAC0",
+      "arn": "arn:aws:sts::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_0D9D-B300-BDD3",
+      "principalId": "PRINCIPAL_A392-9F93-FC3B",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-04-21T08:26:58Z",
+          "mfaAuthenticated": "false"
+        },
+        "sessionIssuer": {
+          "accountId": "ACCOUNT_9E7B-54AF-AAC0",
+          "arn": "arn:aws:iam::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_3687-BCF1-7AE3",
+          "principalId": "PRINCIPAL_EC24-E191-6E58",
+          "type": "Role",
+          "userName": "USER_05D1-FAF8-F9CA"
+        }
+      },
+      "type": "AssumedRole"
+    }
+  },
+  {
+    "awsRegion": "us-east-1",
+    "errorCode": "Client.UnauthorizedOperation",
+    "errorMessage": "You are not authorized to perform this operation. User: arn:aws:sts::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_0D9D-B300-BDD3 is not authorized to perform: ec2:DescribeInstanceAttribute on resource: arn:aws:ec2:us-east-1:ACCOUNT_9E7B-54AF-AAC0:RESOURCE_7A0C-AD0B-AC62 because no identity-based policy allows the ec2:DescribeInstanceAttribute action. Encoded authorization failure message: 3DjnA0CTl7Rku9Vw7y4-53kzCZgatnOMcBGPJWdxeOP66dWiso4sQt3rN4bPfZ2-3I4tGmqgAoBUcSDS8ppcuvmWYwVm2rFGgKhQK_C8xBA6t65G5TgcHy-lA_zIOZcj0cdIjrm3H9wxgaPoX8ZRRGPSBkqh1ICPGx2kkFJudQpieq3ISA_4QRq8YvZJvt62TVEfkZQ-1kwXNBKOZ5f5UTtZhDEV7zlYuxS-UEx0_gunH9LG1ums_LJlseHa4zKlMGD4CE0XTbYWj0I4IZ7y7qDlw0BmEe3Q6HOns91uWGx6hFcTWrTL-2ipNXVeprlbXu9bZ1Al0d39FaQTsk64BEUNPRFwY8O9QXPQH-P57PSf6cZBlCAHMyXEMoCKShXi_y9Wy6a3DUrsz3Hf_XlfSN03q3a41YJurp-3bx9otgtazhaXvf7NseDHRarJJl4xPsHfLkZoS81jQavPdfCGFyNcZza_UUA2cOcb7b46gVA-rM8sNtrT9Fxhh_VsPS_K6vv_KmXVGWrR0GJtFoP2eF7UGaUmNOM1Yz0IQTmAZ8CBs_CRSo3mDC02MCqWi6HpJjsNfOJ7z_gk",
+    "eventCategory": "Management",
+    "eventID": "EVENTID_7F32-98BE-D462",
+    "eventName": "DescribeInstanceAttribute",
+    "eventSource": "ec2.amazonaws.com",
+    "eventTime": "2026-04-21T08:27:01Z",
+    "eventType": "AwsApiCall",
+    "eventVersion": "1.11",
+    "managementEvent": true,
+    "readOnly": true,
+    "recipientAccountId": "ACCOUNT_9E7B-54AF-AAC0",
+    "requestID": "REQUESTID_2372-15E0-FA83",
+    "requestParameters": {
+      "attribute": "userData",
+      "instanceId": "INSTANCEID_ADFF-C254-5D9F"
+    },
+    "responseElements": null,
+    "sourceIPAddress": "IP_3296-6CC8-92D8",
+    "tlsDetails": {
+      "cipherSuite": "TLS_AES_128_GCM_SHA256",
+      "clientProvidedHostHeader": "ec2.us-east-1.amazonaws.com",
+      "tlsVersion": "TLSv1.3"
+    },
+    "userAgent": "stratus-red-team_cae81a42-c36d-4225-99d8-88666c3a945a",
+    "userIdentity": {
+      "accessKeyId": "ACCESSKEY_5515-3F96-593B",
+      "accountId": "ACCOUNT_9E7B-54AF-AAC0",
+      "arn": "arn:aws:sts::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_0D9D-B300-BDD3",
+      "principalId": "PRINCIPAL_A392-9F93-FC3B",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-04-21T08:26:58Z",
+          "mfaAuthenticated": "false"
+        },
+        "sessionIssuer": {
+          "accountId": "ACCOUNT_9E7B-54AF-AAC0",
+          "arn": "arn:aws:iam::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_3687-BCF1-7AE3",
+          "principalId": "PRINCIPAL_EC24-E191-6E58",
+          "type": "Role",
+          "userName": "USER_05D1-FAF8-F9CA"
+        }
+      },
+      "type": "AssumedRole"
+    }
+  },
+  {
+    "awsRegion": "us-east-1",
+    "errorCode": "Client.UnauthorizedOperation",
+    "errorMessage": "You are not authorized to perform this operation. User: arn:aws:sts::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_0D9D-B300-BDD3 is not authorized to perform: ec2:DescribeInstanceAttribute on resource: arn:aws:ec2:us-east-1:ACCOUNT_9E7B-54AF-AAC0:RESOURCE_7A0C-AD0B-AC62 because no identity-based policy allows the ec2:DescribeInstanceAttribute action. Encoded authorization failure message: yf3gsCW2GE9v6uLrWuPIWHifB3E8TWQyEZMeRWWJkcY7wmH0jnzL_QqLLdXKutI7faDXR9ZbCbM1GqHhO_WspNPFnyoHqhjAiyzxPseF_a7DV6n-MzeD5SEUj-3zJKgld2F0Fxys49RAsg60f03LofnCaj35it4LfqEHHveTuKxIp3p7X7Bpss4RZpzqZlsr6dhvzqlgGHGtdWWB2ath-pEJ-vtUmcP-ThuRvBR78dRitBNbVSEqqTKhfCJfb-gH1Bpk77MpCNzqsHstN-6BDpJAPqOC48jrPymsxHVXJ5zhaars2DAP5TwuPFNy4lrYUnZAF6bhA-MQXcEgkvvk_ZQMtkEBm_VVD4z9uDKFXF8_mFsd-fU5V1rj9fvn-eflGxa-T4Fnp31_p9ImP-QuBI9EXdmzuxiBiHMd3Wpqs7zIbaCc1cRNgJrICWxpjdUn4z4-mKnknzzETO7XZocp8qRqctCgil8zQ1mKQ61GC5Fcgscv7hTzHmj3gPPTqadk3Y3vatqjDKlDhsyuKCuSvrB7Hlbg3nrUZFoh0unziv4RwjhlGHzIe0sLqsiRoKc3x_4K0tqmAaA",
+    "eventCategory": "Management",
+    "eventID": "EVENTID_4CA5-FC26-3B16",
+    "eventName": "DescribeInstanceAttribute",
+    "eventSource": "ec2.amazonaws.com",
+    "eventTime": "2026-04-21T08:27:01Z",
+    "eventType": "AwsApiCall",
+    "eventVersion": "1.11",
+    "managementEvent": true,
+    "readOnly": true,
+    "recipientAccountId": "ACCOUNT_9E7B-54AF-AAC0",
+    "requestID": "REQUESTID_6782-3E7C-3B40",
+    "requestParameters": {
+      "attribute": "userData",
+      "instanceId": "INSTANCEID_A239-1FBD-B9FF"
+    },
+    "responseElements": null,
+    "sourceIPAddress": "IP_3296-6CC8-92D8",
+    "tlsDetails": {
+      "cipherSuite": "TLS_AES_128_GCM_SHA256",
+      "clientProvidedHostHeader": "ec2.us-east-1.amazonaws.com",
+      "tlsVersion": "TLSv1.3"
+    },
+    "userAgent": "stratus-red-team_cae81a42-c36d-4225-99d8-88666c3a945a",
+    "userIdentity": {
+      "accessKeyId": "ACCESSKEY_5515-3F96-593B",
+      "accountId": "ACCOUNT_9E7B-54AF-AAC0",
+      "arn": "arn:aws:sts::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_0D9D-B300-BDD3",
+      "principalId": "PRINCIPAL_A392-9F93-FC3B",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-04-21T08:26:58Z",
+          "mfaAuthenticated": "false"
+        },
+        "sessionIssuer": {
+          "accountId": "ACCOUNT_9E7B-54AF-AAC0",
+          "arn": "arn:aws:iam::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_3687-BCF1-7AE3",
+          "principalId": "PRINCIPAL_EC24-E191-6E58",
+          "type": "Role",
+          "userName": "USER_05D1-FAF8-F9CA"
+        }
+      },
+      "type": "AssumedRole"
+    }
+  },
+  {
+    "awsRegion": "us-east-1",
+    "errorCode": "Client.UnauthorizedOperation",
+    "errorMessage": "You are not authorized to perform this operation. User: arn:aws:sts::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_0D9D-B300-BDD3 is not authorized to perform: ec2:DescribeInstanceAttribute on resource: arn:aws:ec2:us-east-1:ACCOUNT_9E7B-54AF-AAC0:RESOURCE_7A0C-AD0B-AC62 because no identity-based policy allows the ec2:DescribeInstanceAttribute action. Encoded authorization failure message: 9rc8Nwt9WsO32JxOQfAScGrWjSDuJ4RHCujRHE6WM7bSj23JkazT9ZPkglgj04i6LzTco2psX16AGswc9Xgk2ZXqBlAAeSGODShwv3-3bjlMKTTwikL_mWj6nAVdtA7Y2VuGAJFr9Mvfm9L1pXxOmxFvoE_sp7sMwwi3bMHnlS4u0xx5vyvRBgRNFiW3580hzFJPoATsMmWxULQdNJLjhN_DYnSq-XdsX8d07iw1_2FqA85_AWmTmy80WyehRmrR3AqeI0KioZB6fPCkfNjHRUS_wvuRzTi075hOONyCtskmtTY8bgVDVebce8ihhkZx3IzpUdsG_k6zrOASbLIZMswYIml61TdNzup7PwjUCpLEEirj0DmLNZ3TKMK56PwpFVnlwgsGl2QMCY_TNQwmhrMHyMGAeNAFjynCN5bez_927MHMgvQH-zuqKexBGeDXsgxS_shEDeDXaVHSoWM207M3cbIu-e4aHaItsrea0qT_i3s7dE9TZ-Kyy4PuTVhSwlFV_0Nv9-ViqOqPkS2AK6agb8RtkzmlnUnKjojhcvkSAHafgSuvekO5aQ4QxXoAgaVlT11vrOc",
+    "eventCategory": "Management",
+    "eventID": "EVENTID_C13C-83DB-4BA2",
+    "eventName": "DescribeInstanceAttribute",
+    "eventSource": "ec2.amazonaws.com",
+    "eventTime": "2026-04-21T08:27:00Z",
+    "eventType": "AwsApiCall",
+    "eventVersion": "1.11",
+    "managementEvent": true,
+    "readOnly": true,
+    "recipientAccountId": "ACCOUNT_9E7B-54AF-AAC0",
+    "requestID": "REQUESTID_A38B-574E-D20C",
+    "requestParameters": {
+      "attribute": "userData",
+      "instanceId": "INSTANCEID_04A6-EE61-A82F"
+    },
+    "responseElements": null,
+    "sourceIPAddress": "IP_3296-6CC8-92D8",
+    "tlsDetails": {
+      "cipherSuite": "TLS_AES_128_GCM_SHA256",
+      "clientProvidedHostHeader": "ec2.us-east-1.amazonaws.com",
+      "tlsVersion": "TLSv1.3"
+    },
+    "userAgent": "stratus-red-team_cae81a42-c36d-4225-99d8-88666c3a945a",
+    "userIdentity": {
+      "accessKeyId": "ACCESSKEY_5515-3F96-593B",
+      "accountId": "ACCOUNT_9E7B-54AF-AAC0",
+      "arn": "arn:aws:sts::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_0D9D-B300-BDD3",
+      "principalId": "PRINCIPAL_A392-9F93-FC3B",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-04-21T08:26:58Z",
+          "mfaAuthenticated": "false"
+        },
+        "sessionIssuer": {
+          "accountId": "ACCOUNT_9E7B-54AF-AAC0",
+          "arn": "arn:aws:iam::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_3687-BCF1-7AE3",
+          "principalId": "PRINCIPAL_EC24-E191-6E58",
+          "type": "Role",
+          "userName": "USER_05D1-FAF8-F9CA"
+        }
+      },
+      "type": "AssumedRole"
+    }
+  },
+  {
+    "awsRegion": "us-east-1",
+    "errorCode": "Client.UnauthorizedOperation",
+    "errorMessage": "You are not authorized to perform this operation. User: arn:aws:sts::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_0D9D-B300-BDD3 is not authorized to perform: ec2:DescribeInstanceAttribute on resource: arn:aws:ec2:us-east-1:ACCOUNT_9E7B-54AF-AAC0:RESOURCE_7A0C-AD0B-AC62 because no identity-based policy allows the ec2:DescribeInstanceAttribute action. Encoded authorization failure message: n-HyYGRaoHWlQf5J9R1vlgUzW2gL6YdB2U98AL3GRLRSqf40eMPJHxOBc7AkXuFxJ__btGRVZHuswet_XPaUvXdMYb6rsMcCjZcZ-N6KjZ-imDZhq1ZeRzEboHOd1xbtikTpKy_3pVEXMF1JZ4TE4Yf0K9DVqCoD8ld0PVhHxPG3R9UPCVVv1ebXsOZ0x1stX5FhTkMRFLWCMo_-_huz8yU0pn_LFxrkJ64LfKlRo9N0XqqoZmXIHoUg3XA7PTKNvUInVl9Nqkm2w4vaNo4_h4O-MWl90RprnlN9FOH-20NRdUdqxjB0QVyCdIxE8Kb6hT3HqLYEOhOkCXbd86cBMuZT3n2-ZHt6-nZyXEyPCgjkss06cMm_YmxDSTeB1wnR90G7lQYTsG51s8jIwMZCnqh5lDdyEO5fh4ZS2t1gzXpsku8jxnL08Oaf0eT-sHBFW5UCeFnEHfJCoULlNG575UGOIuMzK0kQYxWqzijoE9gmJObseNcmt93WlW6eOFuo-NtgzgIZ3Y6okwrgEpXb_ogpyNpSCpvmEeul-YS1zfeH_2RLAEeMOioriLvVBF67fFacB5UjKc4",
+    "eventCategory": "Management",
+    "eventID": "EVENTID_65D2-A460-60B3",
+    "eventName": "DescribeInstanceAttribute",
+    "eventSource": "ec2.amazonaws.com",
+    "eventTime": "2026-04-21T08:27:00Z",
+    "eventType": "AwsApiCall",
+    "eventVersion": "1.11",
+    "managementEvent": true,
+    "readOnly": true,
+    "recipientAccountId": "ACCOUNT_9E7B-54AF-AAC0",
+    "requestID": "REQUESTID_9C18-96C4-2D1A",
+    "requestParameters": {
+      "attribute": "userData",
+      "instanceId": "INSTANCEID_7233-9A94-81BF"
+    },
+    "responseElements": null,
+    "sourceIPAddress": "IP_3296-6CC8-92D8",
+    "tlsDetails": {
+      "cipherSuite": "TLS_AES_128_GCM_SHA256",
+      "clientProvidedHostHeader": "ec2.us-east-1.amazonaws.com",
+      "tlsVersion": "TLSv1.3"
+    },
+    "userAgent": "stratus-red-team_cae81a42-c36d-4225-99d8-88666c3a945a",
+    "userIdentity": {
+      "accessKeyId": "ACCESSKEY_5515-3F96-593B",
+      "accountId": "ACCOUNT_9E7B-54AF-AAC0",
+      "arn": "arn:aws:sts::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_0D9D-B300-BDD3",
+      "principalId": "PRINCIPAL_A392-9F93-FC3B",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-04-21T08:26:58Z",
+          "mfaAuthenticated": "false"
+        },
+        "sessionIssuer": {
+          "accountId": "ACCOUNT_9E7B-54AF-AAC0",
+          "arn": "arn:aws:iam::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_3687-BCF1-7AE3",
+          "principalId": "PRINCIPAL_EC24-E191-6E58",
+          "type": "Role",
+          "userName": "USER_05D1-FAF8-F9CA"
+        }
+      },
+      "type": "AssumedRole"
+    }
+  },
+  {
+    "additionalEventData": {
+      "ExtendedRequestId": "MTp1cy1lYXN0LTE6UzoxNzc2NzYwMDE4MzYzOlI6ZjNNVjlzcXQ=",
+      "RequestDetails": {
+        "awsServingRegion": "us-east-1",
+        "endpointType": "regional"
+      }
+    },
+    "awsRegion": "us-east-1",
+    "eventCategory": "Management",
+    "eventID": "EVENTID_A7CA-5030-2CEE",
+    "eventName": "AssumeRole",
+    "eventSource": "sts.amazonaws.com",
+    "eventTime": "2026-04-21T08:26:58Z",
+    "eventType": "AwsApiCall",
+    "eventVersion": "1.11",
+    "managementEvent": true,
+    "readOnly": true,
+    "recipientAccountId": "ACCOUNT_9E7B-54AF-AAC0",
+    "requestID": "REQUESTID_3D81-B2EB-F698",
+    "requestParameters": {
+      "durationSeconds": 900,
+      "roleArn": "arn:aws:iam::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_3687-BCF1-7AE3",
+      "roleSessionName": "aws-go-sdk-1776760019214440119"
+    },
+    "resources": [
+      {
+        "ARN": "arn:aws:iam::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_3687-BCF1-7AE3",
+        "accountId": "ACCOUNT_9E7B-54AF-AAC0",
+        "type": "AWS::IAM::Role"
+      }
+    ],
+    "responseElements": {
+      "assumedRoleUser": {
+        "arn": "arn:aws:sts::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_0D9D-B300-BDD3",
+        "assumedRoleId": "AROAV47MCUL5VYN6ZR45J:aws-go-sdk-1776760019214440119"
+      },
+      "credentials": {
+        "accessKeyId": "ACCESSKEY_DC05-00C0-8AAB",
+        "expiration": "Apr 21, 2026, 8:41:58 AM",
+        "sessionToken": "REDACTED_92B5-8C96-861D"
+      }
+    },
+    "sourceIPAddress": "IP_3296-6CC8-92D8",
+    "tlsDetails": {
+      "cipherSuite": "TLS_AES_128_GCM_SHA256",
+      "clientProvidedHostHeader": "sts.us-east-1.amazonaws.com",
+      "tlsVersion": "TLSv1.3"
+    },
+    "userAgent": "stratus-red-team_cae81a42-c36d-4225-99d8-88666c3a945a",
+    "userIdentity": {
+      "accessKeyId": "ACCESSKEY_4441-6385-8CDE",
+      "accountId": "ACCOUNT_9E7B-54AF-AAC0",
+      "arn": "arn:aws:iam::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_49AD-C89D-87F9",
+      "principalId": "PRINCIPAL_6ACC-0DDD-F1E2",
+      "type": "IAMUser",
+      "userName": "USER_488F-BA78-9E22"
+    }
+  },
+  {
+    "additionalEventData": {
+      "ExtendedRequestId": "MTp1cy1lYXN0LTE6UzoxNzc2NzYwMDE4NTgwOlI6VkdJd2ppZ08=",
+      "RequestDetails": {
+        "awsServingRegion": "us-east-1",
+        "endpointType": "regional"
+      }
+    },
+    "awsRegion": "us-east-1",
+    "eventCategory": "Management",
+    "eventID": "EVENTID_637F-69F1-4AAE",
+    "eventName": "AssumeRole",
+    "eventSource": "sts.amazonaws.com",
+    "eventTime": "2026-04-21T08:26:58Z",
+    "eventType": "AwsApiCall",
+    "eventVersion": "1.11",
+    "managementEvent": true,
+    "readOnly": true,
+    "recipientAccountId": "ACCOUNT_9E7B-54AF-AAC0",
+    "requestID": "REQUESTID_BA03-4000-EA99",
+    "requestParameters": {
+      "durationSeconds": 900,
+      "roleArn": "arn:aws:iam::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_3687-BCF1-7AE3",
+      "roleSessionName": "aws-go-sdk-1776760019214440119"
+    },
+    "resources": [
+      {
+        "ARN": "arn:aws:iam::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_3687-BCF1-7AE3",
+        "accountId": "ACCOUNT_9E7B-54AF-AAC0",
+        "type": "AWS::IAM::Role"
+      }
+    ],
+    "responseElements": {
+      "assumedRoleUser": {
+        "arn": "arn:aws:sts::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_0D9D-B300-BDD3",
+        "assumedRoleId": "AROAV47MCUL5VYN6ZR45J:aws-go-sdk-1776760019214440119"
+      },
+      "credentials": {
+        "accessKeyId": "ACCESSKEY_5515-3F96-593B",
+        "expiration": "Apr 21, 2026, 8:41:58 AM",
+        "sessionToken": "REDACTED_D7D5-AA13-3E0C"
+      }
+    },
+    "sourceIPAddress": "IP_3296-6CC8-92D8",
+    "tlsDetails": {
+      "cipherSuite": "TLS_AES_128_GCM_SHA256",
+      "clientProvidedHostHeader": "sts.us-east-1.amazonaws.com",
+      "tlsVersion": "TLSv1.3"
+    },
+    "userAgent": "stratus-red-team_cae81a42-c36d-4225-99d8-88666c3a945a",
+    "userIdentity": {
+      "accessKeyId": "ACCESSKEY_4441-6385-8CDE",
+      "accountId": "ACCOUNT_9E7B-54AF-AAC0",
+      "arn": "arn:aws:iam::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_49AD-C89D-87F9",
+      "principalId": "PRINCIPAL_6ACC-0DDD-F1E2",
+      "type": "IAMUser",
+      "userName": "USER_488F-BA78-9E22"
+    }
+  }
+]

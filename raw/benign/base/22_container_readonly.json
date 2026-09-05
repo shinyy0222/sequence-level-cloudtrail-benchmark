@@ -1,0 +1,101 @@
+{
+  "Records": [
+    {
+      "eventVersion": "1.11",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "PRINCIPAL_6ACC-0DDD-F1E2",
+        "arn": "arn:aws:iam::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_49AD-C89D-87F9",
+        "accountId": "ACCOUNT_9E7B-54AF-AAC0",
+        "accessKeyId": "ACCESSKEY_4441-6385-8CDE",
+        "userName": "USER_488F-BA78-9E22"
+      },
+      "eventTime": "2026-04-22T11:15:12Z",
+      "eventSource": "ecs.amazonaws.com",
+      "eventName": "ListClusters",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "IP_3296-6CC8-92D8",
+      "userAgent": "Boto3/1.42.93 md/Botocore#1.42.93 ua/2.1 os/linux#IP_04B7-A84E-2925-microsoft-standard-WSL2 md/arch#x86_64 lang/python#3.12.3 md/pyimpl#CPython m/Z,b,D cfg/retry-mode#legacy Botocore/1.42.93",
+      "requestParameters": null,
+      "responseElements": null,
+      "requestID": "REQUESTID_4A01-57FA-4BF6",
+      "eventID": "EVENTID_349B-2A7B-E1D0",
+      "readOnly": true,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "ACCOUNT_9E7B-54AF-AAC0",
+      "eventCategory": "Management",
+      "tlsDetails": {
+        "tlsVersion": "TLSv1.3",
+        "cipherSuite": "TLS_AES_128_GCM_SHA256",
+        "clientProvidedHostHeader": "ecs.us-east-1.amazonaws.com"
+      }
+    },
+    {
+      "eventVersion": "1.11",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "PRINCIPAL_6ACC-0DDD-F1E2",
+        "arn": "arn:aws:iam::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_49AD-C89D-87F9",
+        "accountId": "ACCOUNT_9E7B-54AF-AAC0",
+        "accessKeyId": "ACCESSKEY_4441-6385-8CDE",
+        "userName": "USER_488F-BA78-9E22"
+      },
+      "eventTime": "2026-04-22T11:15:13Z",
+      "eventSource": "ecs.amazonaws.com",
+      "eventName": "ListServices",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "IP_3296-6CC8-92D8",
+      "userAgent": "Boto3/1.42.93 md/Botocore#1.42.93 ua/2.1 os/linux#IP_04B7-A84E-2925-microsoft-standard-WSL2 md/arch#x86_64 lang/python#3.12.3 md/pyimpl#CPython m/Z,b,D cfg/retry-mode#legacy Botocore/1.42.93",
+      "errorCode": "ClusterNotFoundException",
+      "errorMessage": "Cluster not found.",
+      "requestParameters": {
+        "cluster": "default"
+      },
+      "responseElements": null,
+      "requestID": "REQUESTID_ADD0-26FD-270B",
+      "eventID": "EVENTID_85F5-4DCA-A1C6",
+      "readOnly": true,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "ACCOUNT_9E7B-54AF-AAC0",
+      "eventCategory": "Management",
+      "tlsDetails": {
+        "tlsVersion": "TLSv1.3",
+        "cipherSuite": "TLS_AES_128_GCM_SHA256",
+        "clientProvidedHostHeader": "ecs.us-east-1.amazonaws.com"
+      }
+    },
+    {
+      "eventVersion": "1.11",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "PRINCIPAL_6ACC-0DDD-F1E2",
+        "arn": "arn:aws:iam::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_49AD-C89D-87F9",
+        "accountId": "ACCOUNT_9E7B-54AF-AAC0",
+        "accessKeyId": "ACCESSKEY_4441-6385-8CDE",
+        "userName": "USER_488F-BA78-9E22"
+      },
+      "eventTime": "2026-04-22T11:15:13Z",
+      "eventSource": "ecs.amazonaws.com",
+      "eventName": "ListTaskDefinitions",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "IP_3296-6CC8-92D8",
+      "userAgent": "Boto3/1.42.93 md/Botocore#1.42.93 ua/2.1 os/linux#IP_04B7-A84E-2925-microsoft-standard-WSL2 md/arch#x86_64 lang/python#3.12.3 md/pyimpl#CPython m/Z,b,D cfg/retry-mode#legacy Botocore/1.42.93",
+      "requestParameters": null,
+      "responseElements": null,
+      "requestID": "REQUESTID_8DB3-11C3-7887",
+      "eventID": "EVENTID_E7EA-4E93-ED9C",
+      "readOnly": true,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "ACCOUNT_9E7B-54AF-AAC0",
+      "eventCategory": "Management",
+      "tlsDetails": {
+        "tlsVersion": "TLSv1.3",
+        "cipherSuite": "TLS_AES_128_GCM_SHA256",
+        "clientProvidedHostHeader": "ecs.us-east-1.amazonaws.com"
+      }
+    }
+  ]
+}

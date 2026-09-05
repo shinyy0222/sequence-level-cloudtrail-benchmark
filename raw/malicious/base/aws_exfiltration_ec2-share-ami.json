@@ -1,0 +1,48 @@
+[
+  {
+    "awsRegion": "us-east-1",
+    "eventCategory": "Management",
+    "eventID": "EVENTID_C015-E643-7BDF",
+    "eventName": "ModifyImageAttribute",
+    "eventSource": "ec2.amazonaws.com",
+    "eventTime": "2026-04-22T05:06:03Z",
+    "eventType": "AwsApiCall",
+    "eventVersion": "1.11",
+    "managementEvent": true,
+    "readOnly": false,
+    "recipientAccountId": "ACCOUNT_9E7B-54AF-AAC0",
+    "requestID": "REQUESTID_9E45-86AB-DCDF",
+    "requestParameters": {
+      "attributeType": "launchPermission",
+      "imageId": "IMAGEID_C89E-44AB-9E40",
+      "launchPermission": {
+        "add": {
+          "items": [
+            {
+              "userId": "ACCOUNT_5B8B-AEAA-AF86"
+            }
+          ]
+        }
+      }
+    },
+    "responseElements": {
+      "_return": true,
+      "requestId": "REQUESTID_9E45-86AB-DCDF"
+    },
+    "sourceIPAddress": "IP_3296-6CC8-92D8",
+    "tlsDetails": {
+      "cipherSuite": "TLS_AES_128_GCM_SHA256",
+      "clientProvidedHostHeader": "ec2.us-east-1.amazonaws.com",
+      "tlsVersion": "TLSv1.3"
+    },
+    "userAgent": "stratus-red-team_7b5c31ef-34a4-412c-a203-41f28eaa5207",
+    "userIdentity": {
+      "accessKeyId": "ACCESSKEY_4441-6385-8CDE",
+      "accountId": "ACCOUNT_9E7B-54AF-AAC0",
+      "arn": "arn:aws:iam::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_49AD-C89D-87F9",
+      "principalId": "PRINCIPAL_6ACC-0DDD-F1E2",
+      "type": "IAMUser",
+      "userName": "USER_488F-BA78-9E22"
+    }
+  }
+]

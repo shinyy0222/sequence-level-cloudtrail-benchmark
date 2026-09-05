@@ -1,0 +1,122 @@
+[
+  {
+    "awsRegion": "us-east-1",
+    "eventCategory": "Management",
+    "eventID": "EVENTID_0D5C-FEB9-212A",
+    "eventName": "PutEventSelectors",
+    "eventSource": "cloudtrail.amazonaws.com",
+    "eventTime": "2026-04-21T07:33:36Z",
+    "eventType": "AwsApiCall",
+    "eventVersion": "1.11",
+    "managementEvent": true,
+    "readOnly": false,
+    "recipientAccountId": "ACCOUNT_9E7B-54AF-AAC0",
+    "requestID": "REQUESTID_BAB9-5BF5-56DB",
+    "requestParameters": {
+      "eventSelectors": [
+        {
+          "dataResources": [],
+          "excludeManagementEventSources": [],
+          "includeManagementEvents": true,
+          "readWriteType": "All"
+        }
+      ],
+      "trailName": "TRAILNAME_4608-A690-5A6F"
+    },
+    "responseElements": {
+      "eventSelectors": [
+        {
+          "dataResources": [],
+          "excludeManagementEventSources": [],
+          "includeManagementEvents": true,
+          "readWriteType": "All"
+        }
+      ],
+      "trailARN": "arn:aws:cloudtrail:us-east-1:ACCOUNT_9E7B-54AF-AAC0:RESOURCE_F32A-F6E6-45D2"
+    },
+    "sourceIPAddress": "IP_3296-6CC8-92D8",
+    "tlsDetails": {
+      "cipherSuite": "TLS_AES_128_GCM_SHA256",
+      "clientProvidedHostHeader": "cloudtrail.us-east-1.amazonaws.com",
+      "tlsVersion": "TLSv1.3"
+    },
+    "userAgent": "stratus-red-team_410e773a-1276-427a-8e60-f6880b5bd487",
+    "userIdentity": {
+      "accessKeyId": "ACCESSKEY_4441-6385-8CDE",
+      "accountId": "ACCOUNT_9E7B-54AF-AAC0",
+      "arn": "arn:aws:iam::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_49AD-C89D-87F9",
+      "principalId": "PRINCIPAL_6ACC-0DDD-F1E2",
+      "type": "IAMUser",
+      "userName": "USER_488F-BA78-9E22"
+    }
+  },
+  {
+    "awsRegion": "us-east-1",
+    "eventCategory": "Management",
+    "eventID": "EVENTID_BFF9-36BC-AC85",
+    "eventName": "PutEventSelectors",
+    "eventSource": "cloudtrail.amazonaws.com",
+    "eventTime": "2026-04-21T07:33:35Z",
+    "eventType": "AwsApiCall",
+    "eventVersion": "1.11",
+    "managementEvent": true,
+    "readOnly": false,
+    "recipientAccountId": "ACCOUNT_9E7B-54AF-AAC0",
+    "requestID": "REQUESTID_1722-D80E-9FDD",
+    "requestParameters": {
+      "eventSelectors": [
+        {
+          "dataResources": [
+            {
+              "type": "AWS::S3::Object",
+              "values": []
+            },
+            {
+              "type": "AWS::Lambda::Function",
+              "values": []
+            }
+          ],
+          "excludeManagementEventSources": [],
+          "includeManagementEvents": false,
+          "readWriteType": "ReadOnly"
+        }
+      ],
+      "trailName": "TRAILNAME_4608-A690-5A6F"
+    },
+    "responseElements": {
+      "eventSelectors": [
+        {
+          "dataResources": [
+            {
+              "type": "AWS::S3::Object",
+              "values": []
+            },
+            {
+              "type": "AWS::Lambda::Function",
+              "values": []
+            }
+          ],
+          "excludeManagementEventSources": [],
+          "includeManagementEvents": false,
+          "readWriteType": "ReadOnly"
+        }
+      ],
+      "trailARN": "arn:aws:cloudtrail:us-east-1:ACCOUNT_9E7B-54AF-AAC0:RESOURCE_F32A-F6E6-45D2"
+    },
+    "sourceIPAddress": "IP_3296-6CC8-92D8",
+    "tlsDetails": {
+      "cipherSuite": "TLS_AES_128_GCM_SHA256",
+      "clientProvidedHostHeader": "cloudtrail.us-east-1.amazonaws.com",
+      "tlsVersion": "TLSv1.3"
+    },
+    "userAgent": "stratus-red-team_410e773a-1276-427a-8e60-f6880b5bd487",
+    "userIdentity": {
+      "accessKeyId": "ACCESSKEY_4441-6385-8CDE",
+      "accountId": "ACCOUNT_9E7B-54AF-AAC0",
+      "arn": "arn:aws:iam::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_49AD-C89D-87F9",
+      "principalId": "PRINCIPAL_6ACC-0DDD-F1E2",
+      "type": "IAMUser",
+      "userName": "USER_488F-BA78-9E22"
+    }
+  }
+]

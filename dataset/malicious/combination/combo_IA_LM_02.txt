@@ -1,5 +1,5 @@
 signin.amazonaws.com:ConsoleLogin
 ec2.amazonaws.com:EnableSerialConsoleAccess
-ec2.amazonaws.com:SendSerialConsoleSSHPublicKey
-ec2.amazonaws.com:SendSerialConsoleSSHPublicKey
-ec2.amazonaws.com:SendSerialConsoleSSHPublicKey
+ec2-instance-connect.amazonaws.com:SendSerialConsoleSSHPublicKey
+ec2-instance-connect.amazonaws.com:SendSerialConsoleSSHPublicKey
+ec2-instance-connect.amazonaws.com:SendSerialConsoleSSHPublicKey

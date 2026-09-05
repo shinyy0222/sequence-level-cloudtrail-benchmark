@@ -1,0 +1,93 @@
+[
+  {
+    "awsRegion": "us-east-1",
+    "eventCategory": "Management",
+    "eventID": "EVENTID_271F-67DF-2A13",
+    "eventName": "UpdateFunctionConfiguration20150331v2",
+    "eventSource": "lambda.amazonaws.com",
+    "eventTime": "2026-04-22T10:00:45Z",
+    "eventType": "AwsApiCall",
+    "eventVersion": "1.11",
+    "managementEvent": true,
+    "readOnly": false,
+    "recipientAccountId": "ACCOUNT_9E7B-54AF-AAC0",
+    "requestID": "REQUESTID_8034-8906-4014",
+    "requestParameters": {
+      "environment": {},
+      "functionName": "FUNCTIONNAME_4D2A-3015-5E3A",
+      "layers": [
+        "arn:aws:lambda:us-east-1:ACCOUNT_9E7B-54AF-AAC0:RESOURCE_1016-9AAD-A63B"
+      ]
+    },
+    "resources": [
+      {
+        "ARN": "arn:aws:lambda:us-east-1:ACCOUNT_9E7B-54AF-AAC0:RESOURCE_2FCD-22C9-49B3",
+        "accountId": "ACCOUNT_9E7B-54AF-AAC0",
+        "type": "function"
+      }
+    ],
+    "responseElements": {
+      "architectures": [
+        "x86_64"
+      ],
+      "codeSha256": "yoqgXJ3G1ROsFXLUfkxIKHbCiKf2eKCiIkxoktNUoNE=",
+      "codeSize": 258,
+      "description": "",
+      "environment": {},
+      "ephemeralStorage": {
+        "size": 512
+      },
+      "functionArn": "arn:aws:lambda:us-east-1:ACCOUNT_9E7B-54AF-AAC0:RESOURCE_2FCD-22C9-49B3",
+      "functionName": "FUNCTIONNAME_C060-EF92-9065",
+      "handler": "stratus-red-team-lambda-layer-simpleLambda.handler",
+      "lastModified": "2026-04-22T10:00:45.000+0000",
+      "lastUpdateStatus": "InProgress",
+      "lastUpdateStatusReason": "The function is being created.",
+      "lastUpdateStatusReasonCode": "Creating",
+      "layers": [
+        {
+          "arn": "arn:aws:lambda:us-east-1:ACCOUNT_9E7B-54AF-AAC0:RESOURCE_1016-9AAD-A63B",
+          "codeSize": 2120,
+          "uncompressedCodeSize": 2672
+        }
+      ],
+      "loggingConfig": {
+        "logFormat": "Text",
+        "logGroup": "/aws/lambda/stratus-red-team-lambda-layer-simpleLambda"
+      },
+      "memorySize": 128,
+      "packageType": "Zip",
+      "revisionId": "UUID_604D-2D74-DA33",
+      "role": "arn:aws:iam::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_A987-41C6-951E",
+      "runtime": "python3.10",
+      "runtimeVersionConfig": {
+        "runtimeVersionArn": "arn:aws:lambda:us-east-1::RESOURCE_811C-A06B-E6D3"
+      },
+      "snapStart": {
+        "applyOn": "None",
+        "optimizationStatus": "Off"
+      },
+      "state": "Active",
+      "timeout": 20,
+      "tracingConfig": {
+        "mode": "PassThrough"
+      },
+      "version": "$LATEST"
+    },
+    "sourceIPAddress": "IP_3296-6CC8-92D8",
+    "tlsDetails": {
+      "cipherSuite": "TLS_AES_128_GCM_SHA256",
+      "clientProvidedHostHeader": "lambda.us-east-1.amazonaws.com",
+      "tlsVersion": "TLSv1.3"
+    },
+    "userAgent": "stratus-red-team_255216df-0241-4713-a637-45d5a663da71",
+    "userIdentity": {
+      "accessKeyId": "ACCESSKEY_4441-6385-8CDE",
+      "accountId": "ACCOUNT_9E7B-54AF-AAC0",
+      "arn": "arn:aws:iam::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_49AD-C89D-87F9",
+      "principalId": "PRINCIPAL_6ACC-0DDD-F1E2",
+      "type": "IAMUser",
+      "userName": "USER_488F-BA78-9E22"
+    }
+  }
+]

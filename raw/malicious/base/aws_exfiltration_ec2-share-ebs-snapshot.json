@@ -1,0 +1,48 @@
+[
+  {
+    "awsRegion": "us-east-1",
+    "eventCategory": "Management",
+    "eventID": "EVENTID_3C4F-A542-3B87",
+    "eventName": "ModifySnapshotAttribute",
+    "eventSource": "ec2.amazonaws.com",
+    "eventTime": "2026-04-22T05:12:13Z",
+    "eventType": "AwsApiCall",
+    "eventVersion": "1.11",
+    "managementEvent": true,
+    "readOnly": false,
+    "recipientAccountId": "ACCOUNT_9E7B-54AF-AAC0",
+    "requestID": "REQUESTID_89A9-BEA0-7219",
+    "requestParameters": {
+      "attributeType": "CREATE_VOLUME_PERMISSION",
+      "createVolumePermission": {
+        "add": {
+          "items": [
+            {
+              "userId": "ACCOUNT_D7EA-7E38-7674"
+            }
+          ]
+        }
+      },
+      "snapshotId": "SNAPSHOTID_5FC6-45C4-F40A"
+    },
+    "responseElements": {
+      "_return": true,
+      "requestId": "REQUESTID_89A9-BEA0-7219"
+    },
+    "sourceIPAddress": "IP_3296-6CC8-92D8",
+    "tlsDetails": {
+      "cipherSuite": "TLS_AES_128_GCM_SHA256",
+      "clientProvidedHostHeader": "ec2.us-east-1.amazonaws.com",
+      "tlsVersion": "TLSv1.3"
+    },
+    "userAgent": "stratus-red-team_f077ce24-7e5c-4fd5-aef9-d6abb053e29e",
+    "userIdentity": {
+      "accessKeyId": "ACCESSKEY_4441-6385-8CDE",
+      "accountId": "ACCOUNT_9E7B-54AF-AAC0",
+      "arn": "arn:aws:iam::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_49AD-C89D-87F9",
+      "principalId": "PRINCIPAL_6ACC-0DDD-F1E2",
+      "type": "IAMUser",
+      "userName": "USER_488F-BA78-9E22"
+    }
+  }
+]

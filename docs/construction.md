@@ -82,3 +82,15 @@ A separate per-combination mapping from each combination file to the exact const
 - Benign Base Sequence: 25
 - Benign Combination Sequence: 100
 - Total: 259
+
+## Raw CloudTrail Provenance
+
+The public release includes sanitized raw CloudTrail traces corresponding to all 59 base workflows: 34 malicious base workflows and 25 benign base workflows.
+
+Malicious traces originate from the CloudTrail activity generated during attack-technique execution. Benign traces correspond to the executed operational workflows used to construct the benign base sequences.
+
+The normalized benchmark is derived from these traces as ordered `eventSource:eventName` pairs. The benchmark focuses on CloudTrail Management Events. Raw scenario traces can contain additional events, including Data Events, that are not retained in the normalized representation.
+
+Combination sequences are constructed from base sequences and therefore do not have independent raw captures. The public raw directory contains only base-workflow provenance.
+
+CloudTrail timestamps can have insufficient ordering granularity when multiple API calls occur within the same second. Where necessary, the released normalized base sequence is treated as the canonical API order while the corresponding raw CloudTrail records provide event-level provenance.

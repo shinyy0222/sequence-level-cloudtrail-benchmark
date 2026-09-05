@@ -1,0 +1,184 @@
+[
+  {
+    "awsRegion": "us-east-1",
+    "errorCode": "Client.UnauthorizedOperation",
+    "errorMessage": "You are not authorized to perform this operation. User: arn:aws:sts::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_B61C-824A-B9CA is not authorized to perform: ec2:RunInstances on resource: arn:aws:ec2:us-east-1:ACCOUNT_9E7B-54AF-AAC0:RESOURCE_7A0C-AD0B-AC62 because no identity-based policy allows the ec2:RunInstances action. Encoded authorization failure message: gnJ_Xki2pWaiGLQQaL0nuc1gu3sCxNugRXjb8LrY_9sEHyedy4Hy7FZ-5a1QBTefenG69mSM3XcSSE-DSzqYQNoSHcYOcb30VSR2xwzW0omxbGVA_8SyUP8mOOsX0Dj8cluzu4d1-oVS9lRIp0Yk3EVU7pem9xmm2pG5EW2H8QGsE8duOCMVa0eBAdPgKj2gn29aamvI1TUheaQw0kryln4SH7a4gk6hWrw0jnfX7pht8FjF_R3vw2p5bnoDvp4iizUPR_JJe22j55UXouVWtw65SiuEwExWyoLN35bxZOP7PaxGbBFaiI5I9VRmp-4WlHxjpUJEcy7jplTe9cm49GB1H3e-O8bvhHexDc1uujlDNOR18syMINnstwvdgqHO24wdxdR7UtVWpOZMx4yW2lvpyE2YA1CAvPJm-6-F2CzuSF4TyhU7-wwJRtl1u2Yyqz5XQL-axBuNNwVHGvtbSITdDYCHMcSlUsbnnBaag_WgEFPv--vQKt17P4xzhVPPx6aati5S-UK1ZB_FJiXZgKtrpFRMzwqC_EHwsj1fPGlK7-JsjgPJFjfOLdpC3hlHi_2aDWroMpYS66HLh6AWak9-fgkXW9d8yOrO8dcu2IAiCk_xgTeXeFoYI3Lyfhb0V...",
+    "eventCategory": "Management",
+    "eventID": "EVENTID_E211-1DA1-AA6E",
+    "eventName": "RunInstances",
+    "eventSource": "ec2.amazonaws.com",
+    "eventTime": "2026-04-21T08:47:14Z",
+    "eventType": "AwsApiCall",
+    "eventVersion": "1.11",
+    "managementEvent": true,
+    "readOnly": false,
+    "recipientAccountId": "ACCOUNT_9E7B-54AF-AAC0",
+    "requestID": "REQUESTID_178D-4386-4F41",
+    "requestParameters": {
+      "blockDeviceMapping": {},
+      "clientToken": "REDACTED_C1D0-D83A-D179",
+      "disableApiStop": false,
+      "disableApiTermination": false,
+      "instanceType": "p2.xlarge",
+      "instancesSet": {
+        "items": [
+          {
+            "imageId": "IMAGEID_FA9E-A08E-74DA",
+            "maxCount": 10,
+            "minCount": 1
+          }
+        ]
+      },
+      "monitoring": {
+        "enabled": false
+      },
+      "subnetId": "SUBNETID_7E24-3F90-DC5D"
+    },
+    "responseElements": null,
+    "sourceIPAddress": "IP_3296-6CC8-92D8",
+    "tlsDetails": {
+      "cipherSuite": "TLS_AES_128_GCM_SHA256",
+      "clientProvidedHostHeader": "ec2.us-east-1.amazonaws.com",
+      "tlsVersion": "TLSv1.3"
+    },
+    "userAgent": "stratus-red-team_62e2bcdd-0f3c-45dd-a647-a9d844df1394",
+    "userIdentity": {
+      "accessKeyId": "ACCESSKEY_7910-7ABA-C0EF",
+      "accountId": "ACCOUNT_9E7B-54AF-AAC0",
+      "arn": "arn:aws:sts::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_B61C-824A-B9CA",
+      "principalId": "PRINCIPAL_017C-CAFE-F064",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-04-21T08:47:13Z",
+          "mfaAuthenticated": "false"
+        },
+        "sessionIssuer": {
+          "accountId": "ACCOUNT_9E7B-54AF-AAC0",
+          "arn": "arn:aws:iam::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_D930-40ED-15D9",
+          "principalId": "PRINCIPAL_2DA7-A315-BD1E",
+          "type": "Role",
+          "userName": "USER_90C4-54A4-E54A"
+        }
+      },
+      "type": "AssumedRole"
+    }
+  },
+  {
+    "additionalEventData": {
+      "ExtendedRequestId": "MTp1cy1lYXN0LTE6UzoxNzc2NzYxMjMzMDE4OlI6YTU0REFhQjQ=",
+      "RequestDetails": {
+        "awsServingRegion": "us-east-1",
+        "endpointType": "regional"
+      }
+    },
+    "awsRegion": "us-east-1",
+    "eventCategory": "Management",
+    "eventID": "EVENTID_E808-5028-7972",
+    "eventName": "AssumeRole",
+    "eventSource": "sts.amazonaws.com",
+    "eventTime": "2026-04-21T08:47:13Z",
+    "eventType": "AwsApiCall",
+    "eventVersion": "1.11",
+    "managementEvent": true,
+    "readOnly": true,
+    "recipientAccountId": "ACCOUNT_9E7B-54AF-AAC0",
+    "requestID": "REQUESTID_EF88-06B2-F284",
+    "requestParameters": {
+      "durationSeconds": 900,
+      "roleArn": "arn:aws:iam::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_D930-40ED-15D9",
+      "roleSessionName": "aws-go-sdk-1776761232838521200"
+    },
+    "resources": [
+      {
+        "ARN": "arn:aws:iam::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_D930-40ED-15D9",
+        "accountId": "ACCOUNT_9E7B-54AF-AAC0",
+        "type": "AWS::IAM::Role"
+      }
+    ],
+    "responseElements": {
+      "assumedRoleUser": {
+        "arn": "arn:aws:sts::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_B61C-824A-B9CA",
+        "assumedRoleId": "AROAV47MCUL5SF7L3LPJY:aws-go-sdk-1776761232838521200"
+      },
+      "credentials": {
+        "accessKeyId": "ACCESSKEY_72A4-75D6-5D07",
+        "expiration": "Apr 21, 2026, 9:02:13 AM",
+        "sessionToken": "REDACTED_AC54-67EE-878B"
+      }
+    },
+    "sourceIPAddress": "IP_3296-6CC8-92D8",
+    "tlsDetails": {
+      "cipherSuite": "TLS_AES_128_GCM_SHA256",
+      "clientProvidedHostHeader": "sts.us-east-1.amazonaws.com",
+      "tlsVersion": "TLSv1.3"
+    },
+    "userAgent": "stratus-red-team_62e2bcdd-0f3c-45dd-a647-a9d844df1394",
+    "userIdentity": {
+      "accessKeyId": "ACCESSKEY_4441-6385-8CDE",
+      "accountId": "ACCOUNT_9E7B-54AF-AAC0",
+      "arn": "arn:aws:iam::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_49AD-C89D-87F9",
+      "principalId": "PRINCIPAL_6ACC-0DDD-F1E2",
+      "type": "IAMUser",
+      "userName": "USER_488F-BA78-9E22"
+    }
+  },
+  {
+    "additionalEventData": {
+      "ExtendedRequestId": "MTp1cy1lYXN0LTE6UzoxNzc2NzYxMjMzMjU2OlI6aElrZExWaDc=",
+      "RequestDetails": {
+        "awsServingRegion": "us-east-1",
+        "endpointType": "regional"
+      }
+    },
+    "awsRegion": "us-east-1",
+    "eventCategory": "Management",
+    "eventID": "EVENTID_1ED9-CC5B-840C",
+    "eventName": "AssumeRole",
+    "eventSource": "sts.amazonaws.com",
+    "eventTime": "2026-04-21T08:47:13Z",
+    "eventType": "AwsApiCall",
+    "eventVersion": "1.11",
+    "managementEvent": true,
+    "readOnly": true,
+    "recipientAccountId": "ACCOUNT_9E7B-54AF-AAC0",
+    "requestID": "REQUESTID_80DD-436D-D2F3",
+    "requestParameters": {
+      "durationSeconds": 900,
+      "roleArn": "arn:aws:iam::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_D930-40ED-15D9",
+      "roleSessionName": "aws-go-sdk-1776761232838521200"
+    },
+    "resources": [
+      {
+        "ARN": "arn:aws:iam::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_D930-40ED-15D9",
+        "accountId": "ACCOUNT_9E7B-54AF-AAC0",
+        "type": "AWS::IAM::Role"
+      }
+    ],
+    "responseElements": {
+      "assumedRoleUser": {
+        "arn": "arn:aws:sts::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_B61C-824A-B9CA",
+        "assumedRoleId": "AROAV47MCUL5SF7L3LPJY:aws-go-sdk-1776761232838521200"
+      },
+      "credentials": {
+        "accessKeyId": "ACCESSKEY_7910-7ABA-C0EF",
+        "expiration": "Apr 21, 2026, 9:02:13 AM",
+        "sessionToken": "REDACTED_A455-A356-1EA6"
+      }
+    },
+    "sourceIPAddress": "IP_3296-6CC8-92D8",
+    "tlsDetails": {
+      "cipherSuite": "TLS_AES_128_GCM_SHA256",
+      "clientProvidedHostHeader": "sts.us-east-1.amazonaws.com",
+      "tlsVersion": "TLSv1.3"
+    },
+    "userAgent": "stratus-red-team_62e2bcdd-0f3c-45dd-a647-a9d844df1394",
+    "userIdentity": {
+      "accessKeyId": "ACCESSKEY_4441-6385-8CDE",
+      "accountId": "ACCOUNT_9E7B-54AF-AAC0",
+      "arn": "arn:aws:iam::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_49AD-C89D-87F9",
+      "principalId": "PRINCIPAL_6ACC-0DDD-F1E2",
+      "type": "IAMUser",
+      "userName": "USER_488F-BA78-9E22"
+    }
+  }
+]

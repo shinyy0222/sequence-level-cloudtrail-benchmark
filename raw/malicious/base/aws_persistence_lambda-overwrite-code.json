@@ -1,0 +1,76 @@
+[
+  {
+    "awsRegion": "us-east-1",
+    "eventCategory": "Management",
+    "eventID": "EVENTID_569C-25A3-703D",
+    "eventName": "UpdateFunctionCode20150331v2",
+    "eventSource": "lambda.amazonaws.com",
+    "eventTime": "2026-04-22T10:03:28Z",
+    "eventType": "AwsApiCall",
+    "eventVersion": "1.11",
+    "managementEvent": true,
+    "readOnly": false,
+    "recipientAccountId": "ACCOUNT_9E7B-54AF-AAC0",
+    "requestID": "REQUESTID_D531-F2BC-1170",
+    "requestParameters": {
+      "dryRun": false,
+      "functionName": "FUNCTIONNAME_AC8E-2D95-1703",
+      "publish": true
+    },
+    "responseElements": {
+      "architectures": [
+        "x86_64"
+      ],
+      "codeSha256": "Pt1c8vVaBygmNtAeSyjlpdy7r8nHRqJAAL++HEGlQkc=",
+      "codeSize": 211,
+      "description": "",
+      "environment": {},
+      "ephemeralStorage": {
+        "size": 512
+      },
+      "functionArn": "arn:aws:lambda:us-east-1:ACCOUNT_9E7B-54AF-AAC0:RESOURCE_CE0D-5CD8-4DAA",
+      "functionName": "FUNCTIONNAME_AC8E-2D95-1703",
+      "handler": "lambda.lambda_handler",
+      "lastModified": "2026-04-22T10:03:28.000+0000",
+      "loggingConfig": {
+        "logFormat": "Text",
+        "logGroup": "/aws/lambda/stratus-red-team-olc-func-gkrfmmynku"
+      },
+      "memorySize": 128,
+      "packageType": "Zip",
+      "revisionId": "UUID_EE0D-1AD0-9FF9",
+      "role": "arn:aws:iam::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_14BA-3582-C74E",
+      "runtime": "python3.9",
+      "runtimeVersionConfig": {
+        "runtimeVersionArn": "arn:aws:lambda:us-east-1::RESOURCE_A68A-B0C7-AF33"
+      },
+      "snapStart": {
+        "applyOn": "None",
+        "optimizationStatus": "Off"
+      },
+      "state": "Pending",
+      "stateReason": "The function is being created.",
+      "stateReasonCode": "Creating",
+      "timeout": 3,
+      "tracingConfig": {
+        "mode": "PassThrough"
+      },
+      "version": "1"
+    },
+    "sourceIPAddress": "IP_3296-6CC8-92D8",
+    "tlsDetails": {
+      "cipherSuite": "TLS_AES_128_GCM_SHA256",
+      "clientProvidedHostHeader": "lambda.us-east-1.amazonaws.com",
+      "tlsVersion": "TLSv1.3"
+    },
+    "userAgent": "stratus-red-team_efe76074-9aec-449b-8f71-5784a7716122",
+    "userIdentity": {
+      "accessKeyId": "ACCESSKEY_4441-6385-8CDE",
+      "accountId": "ACCOUNT_9E7B-54AF-AAC0",
+      "arn": "arn:aws:iam::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_49AD-C89D-87F9",
+      "principalId": "PRINCIPAL_6ACC-0DDD-F1E2",
+      "type": "IAMUser",
+      "userName": "USER_488F-BA78-9E22"
+    }
+  }
+]

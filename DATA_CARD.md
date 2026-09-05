@@ -91,3 +91,11 @@ The released sequences contain only normalized API identifiers and intentionally
 The benchmark is based on controlled attack emulation and designed administrative workflows.
 
 A separate per-combination constituent-base mapping artifact is not included in this release.
+
+## Raw Trace Artifacts
+
+The release includes 59 sanitized base-workflow CloudTrail traces: 34 malicious and 25 benign. These artifacts provide execution provenance for the normalized sequence-level benchmark.
+
+The raw traces are supplemental artifacts rather than additional benchmark samples. Malicious and benign combination sequences are constructed from the base workflows and therefore are not duplicated as separate raw CloudTrail captures.
+
+Environment-specific identifiers and potentially sensitive values are pseudonymized or redacted before publication. Consequently, the raw release should not be used for analyses that depend on original account identities, IP addresses, credential identifiers, or resource names.

@@ -4,7 +4,7 @@ sts.amazonaws.com:AssumeRole
 ec2.amazonaws.com:DescribeInstanceAttribute
 secretsmanager.amazonaws.com:BatchGetSecretValue
 ec2.amazonaws.com:EnableSerialConsoleAccess
-ec2.amazonaws.com:SendSerialConsoleSSHPublicKey
+ec2-instance-connect.amazonaws.com:SendSerialConsoleSSHPublicKey
 ec2.amazonaws.com:RunInstances
 bedrock.amazonaws.com:InvokeModel
 cloudtrail.amazonaws.com:DeleteTrail

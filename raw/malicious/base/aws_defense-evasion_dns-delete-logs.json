@@ -1,0 +1,49 @@
+[
+  {
+    "awsRegion": "us-east-1",
+    "eventCategory": "Management",
+    "eventID": "EVENTID_DDD5-0F96-1D23",
+    "eventName": "DeleteResolverQueryLogConfig",
+    "eventSource": "route53resolver.amazonaws.com",
+    "eventTime": "2026-04-21T08:05:41Z",
+    "eventType": "AwsApiCall",
+    "eventVersion": "1.11",
+    "managementEvent": true,
+    "readOnly": false,
+    "recipientAccountId": "ACCOUNT_9E7B-54AF-AAC0",
+    "requestID": "REQUESTID_2BE2-BC98-C1EA",
+    "requestParameters": {
+      "originSequenceNumber": 0,
+      "resolverQueryLogConfigId": "rqlc-29e86439e5934835"
+    },
+    "responseElements": {
+      "resolverQueryLogConfig": {
+        "arn": "arn:aws:route53resolver:us-east-1:ACCOUNT_9E7B-54AF-AAC0:RESOURCE_C928-B4A8-686A",
+        "associationCount": 0,
+        "creationTime": "2026-04-21T08:05:35.096142203Z",
+        "creatorRequestId": "tf-r53-resolver-query-log-config-20260421080535063000000001",
+        "destinationArn": "arn:aws:s3:::RESOURCE_9763-43DB-66BE",
+        "id": "rqlc-29e86439e5934835",
+        "name": "stratus-red-team-dns-delete-config-lcnehlkkip",
+        "ownerId": "ACCOUNT_9E7B-54AF-AAC0",
+        "shareStatus": "NOT_SHARED",
+        "status": "DELETING"
+      }
+    },
+    "sourceIPAddress": "IP_3296-6CC8-92D8",
+    "tlsDetails": {
+      "cipherSuite": "TLS_AES_128_GCM_SHA256",
+      "clientProvidedHostHeader": "route53resolver.us-east-1.amazonaws.com",
+      "tlsVersion": "TLSv1.3"
+    },
+    "userAgent": "stratus-red-team_46e8cb3b-5e11-4cf9-84ba-03037f0d57af",
+    "userIdentity": {
+      "accessKeyId": "ACCESSKEY_4441-6385-8CDE",
+      "accountId": "ACCOUNT_9E7B-54AF-AAC0",
+      "arn": "arn:aws:iam::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_49AD-C89D-87F9",
+      "principalId": "PRINCIPAL_6ACC-0DDD-F1E2",
+      "type": "IAMUser",
+      "userName": "USER_488F-BA78-9E22"
+    }
+  }
+]

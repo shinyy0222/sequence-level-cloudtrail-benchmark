@@ -1,0 +1,194 @@
+{
+  "Records": [
+    {
+      "eventVersion": "1.11",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "PRINCIPAL_6ACC-0DDD-F1E2",
+        "arn": "arn:aws:iam::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_49AD-C89D-87F9",
+        "accountId": "ACCOUNT_9E7B-54AF-AAC0",
+        "accessKeyId": "ACCESSKEY_4441-6385-8CDE",
+        "userName": "USER_488F-BA78-9E22"
+      },
+      "eventTime": "2026-04-22T08:34:45Z",
+      "eventSource": "ec2.amazonaws.com",
+      "eventName": "DescribeAccountAttributes",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "IP_3296-6CC8-92D8",
+      "userAgent": "stratus-red-team_4a39bf63-3ffc-4c0f-a830-371742ec02b0",
+      "requestParameters": {
+        "accountAttributeNameSet": {},
+        "filterSet": {}
+      },
+      "responseElements": null,
+      "requestID": "REQUESTID_2A6F-64D2-0386",
+      "eventID": "EVENTID_BA8C-BD68-B396",
+      "readOnly": true,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "ACCOUNT_9E7B-54AF-AAC0",
+      "eventCategory": "Management",
+      "tlsDetails": {
+        "tlsVersion": "TLSv1.3",
+        "cipherSuite": "TLS_AES_128_GCM_SHA256",
+        "clientProvidedHostHeader": "ec2.us-east-1.amazonaws.com"
+      }
+    },
+    {
+      "eventVersion": "1.11",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "PRINCIPAL_6ACC-0DDD-F1E2",
+        "arn": "arn:aws:iam::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_49AD-C89D-87F9",
+        "accountId": "ACCOUNT_9E7B-54AF-AAC0",
+        "accessKeyId": "ACCESSKEY_4441-6385-8CDE",
+        "userName": "USER_488F-BA78-9E22"
+      },
+      "eventTime": "2026-04-22T08:34:46Z",
+      "eventSource": "ec2.amazonaws.com",
+      "eventName": "EnableSerialConsoleAccess",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "IP_3296-6CC8-92D8",
+      "userAgent": "stratus-red-team_d7400a12-db74-42b4-8e81-16ea53a8f5bb",
+      "requestParameters": {
+        "EnableSerialConsoleAccessRequest": ""
+      },
+      "responseElements": {
+        "EnableSerialConsoleAccessResponse": {
+          "xmlns": "http://ec2.amazonaws.com/doc/2016-11-15/",
+          "requestId": "REQUESTID_6888-2FBC-906F",
+          "serialConsoleAccessEnabled": true
+        }
+      },
+      "requestID": "REQUESTID_6888-2FBC-906F",
+      "eventID": "EVENTID_926A-FB74-E983",
+      "readOnly": false,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "ACCOUNT_9E7B-54AF-AAC0",
+      "eventCategory": "Management",
+      "tlsDetails": {
+        "tlsVersion": "TLSv1.3",
+        "cipherSuite": "TLS_AES_128_GCM_SHA256",
+        "clientProvidedHostHeader": "ec2.us-east-1.amazonaws.com"
+      }
+    },
+    {
+      "eventVersion": "1.11",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "PRINCIPAL_6ACC-0DDD-F1E2",
+        "arn": "arn:aws:iam::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_49AD-C89D-87F9",
+        "accountId": "ACCOUNT_9E7B-54AF-AAC0",
+        "accessKeyId": "ACCESSKEY_4441-6385-8CDE",
+        "userName": "USER_488F-BA78-9E22"
+      },
+      "eventTime": "2026-04-22T08:34:48Z",
+      "eventSource": "ec2-instance-connect.amazonaws.com",
+      "eventName": "SendSerialConsoleSSHPublicKey",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "IP_3296-6CC8-92D8",
+      "userAgent": "stratus-red-team_d7400a12-db74-42b4-8e81-16ea53a8f5bb",
+      "requestParameters": {
+        "instanceId": "INSTANCEID_D741-48AD-421C",
+        "serialPort": 0,
+        "sSHPublicKey": "REDACTED_B200-61AB-3B4C",
+        "monitorMode": false
+      },
+      "responseElements": {
+        "requestId": "REQUESTID_A9B2-4898-DE0C",
+        "success": true
+      },
+      "requestID": "REQUESTID_A9B2-4898-DE0C",
+      "eventID": "EVENTID_F426-78C7-FF9E",
+      "readOnly": false,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "ACCOUNT_9E7B-54AF-AAC0",
+      "eventCategory": "Management",
+      "tlsDetails": {
+        "tlsVersion": "TLSv1.3",
+        "cipherSuite": "TLS_AES_128_GCM_SHA256",
+        "clientProvidedHostHeader": "ec2-instance-connect.us-east-1.amazonaws.com"
+      }
+    },
+    {
+      "eventVersion": "1.11",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "PRINCIPAL_6ACC-0DDD-F1E2",
+        "arn": "arn:aws:iam::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_49AD-C89D-87F9",
+        "accountId": "ACCOUNT_9E7B-54AF-AAC0",
+        "accessKeyId": "ACCESSKEY_4441-6385-8CDE",
+        "userName": "USER_488F-BA78-9E22"
+      },
+      "eventTime": "2026-04-22T08:34:48Z",
+      "eventSource": "ec2-instance-connect.amazonaws.com",
+      "eventName": "SendSerialConsoleSSHPublicKey",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "IP_3296-6CC8-92D8",
+      "userAgent": "stratus-red-team_d7400a12-db74-42b4-8e81-16ea53a8f5bb",
+      "requestParameters": {
+        "instanceId": "INSTANCEID_F906-D200-DD47",
+        "serialPort": 0,
+        "sSHPublicKey": "REDACTED_B200-61AB-3B4C",
+        "monitorMode": false
+      },
+      "responseElements": {
+        "requestId": "REQUESTID_3C46-2254-6346",
+        "success": true
+      },
+      "requestID": "REQUESTID_3C46-2254-6346",
+      "eventID": "EVENTID_6286-827E-E7E1",
+      "readOnly": false,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "ACCOUNT_9E7B-54AF-AAC0",
+      "eventCategory": "Management",
+      "tlsDetails": {
+        "tlsVersion": "TLSv1.3",
+        "cipherSuite": "TLS_AES_128_GCM_SHA256",
+        "clientProvidedHostHeader": "ec2-instance-connect.us-east-1.amazonaws.com"
+      }
+    },
+    {
+      "eventVersion": "1.11",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "PRINCIPAL_6ACC-0DDD-F1E2",
+        "arn": "arn:aws:iam::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_49AD-C89D-87F9",
+        "accountId": "ACCOUNT_9E7B-54AF-AAC0",
+        "accessKeyId": "ACCESSKEY_4441-6385-8CDE",
+        "userName": "USER_488F-BA78-9E22"
+      },
+      "eventTime": "2026-04-22T08:34:49Z",
+      "eventSource": "ec2-instance-connect.amazonaws.com",
+      "eventName": "SendSerialConsoleSSHPublicKey",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "IP_3296-6CC8-92D8",
+      "userAgent": "stratus-red-team_d7400a12-db74-42b4-8e81-16ea53a8f5bb",
+      "requestParameters": {
+        "instanceId": "INSTANCEID_7574-C089-1035",
+        "serialPort": 0,
+        "sSHPublicKey": "REDACTED_B200-61AB-3B4C",
+        "monitorMode": false
+      },
+      "responseElements": {
+        "requestId": "REQUESTID_9EB4-C970-B98C",
+        "success": true
+      },
+      "requestID": "REQUESTID_9EB4-C970-B98C",
+      "eventID": "EVENTID_8210-7F1D-9CBD",
+      "readOnly": false,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "ACCOUNT_9E7B-54AF-AAC0",
+      "eventCategory": "Management",
+      "tlsDetails": {
+        "tlsVersion": "TLSv1.3",
+        "cipherSuite": "TLS_AES_128_GCM_SHA256",
+        "clientProvidedHostHeader": "ec2-instance-connect.us-east-1.amazonaws.com"
+      }
+    }
+  ]
+}

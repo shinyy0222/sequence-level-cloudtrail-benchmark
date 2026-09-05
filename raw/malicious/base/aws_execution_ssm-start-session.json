@@ -1,0 +1,188 @@
+[
+  {
+    "awsRegion": "us-east-1",
+    "eventCategory": "Management",
+    "eventID": "EVENTID_983E-9281-7E09",
+    "eventName": "TerminateSession",
+    "eventSource": "ssm.amazonaws.com",
+    "eventTime": "2026-04-22T04:59:12Z",
+    "eventType": "AwsApiCall",
+    "eventVersion": "1.11",
+    "managementEvent": true,
+    "readOnly": false,
+    "recipientAccountId": "ACCOUNT_9E7B-54AF-AAC0",
+    "requestID": "REQUESTID_F1AA-45CD-6D81",
+    "requestParameters": {
+      "sessionId": "big-dipy3rp3aspvr4i4a8nzapqtbe"
+    },
+    "responseElements": {
+      "sessionId": "big-dipy3rp3aspvr4i4a8nzapqtbe"
+    },
+    "sourceIPAddress": "IP_3296-6CC8-92D8",
+    "tlsDetails": {
+      "cipherSuite": "ECDHE-RSA-AES128-GCM-SHA256",
+      "clientProvidedHostHeader": "ssm.us-east-1.amazonaws.com",
+      "tlsVersion": "TLSv1.2"
+    },
+    "userAgent": "stratus-red-team_f105e510-bfa8-410f-8c52-d822e61aba48",
+    "userIdentity": {
+      "accessKeyId": "ACCESSKEY_4441-6385-8CDE",
+      "accountId": "ACCOUNT_9E7B-54AF-AAC0",
+      "arn": "arn:aws:iam::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_49AD-C89D-87F9",
+      "principalId": "PRINCIPAL_6ACC-0DDD-F1E2",
+      "type": "IAMUser",
+      "userName": "USER_488F-BA78-9E22"
+    }
+  },
+  {
+    "awsRegion": "us-east-1",
+    "eventCategory": "Management",
+    "eventID": "EVENTID_4AA5-AEF7-1983",
+    "eventName": "StartSession",
+    "eventSource": "ssm.amazonaws.com",
+    "eventTime": "2026-04-22T04:59:12Z",
+    "eventType": "AwsApiCall",
+    "eventVersion": "1.11",
+    "managementEvent": true,
+    "readOnly": false,
+    "recipientAccountId": "ACCOUNT_9E7B-54AF-AAC0",
+    "requestID": "REQUESTID_FE7B-B7AC-CFFD",
+    "requestParameters": {
+      "target": "i-06061837ca2b5d172"
+    },
+    "responseElements": {
+      "sessionId": "big-dipy3rp3aspvr4i4a8nzapqtbe",
+      "streamUrl": "wss://ssmmessages.us-east-1.amazonaws.com/v1/data-channel/big-dipy3rp3aspvr4i4a8nzapqtbe?role=publish_subscribe&cell-number=AAEAAb6qK+EfYoiNhw1wdfyiw8ujvQEt0FsOM9P8y1OrBFuiAAAAAGnoVaCEdKmZ2GrHGCKvKpfAt0cJKFVLthTkMoCdzsKwQpZ7qqQ1c1tH",
+      "tokenValue": "REDACTED_87C7-1CA6-1149"
+    },
+    "sourceIPAddress": "IP_3296-6CC8-92D8",
+    "tlsDetails": {
+      "cipherSuite": "ECDHE-RSA-AES128-GCM-SHA256",
+      "clientProvidedHostHeader": "ssm.us-east-1.amazonaws.com",
+      "tlsVersion": "TLSv1.2"
+    },
+    "userAgent": "stratus-red-team_f105e510-bfa8-410f-8c52-d822e61aba48",
+    "userIdentity": {
+      "accessKeyId": "ACCESSKEY_4441-6385-8CDE",
+      "accountId": "ACCOUNT_9E7B-54AF-AAC0",
+      "arn": "arn:aws:iam::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_49AD-C89D-87F9",
+      "principalId": "PRINCIPAL_6ACC-0DDD-F1E2",
+      "type": "IAMUser",
+      "userName": "USER_488F-BA78-9E22"
+    }
+  },
+  {
+    "awsRegion": "us-east-1",
+    "eventCategory": "Management",
+    "eventID": "EVENTID_93E7-EF1A-73C7",
+    "eventName": "TerminateSession",
+    "eventSource": "ssm.amazonaws.com",
+    "eventTime": "2026-04-22T04:59:11Z",
+    "eventType": "AwsApiCall",
+    "eventVersion": "1.11",
+    "managementEvent": true,
+    "readOnly": false,
+    "recipientAccountId": "ACCOUNT_9E7B-54AF-AAC0",
+    "requestID": "REQUESTID_E3CD-72D3-ACA7",
+    "requestParameters": {
+      "sessionId": "big-5reztdondbx2hacennthjbiciu"
+    },
+    "responseElements": {
+      "sessionId": "big-5reztdondbx2hacennthjbiciu"
+    },
+    "sourceIPAddress": "IP_3296-6CC8-92D8",
+    "tlsDetails": {
+      "cipherSuite": "ECDHE-RSA-AES128-GCM-SHA256",
+      "clientProvidedHostHeader": "ssm.us-east-1.amazonaws.com",
+      "tlsVersion": "TLSv1.2"
+    },
+    "userAgent": "stratus-red-team_f105e510-bfa8-410f-8c52-d822e61aba48",
+    "userIdentity": {
+      "accessKeyId": "ACCESSKEY_4441-6385-8CDE",
+      "accountId": "ACCOUNT_9E7B-54AF-AAC0",
+      "arn": "arn:aws:iam::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_49AD-C89D-87F9",
+      "principalId": "PRINCIPAL_6ACC-0DDD-F1E2",
+      "type": "IAMUser",
+      "userName": "USER_488F-BA78-9E22"
+    }
+  },
+  {
+    "awsRegion": "us-east-1",
+    "eventCategory": "Management",
+    "eventID": "EVENTID_ACBA-1A1B-5AAA",
+    "eventName": "DescribeInstanceInformation",
+    "eventSource": "ssm.amazonaws.com",
+    "eventTime": "2026-04-22T04:59:10Z",
+    "eventType": "AwsApiCall",
+    "eventVersion": "1.11",
+    "managementEvent": true,
+    "readOnly": true,
+    "recipientAccountId": "ACCOUNT_9E7B-54AF-AAC0",
+    "requestID": "REQUESTID_696C-9A4A-4597",
+    "requestParameters": {
+      "filters": [
+        {
+          "key": "InstanceIds",
+          "values": [
+            "i-0aa37f225de321518",
+            "i-02a32428c0f14c869",
+            "i-06061837ca2b5d172"
+          ]
+        }
+      ]
+    },
+    "responseElements": null,
+    "sourceIPAddress": "IP_3296-6CC8-92D8",
+    "tlsDetails": {
+      "cipherSuite": "ECDHE-RSA-AES128-GCM-SHA256",
+      "clientProvidedHostHeader": "ssm.us-east-1.amazonaws.com",
+      "tlsVersion": "TLSv1.2"
+    },
+    "userAgent": "stratus-red-team_f105e510-bfa8-410f-8c52-d822e61aba48",
+    "userIdentity": {
+      "accessKeyId": "ACCESSKEY_4441-6385-8CDE",
+      "accountId": "ACCOUNT_9E7B-54AF-AAC0",
+      "arn": "arn:aws:iam::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_49AD-C89D-87F9",
+      "principalId": "PRINCIPAL_6ACC-0DDD-F1E2",
+      "type": "IAMUser",
+      "userName": "USER_488F-BA78-9E22"
+    }
+  },
+  {
+    "awsRegion": "us-east-1",
+    "eventCategory": "Management",
+    "eventID": "EVENTID_B2EA-FDA3-7204",
+    "eventName": "StartSession",
+    "eventSource": "ssm.amazonaws.com",
+    "eventTime": "2026-04-22T04:59:10Z",
+    "eventType": "AwsApiCall",
+    "eventVersion": "1.11",
+    "managementEvent": true,
+    "readOnly": false,
+    "recipientAccountId": "ACCOUNT_9E7B-54AF-AAC0",
+    "requestID": "REQUESTID_9CCF-DF27-A4C9",
+    "requestParameters": {
+      "target": "i-0aa37f225de321518"
+    },
+    "responseElements": {
+      "sessionId": "big-5reztdondbx2hacennthjbiciu",
+      "streamUrl": "wss://ssmmessages.us-east-1.amazonaws.com/v1/data-channel/big-5reztdondbx2hacennthjbiciu?role=publish_subscribe&cell-number=AAEAAYQxW0pKwAVSH7Np7Ck2j4ag/KdpsJErpPBECGGizrDyAAAAAGnoVZ4gZBKHA04DwlOhxMz6PCG9tvmx+2xty6WRkTarYbi5ETjhXK5O",
+      "tokenValue": "REDACTED_87C7-1CA6-1149"
+    },
+    "sourceIPAddress": "IP_3296-6CC8-92D8",
+    "tlsDetails": {
+      "cipherSuite": "ECDHE-RSA-AES128-GCM-SHA256",
+      "clientProvidedHostHeader": "ssm.us-east-1.amazonaws.com",
+      "tlsVersion": "TLSv1.2"
+    },
+    "userAgent": "stratus-red-team_f105e510-bfa8-410f-8c52-d822e61aba48",
+    "userIdentity": {
+      "accessKeyId": "ACCESSKEY_4441-6385-8CDE",
+      "accountId": "ACCOUNT_9E7B-54AF-AAC0",
+      "arn": "arn:aws:iam::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_49AD-C89D-87F9",
+      "principalId": "PRINCIPAL_6ACC-0DDD-F1E2",
+      "type": "IAMUser",
+      "userName": "USER_488F-BA78-9E22"
+    }
+  }
+]

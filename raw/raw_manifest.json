@@ -1,0 +1,243 @@
+{
+  "total_raw_files": 59,
+  "malicious_raw_files": 34,
+  "benign_raw_files": 25,
+  "files": [
+    {
+      "path": "benign/base/01_s3_management.json",
+      "records": 6
+    },
+    {
+      "path": "benign/base/02_ec2_describe.json",
+      "records": 5
+    },
+    {
+      "path": "benign/base/03_iam_readonly.json",
+      "records": 4
+    },
+    {
+      "path": "benign/base/04_cloudtrail_readonly.json",
+      "records": 3
+    },
+    {
+      "path": "benign/base/05_cloudwatch_readonly.json",
+      "records": 1
+    },
+    {
+      "path": "benign/base/06_iam_user_create.json",
+      "records": 7
+    },
+    {
+      "path": "benign/base/07_iam_role_create.json",
+      "records": 6
+    },
+    {
+      "path": "benign/base/08_secretsmanager.json",
+      "records": 6
+    },
+    {
+      "path": "benign/base/09_access_key_management.json",
+      "records": 2
+    },
+    {
+      "path": "benign/base/10_security_audit.json",
+      "records": 6
+    },
+    {
+      "path": "benign/base/11_vpc_readonly.json",
+      "records": 7
+    },
+    {
+      "path": "benign/base/12_rds_readonly.json",
+      "records": 4
+    },
+    {
+      "path": "benign/base/13_lambda_readonly.json",
+      "records": 3
+    },
+    {
+      "path": "benign/base/14_sns_sqs_readonly.json",
+      "records": 2
+    },
+    {
+      "path": "benign/base/15_kms_readonly.json",
+      "records": 2
+    },
+    {
+      "path": "benign/base/16_ssm_readonly.json",
+      "records": 3
+    },
+    {
+      "path": "benign/base/17_ec2_ami_snapshot.json",
+      "records": 3
+    },
+    {
+      "path": "benign/base/18_iam_policy_review.json",
+      "records": 5
+    },
+    {
+      "path": "benign/base/19_s3_config_review.json",
+      "records": 5
+    },
+    {
+      "path": "benign/base/20_cloudformation_readonly.json",
+      "records": 2
+    },
+    {
+      "path": "benign/base/21_guardduty_readonly.json",
+      "records": 1
+    },
+    {
+      "path": "benign/base/22_container_readonly.json",
+      "records": 3
+    },
+    {
+      "path": "benign/base/23_route53_readonly.json",
+      "records": 2
+    },
+    {
+      "path": "benign/base/24_cost_readonly.json",
+      "records": 1
+    },
+    {
+      "path": "benign/base/25_config_readonly.json",
+      "records": 3
+    },
+    {
+      "path": "malicious/base/aws_credential-access_ec2-steal-instance-credentials.json",
+      "records": 38
+    },
+    {
+      "path": "malicious/base/aws_credential-access_secretsmanager-batch-retrieve-secrets.json",
+      "records": 5
+    },
+    {
+      "path": "malicious/base/aws_credential-access_secretsmanager-retrieve-secrets.json",
+      "records": 21
+    },
+    {
+      "path": "malicious/base/aws_credential-access_ssm-retrieve-securestring-parameters.json",
+      "records": 10
+    },
+    {
+      "path": "malicious/base/aws_defense-evasion_cloudtrail-delete.json",
+      "records": 1
+    },
+    {
+      "path": "malicious/base/aws_defense-evasion_cloudtrail-event-selectors.json",
+      "records": 2
+    },
+    {
+      "path": "malicious/base/aws_defense-evasion_cloudtrail-lifecycle-rule.json",
+      "records": 35
+    },
+    {
+      "path": "malicious/base/aws_defense-evasion_cloudtrail-stop.json",
+      "records": 2
+    },
+    {
+      "path": "malicious/base/aws_defense-evasion_dns-delete-logs.json",
+      "records": 1
+    },
+    {
+      "path": "malicious/base/aws_defense-evasion_organizations-leave.json",
+      "records": 3
+    },
+    {
+      "path": "malicious/base/aws_defense-evasion_vpc-remove-flow-logs.json",
+      "records": 1
+    },
+    {
+      "path": "malicious/base/aws_discovery_ec2-download-user-data.json",
+      "records": 17
+    },
+    {
+      "path": "malicious/base/aws_discovery_ses-enumerate.json",
+      "records": 3
+    },
+    {
+      "path": "malicious/base/aws_execution_ec2-launch-unusual-instances.json",
+      "records": 3
+    },
+    {
+      "path": "malicious/base/aws_execution_ssm-send-command.json",
+      "records": 71
+    },
+    {
+      "path": "malicious/base/aws_execution_ssm-start-session.json",
+      "records": 5
+    },
+    {
+      "path": "malicious/base/aws_exfiltration_ec2-security-group-open-port-22-ingress.json",
+      "records": 1
+    },
+    {
+      "path": "malicious/base/aws_exfiltration_ec2-share-ami.json",
+      "records": 1
+    },
+    {
+      "path": "malicious/base/aws_exfiltration_ec2-share-ebs-snapshot.json",
+      "records": 1
+    },
+    {
+      "path": "malicious/base/aws_exfiltration_rds-share-snapshot.json",
+      "records": 2
+    },
+    {
+      "path": "malicious/base/aws_exfiltration_s3-backdoor-bucket-policy.json",
+      "records": 0
+    },
+    {
+      "path": "malicious/base/aws_impact_bedrock-invoke-model.json",
+      "records": 1
+    },
+    {
+      "path": "malicious/base/aws_initial-access_console-login-without-mfa.json",
+      "records": 1
+    },
+    {
+      "path": "malicious/base/aws_lateral-movement_ec2-instance-connect.json",
+      "records": 3
+    },
+    {
+      "path": "malicious/base/aws_lateral-movement_ec2-serial-console-send-ssh-public-key.json",
+      "records": 5
+    },
+    {
+      "path": "malicious/base/aws_persistence_iam-backdoor-role.json",
+      "records": 1
+    },
+    {
+      "path": "malicious/base/aws_persistence_iam-backdoor-user.json",
+      "records": 3
+    },
+    {
+      "path": "malicious/base/aws_persistence_iam-create-admin-user.json",
+      "records": 4
+    },
+    {
+      "path": "malicious/base/aws_persistence_iam-create-backdoor-role.json",
+      "records": 3
+    },
+    {
+      "path": "malicious/base/aws_persistence_iam-create-user-login-profile.json",
+      "records": 1
+    },
+    {
+      "path": "malicious/base/aws_persistence_lambda-backdoor-function.json",
+      "records": 2
+    },
+    {
+      "path": "malicious/base/aws_persistence_lambda-layer-extension.json",
+      "records": 1
+    },
+    {
+      "path": "malicious/base/aws_persistence_lambda-overwrite-code.json",
+      "records": 1
+    },
+    {
+      "path": "malicious/base/aws_persistence_rolesanywhere-create-trust-anchor.json",
+      "records": 2
+    }
+  ]
+}

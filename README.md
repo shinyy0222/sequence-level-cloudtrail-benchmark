@@ -214,3 +214,20 @@ Citation information is provided in [`CITATION.cff`](CITATION.cff).
 This dataset is released under the Creative Commons Attribution 4.0 International (CC BY 4.0) license.
 
 See [`LICENSE`](LICENSE) for details.
+
+## Sanitized Raw CloudTrail Traces
+
+Release v1.1.0 additionally provides sanitized raw CloudTrail traces for all 59 base workflows used to construct the benchmark:
+
+- 34 malicious base workflows
+- 25 benign base workflows
+
+The traces are available under `raw/malicious/base/` and `raw/benign/base/`.
+
+The raw artifacts preserve CloudTrail event semantics while pseudonymizing environment-specific identifiers such as AWS account IDs, ARNs, access-key identifiers, principal identifiers, usernames, source IP addresses, and resource identifiers. Secret- or credential-related field values are redacted.
+
+The normalized benchmark continues to use ordered `eventSource:eventName` sequences. Combination sequences do not have separate raw traces because they are constructed from the collected base workflows while preserving the constituent workflow order.
+
+Some raw traces may contain additional CloudTrail events that are not included in the normalized benchmark. For example, an S3 workflow can contain Data Events in addition to the Management Events retained by the benchmark representation.
+
+See `docs/construction.md` and `docs/privacy.md` for details.

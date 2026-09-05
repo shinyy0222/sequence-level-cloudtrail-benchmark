@@ -42,3 +42,13 @@ The repository validation script performs these checks automatically.
 ## Scope
 
 The absence of raw event attributes is a deliberate property of this benchmark and matches the compact representation evaluated in the associated study.
+
+## Raw Trace Sanitization
+
+Raw CloudTrail artifacts are sanitized before publication. The unsanitized source traces are not included in this repository.
+
+The sanitization procedure applies deterministic pseudonymization to environment-specific identifiers while preserving the API-level semantics required for sequence analysis. Sanitized fields include AWS account identifiers, ARNs, access-key identifiers, principal identifiers, usernames, source IP addresses, event/request identifiers, and environment-specific resource identifiers. Secret-, token-, password-, credential-, and key-related field values are redacted.
+
+The sanitization process preserves fields required by the benchmark representation, including `eventSource`, `eventName`, `eventCategory`, and `managementEvent`.
+
+A release-time scanner verifies that the public raw artifacts contain no 12-digit AWS account-ID patterns, AWS access-key patterns, or IPv4-address patterns. The private pseudonymization salt and all unsanitized traces are excluded from the repository.

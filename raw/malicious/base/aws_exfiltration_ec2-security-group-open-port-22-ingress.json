@@ -1,0 +1,58 @@
+[
+  {
+    "awsRegion": "us-east-1",
+    "eventCategory": "Management",
+    "eventID": "EVENTID_E6BE-7DA0-8D8F",
+    "eventName": "AuthorizeSecurityGroupIngress",
+    "eventSource": "ec2.amazonaws.com",
+    "eventTime": "2026-04-22T05:01:38Z",
+    "eventType": "AwsApiCall",
+    "eventVersion": "1.11",
+    "managementEvent": true,
+    "readOnly": false,
+    "recipientAccountId": "ACCOUNT_9E7B-54AF-AAC0",
+    "requestID": "REQUESTID_55E7-F73A-D94B",
+    "requestParameters": {
+      "cidrIp": "IP_C8B9-4369-8379/0",
+      "fromPort": 22,
+      "groupId": "sg-074f4579d592c40d6",
+      "ipPermissions": {},
+      "ipProtocol": "tcp",
+      "toPort": 22
+    },
+    "responseElements": {
+      "_return": true,
+      "requestId": "REQUESTID_55E7-F73A-D94B",
+      "securityGroupRuleSet": {
+        "items": [
+          {
+            "cidrIpv4": "IP_C8B9-4369-8379/0",
+            "fromPort": 22,
+            "groupId": "sg-074f4579d592c40d6",
+            "groupOwnerId": "ACCOUNT_9E7B-54AF-AAC0",
+            "ipProtocol": "tcp",
+            "isEgress": false,
+            "securityGroupRuleArn": "arn:aws:ec2:us-east-1:ACCOUNT_9E7B-54AF-AAC0:RESOURCE_DCC7-0FEB-D2E9",
+            "securityGroupRuleId": "sgr-08e69b2263b28cc28",
+            "toPort": 22
+          }
+        ]
+      }
+    },
+    "sourceIPAddress": "IP_3296-6CC8-92D8",
+    "tlsDetails": {
+      "cipherSuite": "TLS_AES_128_GCM_SHA256",
+      "clientProvidedHostHeader": "ec2.us-east-1.amazonaws.com",
+      "tlsVersion": "TLSv1.3"
+    },
+    "userAgent": "stratus-red-team_93003149-3417-407d-835f-cc553c5a8de2",
+    "userIdentity": {
+      "accessKeyId": "ACCESSKEY_4441-6385-8CDE",
+      "accountId": "ACCOUNT_9E7B-54AF-AAC0",
+      "arn": "arn:aws:iam::ACCOUNT_9E7B-54AF-AAC0:RESOURCE_49AD-C89D-87F9",
+      "principalId": "PRINCIPAL_6ACC-0DDD-F1E2",
+      "type": "IAMUser",
+      "userName": "USER_488F-BA78-9E22"
+    }
+  }
+]
