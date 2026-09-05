@@ -44,4 +44,7 @@ Performance measured on this benchmark should not be interpreted as evidence of 
 
 ## Sanitized Raw Trace Limitations
 
-The released raw traces are sanitized provenance artifacts rather than exact copies of the private AWS environment logs. Identifier-level relationships are preserved only through pseudonymized values, and analyses that require original identities, source IP addresses, credential identifiers, or resource names are therefore outside the intended scope of the release.
+The released raw traces are sanitized provenance artifacts rather than exact copies of the private AWS environment logs.
+
+Identifier-level values such as account IDs, ARNs, access-key identifiers, source IP addresses, principals, and resource names are pseudonymized or redacted. Analyses that require the original environment-specific values are therefore outside the intended scope of this release.
+

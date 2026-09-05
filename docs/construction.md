@@ -8,7 +8,7 @@ Each CloudTrail event is normalized to:
 
 Events remain in temporal order within each sequence.
 
-Event-specific fields such as request parameters, actor identity, source IP address, resource identifiers, user-agent information, MFA state, policy documents, and error information are not included in the released representation.
+Event-specific fields are not included in the normalized sequence representation. Release v1.1.0 additionally provides sanitized raw CloudTrail provenance for the base workflows.
 
 ## Collection Environment
 
@@ -85,12 +85,13 @@ A separate per-combination mapping from each combination file to the exact const
 
 ## Raw CloudTrail Provenance
 
-The public release includes sanitized raw CloudTrail traces corresponding to all 59 base workflows: 34 malicious base workflows and 25 benign base workflows.
+The public release includes sanitized raw CloudTrail traces corresponding to all 59 base workflows: 34 malicious and 25 benign.
 
-Malicious traces originate from the CloudTrail activity generated during attack-technique execution. Benign traces correspond to the executed operational workflows used to construct the benign base sequences.
+Malicious raw traces originate from CloudTrail activity generated during attack-technique execution. Benign raw traces correspond to the administrative workflows executed to construct the benign base sequences.
 
-The normalized benchmark is derived from these traces as ordered `eventSource:eventName` pairs. The benchmark focuses on CloudTrail Management Events. Raw scenario traces can contain additional events, including Data Events, that are not retained in the normalized representation.
+The normalized benchmark is derived from these workflow traces as ordered `eventSource:eventName` pairs and focuses on CloudTrail Management Events. A raw scenario trace can contain additional events, including Data Events, that are not retained in the normalized representation.
 
-Combination sequences are constructed from base sequences and therefore do not have independent raw captures. The public raw directory contains only base-workflow provenance.
+Combination sequences are constructed from base sequences and therefore do not have independent raw captures.
 
-CloudTrail timestamps can have insufficient ordering granularity when multiple API calls occur within the same second. Where necessary, the released normalized base sequence is treated as the canonical API order while the corresponding raw CloudTrail records provide event-level provenance.
+When multiple CloudTrail records share the same second-level timestamp, the released normalized base sequence represents the canonical API order used by the benchmark while the raw records provide event-level provenance.
+

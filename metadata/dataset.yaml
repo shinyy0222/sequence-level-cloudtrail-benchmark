@@ -1,5 +1,5 @@
 name: sequence-level-aws-cloudtrail-benchmark
-version: "1.0.0"
+version: "1.1.0"
 representation: "eventSource:eventName"
 format: "one normalized API event per line"
 total_sequences: 259
@@ -48,7 +48,13 @@ directories:
   malicious_combination: dataset/malicious/combination
   benign_base: dataset/benign/base
   benign_combination: dataset/benign/combination
+  malicious_raw_base: raw/malicious/base
+  benign_raw_base: raw/benign/base
 
 release:
-  raw_cloudtrail_included: false
+  raw_cloudtrail_included: true
+  raw_malicious_base_files: 34
+  raw_benign_base_files: 25
+  raw_total_files: 59
+  raw_sanitized: true
   per_combination_constituent_mapping_included: false

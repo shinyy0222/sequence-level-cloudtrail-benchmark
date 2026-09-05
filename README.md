@@ -28,7 +28,7 @@ The benchmark is intended for controlled analysis of dual-use AWS APIs that can 
 
 ## Dataset Version
 
-- Version: 1.0.0
+- Version: 1.1.0
 - Initial release: September 2026
 - Total sequences: 259
 
@@ -63,17 +63,24 @@ Raw CloudTrail events were normalized to:
 
     eventSource:eventName
 
-Only this normalized representation is released. Raw CloudTrail JSON records are not distributed.
+The primary benchmark representation is the normalized `eventSource:eventName` sequence. Release v1.1.0 additionally provides sanitized raw CloudTrail traces for all 59 base workflows.
 
 ## Dataset Structure
 
-    dataset/
+dataset/
     ├── malicious/
     │   ├── base/
     │   └── combination/
     └── benign/
         ├── base/
         └── combination/
+
+    raw/
+    ├── malicious/
+    │   └── base/          # 34 sanitized raw traces
+    ├── benign/
+    │   └── base/          # 25 sanitized raw traces
+    └── raw_manifest.json
 
 ## Sequence Format
 
@@ -123,22 +130,16 @@ They are intended as controlled, operationally plausible workflows rather than e
 
 ## Release Scope
 
-This repository releases only the compact normalized representation used in the associated study.
+The repository releases the 259 normalized sequence samples used by the benchmark together with sanitized CloudTrail provenance for all 59 base workflows.
 
-Raw CloudTrail JSON records are not included.
+The raw release contains:
 
-The released files intentionally exclude event-specific fields such as:
+- 34 malicious base-workflow traces
+- 25 benign base-workflow traces
 
-- AWS account identifiers
-- IAM user identities
-- ARNs
-- access keys
-- source IP addresses
-- request parameters
-- resource identifiers
-- user agents
-- MFA information
-- policy documents
+Combination sequences do not have separate raw traces because they are constructed from the collected base workflows.
+
+Environment-specific identifiers and potentially sensitive values in the raw traces are pseudonymized or redacted before publication. The unsanitized source logs are not included.
 
 See [docs/privacy.md](docs/privacy.md) for details.
 
@@ -171,7 +172,7 @@ Example in Python:
 
     print(sequence)
 
-This release contains normalized API sequences rather than native CloudTrail JSON and is not intended for direct replay as raw CloudTrail logs.
+This release contains normalized API sequences together with sanitized raw CloudTrail provenance for the base workflows. The sanitized traces are not exact copies of the private AWS logs because environment-specific identifiers have been pseudonymized or redacted.
 
 ## Validation
 
@@ -217,17 +218,13 @@ See [`LICENSE`](LICENSE) for details.
 
 ## Sanitized Raw CloudTrail Traces
 
-Release v1.1.0 additionally provides sanitized raw CloudTrail traces for all 59 base workflows used to construct the benchmark:
+Release v1.1.0 provides sanitized raw CloudTrail traces for all 59 base workflows used to construct the benchmark.
 
-- 34 malicious base workflows
-- 25 benign base workflows
+The traces are stored under `raw/malicious/base/` and `raw/benign/base/`.
 
-The traces are available under `raw/malicious/base/` and `raw/benign/base/`.
+The raw artifacts preserve CloudTrail API semantics while pseudonymizing or redacting environment-specific values such as AWS account identifiers, ARNs, access-key identifiers, principals, usernames, source IP addresses, event/request identifiers, and resource-specific identifiers.
 
-The raw artifacts preserve CloudTrail event semantics while pseudonymizing environment-specific identifiers such as AWS account IDs, ARNs, access-key identifiers, principal identifiers, usernames, source IP addresses, and resource identifiers. Secret- or credential-related field values are redacted.
+The normalized benchmark continues to use ordered `eventSource:eventName` sequences. Raw scenario traces may contain additional CloudTrail events that are not retained in the normalized benchmark representation. For example, an S3 scenario can contain Data Events in addition to the Management Events used by the benchmark.
 
-The normalized benchmark continues to use ordered `eventSource:eventName` sequences. Combination sequences do not have separate raw traces because they are constructed from the collected base workflows while preserving the constituent workflow order.
+Combination sequences are constructed from base workflows and therefore do not have separate raw captures.
 
-Some raw traces may contain additional CloudTrail events that are not included in the normalized benchmark. For example, an S3 workflow can contain Data Events in addition to the Management Events retained by the benchmark representation.
-
-See `docs/construction.md` and `docs/privacy.md` for details.

@@ -82,9 +82,11 @@ The benchmark should not be treated as:
 
 ## Privacy
 
-Raw CloudTrail JSON records are not distributed.
+The public release includes normalized API sequences and sanitized raw CloudTrail traces for the 59 base workflows.
 
-The released sequences contain only normalized API identifiers and intentionally exclude account-specific and user-specific event attributes.
+Unsanitized CloudTrail logs are not distributed. Account identifiers, ARNs, access-key identifiers, principals, usernames, source IP addresses, resource-specific identifiers, and other sensitive values are pseudonymized or redacted in the raw release.
+
+The sanitized raw artifacts are therefore not intended for analyses that depend on original AWS identities, IP addresses, credentials, or resource names.
 
 ## Known Limitations
 
@@ -94,8 +96,11 @@ A separate per-combination constituent-base mapping artifact is not included in 
 
 ## Raw Trace Artifacts
 
-The release includes 59 sanitized base-workflow CloudTrail traces: 34 malicious and 25 benign. These artifacts provide execution provenance for the normalized sequence-level benchmark.
+Release v1.1.0 includes 59 sanitized CloudTrail base-workflow traces: 34 malicious and 25 benign.
 
-The raw traces are supplemental artifacts rather than additional benchmark samples. Malicious and benign combination sequences are constructed from the base workflows and therefore are not duplicated as separate raw CloudTrail captures.
+These raw artifacts provide execution provenance for the normalized benchmark and are supplemental artifacts rather than additional benchmark samples.
 
-Environment-specific identifiers and potentially sensitive values are pseudonymized or redacted before publication. Consequently, the raw release should not be used for analyses that depend on original account identities, IP addresses, credential identifiers, or resource names.
+Combination sequences are constructed from base workflows and therefore are not duplicated as independent raw captures.
+
+Environment-specific identifiers and sensitive values are pseudonymized or redacted before publication.
+
