@@ -1,0 +1,7 @@
+experiment,framework,N,TP,FN,Recall
+Single-event Prompt-only,AtomicRedTeam,25,24,1,0.96
+Single-event Prompt-only,CloudGoat,25,13,12,0.52
+Sequence Prompt-only,AtomicRedTeam,25,25,0,1.0
+Sequence Prompt-only,CloudGoat,25,17,8,0.68
+Sequence + RAG,AtomicRedTeam,25,24,1,0.96
+Sequence + RAG,CloudGoat,25,20,5,0.8

@@ -230,3 +230,11 @@ The normalized benchmark continues to use ordered `eventSource:eventName` sequen
 
 Combination sequences are constructed from base workflows and therefore do not have separate raw captures.
 
+
+## External Validation
+
+An independent malicious-only external validation set based on CloudGoat and Atomic Red Team is provided under [`external_validation/`](external_validation/).
+
+It contains 50 attack-relevant Single-event samples and 50 complete attack workflows, with 25 samples from each framework. The external validation data are released separately and are not included in the 259-sequence benchmark count.
+
+See [`external_validation/README.md`](external_validation/README.md) for evaluation units, dataset composition, and results.
