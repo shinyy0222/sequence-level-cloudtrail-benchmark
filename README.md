@@ -230,11 +230,24 @@ The normalized benchmark continues to use ordered `eventSource:eventName` sequen
 
 Combination sequences are constructed from base workflows and therefore do not have separate raw captures.
 
-
 ## External Validation
 
-An independent malicious-only external validation set based on CloudGoat and Atomic Red Team is provided under [`external_validation/`](external_validation/).
+A separate malicious-only external evaluation based on CloudGoat and Atomic Red Team is documented under [`external_validation/`](external_validation/). These samples are not included in the 259-sequence benchmark count.
 
-It contains 50 attack-relevant Single-event samples and 50 complete attack workflows, with 25 samples from each framework. The external validation data are released separately and are not included in the 259-sequence benchmark count.
+The final manuscript uses representation-specific evaluation:
 
-See [`external_validation/README.md`](external_validation/README.md) for evaluation units, dataset composition, and results.
+- **CloudGoat** is used as a development/generalization set with 25 complete malicious sequences. The Single-event protocol yields 21 eligible attack-relevant events.
+- **Atomic Red Team** is used as a held-out external evaluation set with 25 complete malicious sequences. The Single-event protocol yields 43 eligible attack-relevant events.
+- Single-event Prompt-only reports **event-level recall**.
+- Sequence Prompt-only and Sequence with RAG report **sequence-level recall**.
+
+The final external results are:
+
+| Source | Single-event | Sequence Prompt-only | Sequence with RAG |
+|---|---:|---:|---:|
+| CloudGoat | 13/21 (0.619) | 18/25 (0.720) | 15/25 (0.600) |
+| Atomic Red Team | 35/43 (0.814) | 25/25 (1.000) | 19/25 (0.760) |
+
+No pooled overall recall is reported because the evaluation units and sample counts differ across representations, and the two external sources serve different evaluation roles.
+
+See [`external_validation/README.md`](external_validation/README.md) for the protocol, scope, and paper-facing results.
