@@ -1,4 +1,0 @@
-experiment,scope,N,TP,FN,Recall
-Single-event Prompt-only,pooled_50,50,37,13,0.74
-Sequence Prompt-only,pooled_50,50,42,8,0.84
-Sequence + RAG,pooled_50,50,44,6,0.88
