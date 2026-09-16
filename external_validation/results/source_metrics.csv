@@ -1,7 +1,7 @@
-experiment,framework,N,TP,FN,Recall
-Single-event Prompt-only,AtomicRedTeam,25,24,1,0.96
-Single-event Prompt-only,CloudGoat,25,13,12,0.52
-Sequence Prompt-only,AtomicRedTeam,25,25,0,1.0
-Sequence Prompt-only,CloudGoat,25,17,8,0.68
-Sequence + RAG,AtomicRedTeam,25,24,1,0.96
-Sequence + RAG,CloudGoat,25,20,5,0.8
+experiment,framework,role,unit,N,TP,FN,Recall
+Single-event Prompt-only,CloudGoat,development_generalization,event,21,13,8,0.619
+Sequence Prompt-only,CloudGoat,development_generalization,sequence,25,18,7,0.720
+Sequence with RAG,CloudGoat,development_generalization,sequence,25,15,10,0.600
+Single-event Prompt-only,AtomicRedTeam,held_out_external,event,43,35,8,0.814
+Sequence Prompt-only,AtomicRedTeam,held_out_external,sequence,25,25,0,1.000
+Sequence with RAG,AtomicRedTeam,held_out_external,sequence,25,19,6,0.760

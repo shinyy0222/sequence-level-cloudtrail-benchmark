@@ -6,7 +6,7 @@ This repository accompanies the manuscript:
 
 **Sequence-Level AWS CloudTrail Threat Detection with Retrieval-Augmented Large Language Models**
 
-by Yeeun Shin and Seongmin Kim.
+by Yeeun Shin, Soo-Min Nam, Yu-Na Jang, So-Yu Park, Jun-Ho Hong, and Seongmin Kim.
 
 ## Overview
 
@@ -28,9 +28,11 @@ The benchmark is intended for controlled analysis of dual-use AWS APIs that can 
 
 ## Dataset Version
 
-- Version: 1.1.0
+- Version: 1.3.0
 - Initial release: September 2026
 - Total sequences: 259
+
+Release v1.3.0 aligns the external-validation artifacts with the final representation-specific protocol used in the manuscript. The external samples remain separate from the 259-sequence primary benchmark.
 
 ## Data Provenance and Collection Environment
 
@@ -82,6 +84,11 @@ raw/
 ├── benign/
 │   └── base/          # 25 sanitized raw traces
 └── raw_manifest.json
+
+external_validation/
+├── single_event/      # 21 CloudGoat + 43 Atomic Red Team eligible events
+├── sequence/          # 25 CloudGoat + 25 Atomic Red Team complete sequences
+└── results/           # source-specific final recall metrics
 </pre>
 
 ## Sequence Format
@@ -181,8 +188,9 @@ This release contains normalized API sequences together with sanitized raw Cloud
 Run:
 
     python3 scripts/validate_dataset.py
+    python3 scripts/validate_external_validation.py
 
-The validation script checks dataset counts, `eventSource:eventName` formatting, common sensitive-data patterns, and dataset consistency.
+The validation scripts check the primary benchmark counts and formatting, common sensitive-data patterns, and consistency of the final external-validation sample counts and paper-facing metrics.
 
 ## Intended Use
 
@@ -230,11 +238,31 @@ The normalized benchmark continues to use ordered `eventSource:eventName` sequen
 
 Combination sequences are constructed from base workflows and therefore do not have separate raw captures.
 
-
 ## External Validation
 
-An independent malicious-only external validation set based on CloudGoat and Atomic Red Team is provided under [`external_validation/`](external_validation/).
+A separate malicious-only external evaluation based on CloudGoat and Atomic Red Team is documented under [`external_validation/`](external_validation/). These samples are not included in the 259-sequence benchmark count.
 
-It contains 50 attack-relevant Single-event samples and 50 complete attack workflows, with 25 samples from each framework. The external validation data are released separately and are not included in the 259-sequence benchmark count.
+The final manuscript uses representation-specific evaluation:
 
-See [`external_validation/README.md`](external_validation/README.md) for evaluation units, dataset composition, and results.
+- **CloudGoat** is used as a development/generalization set with 25 complete malicious sequences. The Single-event protocol yields 21 eligible attack-relevant events.
+- **Atomic Red Team** is used as a held-out external evaluation set with 25 complete malicious sequences. The Single-event protocol yields 43 eligible attack-relevant events.
+- Single-event Prompt-only reports **event-level recall**.
+- Sequence Prompt-only and Sequence with RAG report **sequence-level recall**.
+
+The final external results are:
+
+| Source | Single-event | Sequence Prompt-only | Sequence with RAG |
+|---|---:|---:|---:|
+| CloudGoat | 13/21 (0.619) | 18/25 (0.720) | 15/25 (0.600) |
+| Atomic Red Team | 35/43 (0.814) | 25/25 (1.000) | 19/25 (0.760) |
+
+No pooled overall recall is reported because the evaluation units and sample counts differ across representations, and the two external sources serve different evaluation roles.
+
+The released sample-level artifacts are:
+
+- `external_validation/single_event/attack_relevant_events.csv`: 64 eligible events (21 CloudGoat + 43 Atomic Red Team).
+- `external_validation/sequence/attack_workflows_50.csv`: 50 complete sequences (25 CloudGoat + 25 Atomic Red Team).
+
+The Atomic Red Team sequence set in the final protocol is the execution-derived base-combination set rather than the earlier synthetic combination robustness set.
+
+See [`external_validation/README.md`](external_validation/README.md) for the protocol, scope, and paper-facing results.

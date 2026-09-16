@@ -1,69 +1,81 @@
 # External Validation
 
-This directory contains the external malicious-only evaluation set used to assess generalization beyond the internally constructed sequence-level CloudTrail benchmark.
+This directory documents the malicious-only external evaluation used in the manuscript **Sequence-Level AWS CloudTrail Threat Detection with Retrieval-Augmented Large Language Models**.
 
-The external data are derived from independently executed AWS attack workflows using:
+The external evaluation is separate from the 259-sequence benchmark under `dataset/`.
 
-- CloudGoat: 25 workflows
-- Atomic Red Team: 25 workflows
+## External Sources and Roles
 
-These samples are **not part of the 259-sequence benchmark** under `dataset/`.
+Two AWS attack sources are used:
 
-## Evaluation Sets
+- **CloudGoat**: 25 malicious API sequences, used as a **development/generalization set**.
+- **Atomic Red Team**: 25 malicious API sequences, used as a **held-out external evaluation set**.
 
-### Single-event
+All samples use the same compact `eventSource:eventName` representation as the internal benchmark.
 
-`single_event/attack_relevant_events_50.csv`
+## Representation-Specific Evaluation
 
-The Single-event evaluation contains 50 attack-relevant API events:
+The evaluation unit differs by representation.
 
-- 25 CloudGoat events
-- 25 Atomic Red Team events
+### Single-event Prompt-only
 
-Each event is represented as an `eventSource:eventName` pair and is classified independently.
+Single-event samples are constructed using the same malicious-event selection rule as the internal event-level evaluation:
 
-This follows the same evaluation principle used for the internal Single-event malicious subset, where attack-relevant API events are evaluated individually.
+1. candidate events are restricted to the same predefined set of attack-relevant and security-sensitive API operations used internally;
+2. repeated occurrences of the same normalized API within the same source sequence are removed using `(eventSource:eventName, source sequence)` as the deduplication key;
+3. sampling uses seed `42` and an internal maximum of 100 malicious events;
+4. because the eligible external pools are smaller than 100, all eligible events are retained.
 
-### Sequence
+This yields:
 
-`sequence/attack_workflows_50.csv`
+- CloudGoat: **21 eligible events**
+- Atomic Red Team: **43 eligible events**
 
-The sequence-level evaluation contains the corresponding 50 complete malicious attack workflows:
+Single-event Prompt-only is therefore evaluated using **event-level recall**.
 
-- 25 CloudGoat workflows
-- 25 Atomic Red Team workflows
+### Sequence Prompt-only and Sequence with RAG
 
-Each workflow is represented as an ordered sequence of `eventSource:eventName` pairs.
+Each complete malicious sequence is classified directly as an ordered API sequence.
 
-## Evaluation Units
+- CloudGoat: 25 sequences
+- Atomic Red Team: 25 sequences
 
-The evaluation units differ by representation:
+Both sequence-based methods are evaluated using **sequence-level recall**.
 
-- Single-event Prompt-only: event-level malicious recall
-- Sequence Prompt-only: workflow-level malicious recall
-- Sequence + RAG: workflow-level malicious recall
+Because Single-event and sequence-based settings use different evaluation units, their results are interpreted descriptively rather than as paired comparisons.
 
-Accordingly, the results are interpreted as a descriptive comparison rather than a paired comparison between Single-event and sequence-level methods.
+The external sets contain only malicious samples. Accordingly, this evaluation reports recall only; false-positive robustness, precision, F1, and full binary-classification generalization cannot be assessed without external benign samples.
 
-Because the external evaluation contains only malicious samples, false-positive behavior, precision, and full binary-classification performance cannot be assessed from this set.
+## Final Results
 
-## Results
+| Source | Role | Single-event Prompt-only | Sequence Prompt-only | Sequence with RAG |
+|---|---|---:|---:|---:|
+| CloudGoat | development/generalization | 13/21 (0.619) | **18/25 (0.720)** | 15/25 (0.600) |
+| Atomic Red Team | held-out external | 35/43 (0.814) | **25/25 (1.000)** | 19/25 (0.760) |
 
-| Source | Single-event | Sequence Prompt-only | Sequence + RAG |
-|---|---:|---:|---:|
-| CloudGoat | 13/25 (0.52) | 17/25 (0.68) | 20/25 (0.80) |
-| Atomic Red Team | 24/25 (0.96) | 25/25 (1.00) | 24/25 (0.96) |
-| Overall | 37/50 (0.74) | 42/50 (0.84) | 44/50 (0.88) |
+Single-event values are event-level recall; sequence-based values are sequence-level recall.
 
-Single-event values report event-level recall on attack-relevant API events, whereas the sequence-based values report workflow-level recall on complete attack workflows.
+No pooled `Overall` result is reported because the Single-event and sequence-based settings use different evaluation units and sample counts, and because CloudGoat and Atomic Red Team serve different evaluation roles.
 
-## Files
+## Interpretation
 
-- `single_event/attack_relevant_events_50.csv`: 50 attack-relevant Single-event samples
-- `sequence/attack_workflows_50.csv`: 50 complete attack workflows
-- `results/overall_metrics.csv`: pooled malicious-only recall
-- `results/source_metrics.csv`: CloudGoat and Atomic Red Team results separately
+Sequence Prompt-only shows numerically higher malicious-detection recall than the event-level baseline on both external sources under the representation-specific protocol. These values are descriptive rather than paired event-versus-sequence comparisons.
+
+Sequence with RAG performs below Sequence Prompt-only on both external sources, indicating that the retrieval benefit observed on the controlled internal benchmark does not uniformly transfer under external source shift.
+
+## Data Provenance Note
+
+CloudGoat sequences are execution-derived attack traces used during development/generalization analysis.
+
+The Atomic Red Team sequence set used for the final paper evaluation is the **actual execution-derived base-combination set**, not the earlier synthetic Atomic combination robustness set. The final held-out Atomic sequences preserve the order of their execution-derived constituent base traces.
+
+## Results Files
+
+- `results/source_metrics.csv`: source-specific final recall values under the representation-specific protocol.
+- `results/final_metrics.csv`: final paper-facing metric table with source role and evaluation unit.
+
+The previous pooled `overall_metrics.csv` is intentionally removed because an overall pooled recall is not meaningful under the final representation-specific protocol.
 
 ## Scope
 
-The external validation set is released separately from the primary benchmark to preserve the distinction between internally constructed benchmark data and independently generated external attack workflows.
+These external samples are not part of the 259-sequence benchmark count. The external evaluation is malicious-only and is intended to characterize attack-detection generalization rather than external false-positive robustness.

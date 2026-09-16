@@ -1,5 +1,5 @@
 name: sequence-level-aws-cloudtrail-benchmark
-version: "1.1.0"
+version: "1.3.0"
 representation: "eventSource:eventName"
 format: "one normalized API event per line"
 total_sequences: 259
@@ -58,3 +58,11 @@ release:
   raw_total_files: 59
   raw_sanitized: true
   per_combination_constituent_mapping_included: false
+  external_validation_included: true
+  external_validation_separate_from_primary_benchmark: true
+  external_single_event_samples:
+    CloudGoat: 21
+    AtomicRedTeam: 43
+  external_sequence_samples:
+    CloudGoat: 25
+    AtomicRedTeam: 25

@@ -1,0 +1,7 @@
+framework,role,method,unit,N,TP,FN,Recall
+CloudGoat,development_generalization,Single-event Prompt-only,event,21,13,8,0.619
+CloudGoat,development_generalization,Sequence Prompt-only,sequence,25,18,7,0.720
+CloudGoat,development_generalization,Sequence with RAG,sequence,25,15,10,0.600
+AtomicRedTeam,held_out_external,Single-event Prompt-only,event,43,35,8,0.814
+AtomicRedTeam,held_out_external,Sequence Prompt-only,sequence,25,25,0,1.000
+AtomicRedTeam,held_out_external,Sequence with RAG,sequence,25,19,6,0.760
